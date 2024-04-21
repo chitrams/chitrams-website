@@ -1,11 +1,11 @@
 ---
-title: "Masala Chai"
+title: "Masala chai"
 description: "A warming spiced tea with equal amounts of (heady) caffeine and sugar. This adaptation tastes similar to the one served in Dishoom London: the best masala chai I've ever had."
 author: ""
 date: "2024-04-21"
 # image: ""
 # image-alt: ""
-categories: [drinks, autumn, winter]
+categories: [drinks]
 date-modified: "2024-04-21"
 ---
 
@@ -23,6 +23,8 @@ Ingredients
 -   50g granulated sugar
 -   500ml whole milk
 
+[^1]: I find Assam to be the best kind of tea. In a pinch, the usual Lipton black teabags would also do.
+
 Tools
 
 -   1.75L capacity saucepan
@@ -34,5 +36,3 @@ Method
 2.  Place tea in saucepan. Turn up the heat to bring to a boil, then lower heat to a simmer. Simmer for 5 minutes.
 3.  Add 8 teaspoons (about 32g) of sugar and all 500ml of milk. Turn up the heat and bring to a boil. Lower heat to a simmer, and allow to simmer for another 10 minutes, stirring occasionally. Taste to see if it's to your liking; adjust sugar if needed. If you want the chai to taste stronger, leave to boil for longer.
 4.  Strain and discard the solids. Serve immediately.
-
-[^1]: I find Assam to be the best kind of tea. In a pinch, the usual Lipton black teabags would also do.

@@ -1,0 +1,46 @@
+---
+title: "Vegan banana cookies"
+description: "A delicious and easy-to-make cookie for the vegans in your life."
+author: ""
+date: "2024-04-15"
+# image: ""
+# image-alt: ""
+categories: [cookies, vegan]
+date-modified: "2024-04-21"
+---
+
+Adapted from Vegan Cookies Invade Your Cookie Jar ([goodreads](https://www.goodreads.com/en/book/show/6364402)) by Isa Chandra Moskowitz and Terry Hope Romero. Makes about a dozen larger cookies, or 20 smaller cookies.
+
+**Ingredients**
+
+-   1-2 very ripe medium banana
+-   70g canola oil
+-   100g sugar
+-   1 teaspoon vanilla extract
+-   115g all purpose flour
+-   0.5 teaspoon baking soda
+-   0.25 teaspoon salt
+-   0.25 teaspoon ground cinnamon
+-   160g rolled oats
+-   65g toasted chopped walnuts or pecans
+-   85g chocolate cut up into chunks, or chocolate chips (ideally these would be vegan)
+
+**Method**
+
+1.  Preheat oven to 180C. Lightly spray two baking sheets with oil, or line with parchment paper.
+2.  In a mixing bowl, mash banana(s) well.
+3.  Add oil, sugar, and vanilla, and mix.
+4.  Add flour, baking soda, salt, and cinnamon. Mix until just moistened.
+5.  Add oatmeal, walnuts, and chocolate chips. Using your hands or a spoon, mix well, ensuring oats are well-moistened. If dough is very slippery, add a little bit more flour.
+6.  Using clean, wet hands, roll dough into balls slightly smaller than a golf ball (about 3cm in diameter). Flatten slightly and place 5 cm apart on baking sheet.
+7.  Bake until lightly browned, 10-12 minutes. Remove from heat and allow to cool for two minutes, then transfer to a rack to cool completely. Store in an airtight container.
+
+# Notes
+
+As I'm not vegan, I prefer recipes that don't rely on egg replacement products such as flaxseed.
+
+Other books I'd like to read about vegan baking:
+
+-   Vegan cupcakes take over the world ([goodreads](https://www.goodreads.com/book/show/48304.Vegan_Cupcakes_Take_Over_the_World?ref=nav_sb_ss_1_14))
+
+-   The joy of vegan baking ([goodreads](https://www.goodreads.com/book/show/805500.The_Joy_of_Vegan_Baking?))
