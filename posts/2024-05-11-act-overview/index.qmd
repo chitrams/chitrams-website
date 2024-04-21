@@ -1,0 +1,7 @@
+---
+title: "An overview of Acceptance and Commitment Therapy (ACT)"
+description: "An incomplete bird's eye view of ACT. It's more likely than not that you've encountered these techniques."
+date: "2024-05-11"
+categories: [psychotherapy, in summary]
+draft: yes
+---

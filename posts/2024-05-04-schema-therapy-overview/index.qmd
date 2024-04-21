@@ -1,0 +1,73 @@
+---
+title: "An overview of schema therapy"
+description: "A quick and dirty summary of schema therapy from the perspective of someone undergoing schema therapy."
+date: "2024-05-04"
+categories: [psychotherapy, in summary]
+draft: yes
+---
+
+Let me preface this post by saying that I do not have a background in psychology. I'm coming at this as someone who's interested in reading about general psychology and have a background in research, which means I'm happy to read pop-sci books, textbooks, and academic journals. And that I have a higher tolerance towards jargon-heavy texts.
+
+This is my attempt at summarising what I've learnt about schema therapy and how it's useful for someone undergoing schema therapy in their psychotherapy sessions.
+
+# Overview of schema therapy
+
+```
+Schema therapy is a form of psychotherapy developed by Dr. Jeffrey Young to treat long-standing, entrenched patterns of thinking, feeling, and behaving known as "schemas." It combines elements of cognitive-behavioral therapy, attachment theory, gestalt therapy, and psychoanalysis. The therapy aims to identify and change these maladaptive schemas, often developed in childhood, through various techniques including cognitive restructuring, experiential exercises, and limited re-parenting
+```
+
+# How schemas work
+
+## Maladaptive schemas
+
+For a complete list, I recommend reading (the unfortunately titled) "Reinventing Your Life."
+
+## Schema perpetuation
+
+## Schema healing
+
+# Schema modes (in other words: parts of the self)
+
+## Healthy adult
+
+```
+This part of the self represents the rational, balanced, and adaptive aspect of personality. It is responsible for making mature decisions, setting boundaries, and nurturing oneself.
+```
+
+## Vulnerable child
+
+```
+The vulnerable child represents the emotional aspect of personality, particularly the inner child that experienced unmet needs, trauma, or neglect during childhood. This part of the self holds onto emotional pain, fears, and insecurities from the past.
+```
+
+## Adaptive coping modes
+
+Compliance, avoidance, and overcompensation
+
+Coping modes developed to protect the vulnerable child from experiencing further pain and distress.
+
+## Dysfunctional coping modes
+
+Surrender, avoidance, and overcompensation
+
+Coping modes that serve to perpetuate negative patterns of behaviour.
+
+# Changing your schemas
+
+The different levels: cognition (thinking), feeling, and experiencing
+
+- Cognitive restructuring
+- Behavioural techniques: behaviours such as practicing assertiveness and setting boundaries
+- Limited reparenting
+- Chair work
+- Experiential techniques (revisiting the past: role-playing, imagery, or visualisation)
+
+# Case examples
+
+# In summary
+
+I think the biggest thing I learnt from schema therapy is recognising that we all have a vulnerable child within us--and different people have different proportions as to the amount of time that they inhabit the vulnerable child vs the healthy adult.
+
+# Additional reading
+
+# Appendix: Development of schema therapy
