@@ -1,11 +1,10 @@
 ---
 title: "Masala Chai"
-subtitle: "A warming spiced tea with equal amounts of (heady) caffeine and sugar. This adaptation tastes similar to the one served in Dishoom London: the best masala chai I've ever had."
-description: ""
+description: "A warming spiced tea with equal amounts of (heady) caffeine and sugar. This adaptation tastes similar to the one served in Dishoom London: the best masala chai I've ever had."
 author: ""
 date: "2024-04-21"
-image: ""
-image-alt: ""
+# image: ""
+# image-alt: ""
 categories: [drinks, autumn, winter]
 date-modified: "2024-04-21"
 ---
