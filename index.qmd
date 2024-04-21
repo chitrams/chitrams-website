@@ -1,5 +1,8 @@
 ---
 title: "Curated by Chitra"
+listing: 
+  contents: posts
+  type: grid
+  sort: "date desc"
+  categories: true 
 ---
-
-Hello! This is where I curate my interests.
