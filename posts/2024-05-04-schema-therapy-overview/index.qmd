@@ -70,4 +70,12 @@ I think the biggest thing I learnt from schema therapy is recognising that we al
 
 # Additional reading
 
+## General audience (self-help)
+
+- Reinventing Your Life: The breakthrough program to end negative behaviour and feel great again by Jeffrey E. Young and Janet S. Klosko ([goodreads](https://www.goodreads.com/book/show/43866.Reinventing_Your_Life))
+- Breaking Negative Thinking Patterns: A schema therapy self-help and support book by Gitta Jacob, Hannie van Genderen and Laura Seebauer ([goodreads](https://www.goodreads.com/book/show/24344283-breaking-negative-thinking-patterns))
+
+## Deep dive
+
+
 # Appendix: Development of schema therapy

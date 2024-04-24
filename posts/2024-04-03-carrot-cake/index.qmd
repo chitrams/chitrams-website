@@ -5,7 +5,7 @@ author: ""
 date: "2024-04-03"
 # image: ""
 # image-alt: ""
-categories: [cakes]
+categories: [cakes, effort/medium, time/medium]
 date-modified: "2024-04-21"
 ---
 
@@ -45,8 +45,8 @@ date-modified: "2024-04-21"
 3. In a separate medium-sized bowl, add sugar and eggs. Whisk or mix the mixture until pale and foamy (1m by hand, ~15s by electric mixer; careful not to overmix). Add oil, cardamom, cinnamon, nutmeg, and salt. Continue whisking/mixing until smooth and emulsified.
 4. Add dry ingredients to the liquid mixture. Whisk (or use rubber spatula to mix) until well-combined and smooth. Then use rubber spatula to fold in grated carrots, dates, and pecans.
 5. Pour batter into prepared pan. Tap pan gently to release any air bubbles and smooth top of batter.
-6. Bake cake in middle rack of oven until puffed and golden and tester/skewer/butter knife inserted into the center comes out clean--30-40m. Set pan on a rack to cool for ~15m then use the parchment paper to lift the cake out of the pan and set it on the rack to cool completely.
-7. Store the cake, well-wrapped, at room temperature for up to 3d. Freezes well too.
+6. Bake cake in middle rack of oven until puffed and golden and tester/skewer/butter knife inserted into the center comes out clean--30-40 minutes. Set pan on a rack to cool for ~15 minutes then use the parchment paper to lift the cake out of the pan and set it on the rack to cool completely.
+7. Store the cake, well-wrapped, at room temperature for up to 3 days. This cake also freezes well.
 
 [^1]: Preference for safflower oil but canola or rapeseed can also be used.
 [^2]: This can be substituted with all-purpose flour or any other whole-grain flour; preference for whole wheat for nuttiness

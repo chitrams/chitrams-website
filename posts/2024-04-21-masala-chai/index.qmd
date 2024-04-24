@@ -5,7 +5,7 @@ author: ""
 date: "2024-04-21"
 # image: ""
 # image-alt: ""
-categories: [drinks]
+categories: [drinks, effort/easy, time/waiting]
 date-modified: "2024-04-21"
 ---
 
@@ -13,9 +13,9 @@ Adapted from [Dishoom: From Bombay with love](https://www.dishoom.com/cookery-bo
 
 Ingredients
 
--   Approximately 12cm by 2cm piece of ginger, sliced thinly into rounds
+-   Approximately 12cm by 2cm piece of ginger, sliced thinly into rounds and bruised
 -   2 teaspoons whole black peppercorns
--   18 cardamom pods
+-   18 cardamom pods, bruised (in other words, gently smashed)
 -   3 cinnamon sticks
 -   8 cloves
 -   1L water
@@ -23,16 +23,20 @@ Ingredients
 -   50g granulated sugar
 -   500ml whole milk
 
-[^1]: I find Assam to be the best kind of tea. In a pinch, the usual Lipton black teabags would also do.
+[^1]: I find any Assam will work well. All you want is a strong, dark, and robust blend. I've also used Yorkshire tea successfully. Lipton tea bags are OK in a pinch, I guess, but I find the resulting chai lacking in flavour. If you must, use more tea bags.
 
-Tools
+You'll also need
 
 -   1.75L capacity saucepan
 -   Strainer
 
 Method
 
-1.  Pour the ginger and spices into a saucepan. Pour 1 litre of boiling water over the ginger and spices. Bring to a boil, then lower heat to a simmer. Simmer for 10-15 minutes, until fragrant.
+1.  Place ginger and spices into a saucepan. Pour 1 litre of boiling water over the ginger and spices. Bring to a boil, then lower heat to a simmer. Simmer for 10-15 minutes, until fragrant.
 2.  Place tea in saucepan. Turn up the heat to bring to a boil, then lower heat to a simmer. Simmer for 5 minutes.
 3.  Add 8 teaspoons (about 32g) of sugar and all 500ml of milk. Turn up the heat and bring to a boil. Lower heat to a simmer, and allow to simmer for another 10 minutes, stirring occasionally. Taste to see if it's to your liking; adjust sugar if needed. If you want the chai to taste stronger, leave to boil for longer.
 4.  Strain and discard the solids. Serve immediately.
+
+# Notes
+
+For extra frothiness: using two large mugs, strain tea into one of the mugs, then pour tea back and forth between the two mugs, back and forth, from as large a height as you can manage. Do this a few times.

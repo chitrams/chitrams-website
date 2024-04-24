@@ -5,7 +5,7 @@ author: ""
 date: "2024-04-15"
 # image: ""
 # image-alt: ""
-categories: [cookies, vegan]
+categories: [cookies, vegan, effort/easy, time/quick]
 date-modified: "2024-04-21"
 ---
 
