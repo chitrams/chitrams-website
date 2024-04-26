@@ -16,11 +16,10 @@ website:
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    page-layout: full
+    theme: 
+      - cosmo
+      - styles.scss
     toc: true
 
 editor: visual
-
-execute:
-  freeze: auto

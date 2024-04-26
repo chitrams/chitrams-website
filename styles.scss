@@ -1,0 +1,13 @@
+/*-- scss:defaults --*/
+
+// Define colours
+$tomato-red: #f25f70;
+
+$link-color:                  $tomato-red;
+$link-shade-percentage:       20%;
+$link-hover-color:            shift-color($link-color, $link-shade-percentage);
+
+$nav-link-color:              $tomato-red;
+$nav-link-hover-color:        $link-hover-color;
+
+/*-- scss:rules --*/
