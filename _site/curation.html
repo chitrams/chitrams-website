@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-date','listing-title','listing-reading-time','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -185,7 +185,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="yoga">yoga <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -214,7 +214,34 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-
+<div class="quarto-post image-right" data-index="0" data-categories="yoga" data-listing-date-sort="1714060800000" data-listing-file-modified-sort="1714100160935" data-listing-date-modified-sort="1714060800000" data-listing-reading-time-sort="2" data-listing-word-count-sort="313">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./curation/2024-04-26-yoga-with-adriene-favourites/index.html" class="no-external">My favourite Yoga With Adriene videos</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./curation/2024-04-26-yoga-with-adriene-favourites/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('yoga'); return false;">
+yoga
+</div>
+</div>
+<div class="listing-description">
+<a href="./curation/2024-04-26-yoga-with-adriene-favourites/index.html" class="no-external">A list for future reference.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./curation/2024-04-26-yoga-with-adriene-favourites/index.html" class="no-external">
+<div class="listing-date">
+Apr 26, 2024
+</div>
+<div class="listing-reading-time">
+2 min
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
