@@ -4,10 +4,14 @@ project:
 website:
   title: "Curated by Chitra"
   navbar:
+    left:
+      - code-collection.qmd
+      - recipes.qmd
+      - curation.qmd
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/chitrams
+        href: https://github.com/chitrams/chitrams-website
   favicon: /supporting-files/C-logo.png
 
 format:

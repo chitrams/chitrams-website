@@ -1,0 +1,60 @@
+---
+title: "How to use Quarto to write a blog"
+author: "Chitra M Saraswati"
+description: "Moving my Netlify-published blog to Quarto from `blogdown`--and what all this means."
+date: "2024-04-13"
+categories:
+  - R
+  - workflow
+  - documentation
+draft: yes
+---
+
+# What's going on, please explain?
+
+## Quarto vs `blogdown`
+
+How to use quarto to build a website, its user manual: https://quarto.org/docs/websites/
+
+## Publishing
+
+Netlify is simply a publishing platform; you can also use GitHub pages and Quarto pub. [Here's a list](https://quarto.org/docs/publishing/) of all the different places you can publish.
+
+# My workflow
+
+## RStudio IDE
+
+Creating new posts, I use `quartopost()` from the [quartopost](https://petzi53.github.io/quartopost/) package. It provides a shiny dialog window similar to blogdown's "New Post" add-in.
+
+``` r
+devtools::install_github("petzi53/quartopost")
+library(quartopost)
+
+quartopost()
+```
+
+I write out the blog post.
+
+Then I render by clicking the 'Render' button in RStudio.
+
+Then I commit my changes and push to GitHub. You will see that changes have been made in your `posts` and `_site` folders.
+
+After I've done this, my webpage should reflect these changes.
+
+## The terminal
+
+`quarto render`
+
+`git push`
+
+# Resources
+
+-   A [blog post by Samantha Csik](https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/) about adding a blog to your quarto website. This also helps explain the site structure, if you're not across that.
+
+-   A guide to publishing a Quarto website with GitHub and Netlify: a [blog post by Jadey Ryan](https://jadeyryan.com/blog/2023-11-19_publish-quarto-website/). This is a good guide to set up Netlify, but at this time of writing there's an issue with configuring the Quarto Netlify plugin. If you follow the instructions in his section [4.1 Configure Netlify plugin](https://jadeyryan.com/blog/2023-11-19_publish-quarto-website/#configure-continuous-deployment), the build will fail when you run it ([GitHub issue](https://github.com/quarto-dev/netlify-plugin-quarto/issues/8)). This is also an issue in the [Quarto docs](https://quarto.org/docs/publishing/netlify.html#rendering-on-netlify) where the same instructions are laid out.
+
+-   Some excellent guides on writing Quarto blogs: one by [Bea Milz](https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/en) and a comprehensive one by Albert Rapp
+
+# Advanced blogging
+
+-   Continuous deployment using GitHub actions vs Netlify. Instructions from [Netlify Docs](https://docs.netlify.com/site-deploys/create-deploys/).
