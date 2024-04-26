@@ -1,0 +1,39 @@
+---
+title: "`git` good with RStudio"
+author: ""
+description: "`git`-ing started, resources to help you, and bonus: dealing with limited admin rights in Windows."
+date: "2024-04-23"
+categories:
+  - git
+  - R
+  - computer science
+  - workflow
+  - resources
+  
+draft: yes
+---
+
+Git is one of those things that I've always known I *should* learn how to use, but never got around to actually learning because my workflow wasn't crap enough to justify putting the effort into learning it. I think it also has a steep learning curve (you need to learn a different way of thinking about managing your digital workflow), and the official documentation isn't the most accessible. So I completely understand why a lot of statisticians and researchers I know aren't convinced about using Git.
+
+Recently though my work has required using version control so other people can see what I've been up to. From that, I've been pleasantly surprised to find that using Git is also useful for my own personal projects, even if I'm the only person working on it. I did struggle to set Git up in RStudio, though, as I don't have access to admin rights on my work PC which runs Windows.
+
+# Why use Git?
+
+# Resources to learn Git
+
+## Useful for me
+
+-   [Happy Git and GitHub for the useR](https://happygitwithr.com/)
+-   [Oh Shit, Git!?!](https://ohshitgit.com/)
+-   An interactive tutorial: [Learn Git Branching](https://learngitbranching.js.org/)
+
+## Likely to be useful
+
+In other words, resources I've skimmed through but haven't really used
+
+-   Think Like a Git [book](https://think-like-a-git.net/) by Sam Livingston-Gray
+-   Pro Git [book](https://book.git-scm.com/book) by Scott Cachon and Ben Straub
+
+# Admin rights issues
+
+Using SSH instead of HTTPS on Windows when setting up Control panel \> Edit environment variables for your account Select 'Path', click the 'Edit' button, and add the path for your Git installation.

@@ -1,0 +1,84 @@
+---
+title: "R packages for summary tables in Word"
+description: "Exporting summary tables from R to Word doesn't have to be painful."
+author: 'Chitra M Saraswati'
+date: '2022-08-21'
+date-modified: '2024-04-23'
+slug: r-packages-for-summary-tables-in-word
+categories: 
+  - R
+  - documentation
+---
+
+A big part of what I do day-to-day is to provide a report of summary statistics. The researchers I work with would usually want this report in the format of a Word document (.docx) as it is (unfortunately) still the most widely used word processing software.
+
+I much prefer markdown and TeX files for reports, but you have to work to your audience. This is how I went down the rabbit hole of trying to find an R package that outputs summary tables into Word documents. So far I've found that `gtsummary` and `table1` combined with the `flextable` package does the job best.
+
+Another package that's been brought to my attention is `stargazer`, but alas it only outputs to html. So I'll walk you through a reproducible example of how to use the `gtsummary` and `table1` packages to create aesthetically pleasing summary tables in Word, supported by the `flextable` package.
+
+```{r, include = FALSE}
+library(tidyverse)
+
+# Packages you could use for table building
+library(gtsummary)
+library(table1)
+
+# To export your table to Word
+library(flextable)
+```
+
+# Using `gtsummary`
+
+Let's create a table for the `mtcars` data, grouping by engine type (V-shaped vs straight). Here's how we'd do it using the `gtsummary` package:
+
+```{r}
+library(gtsummary)
+
+mtcars %>%
+  select(mpg, cyl, disp, am, vs) %>% 
+  tbl_summary(by = vs)
+```
+
+Not bad--*and* it plays well with the `tidyverse`. I also like that `gtsummary` tends to be smart about how the results should be displayed. For example, the `cyl` and `am` variables were automatically treated as discrete instead of continuous variables (thus giving us counts and percentages instead of median and IQR). You'll notice that if you have the levels of a categorical variable as `0` and `1` (as in `am`), `gtsummary` provides only the count and percentage for the values coded as `1`, which I'd argue eliminates redundancy.
+
+# Using `table1`
+
+Now, let's use the `table1` package:
+
+```{r}
+library(table1)
+
+table1(~ mpg + factor(cyl) + disp + factor(am) | factor(vs),
+       data = mtcars)
+```
+
+One could argue that the formula format is a bit tedious as you can't `select` the variables (for example, from a list or vector), but I find that you usually need to be cognisant of which variables you want included in a summary table anyways so this isn't much of a problem for me. I also prefer how it looks as it fits more into the format of a 'Table 1' for scientific publishing (hence the package name).
+
+I did however have to wrap the `cyl` and `am` with `factor()` as `table1` does not automatically treat these numeric variables as categorical variables.
+
+# Exporting using `flextable`
+
+Now let's export these tables into Word. First you have to save your table as a `flextable` object. You do this by either using the `as_flex_table()` function for a `gtsummary` object, or the `t1flex()` function for a `table1` object. Once you've done that, `save_as_docx()` saves the table into a Word document which you can copy and paste. Here's how it would look:
+
+```{r, eval = FALSE}
+# For gtsummary
+table <- mtcars %>%
+  select(mpg, cyl, disp, am, vs) %>% 
+  tbl_summary(by = vs)
+
+as_flex_table(table) %>% 
+  save_as_docx(path = "./gtsummary.docx")
+
+# For table1
+table <- table1(~ mpg + factor(cyl) + disp + factor(am) | factor(vs),
+       data = mtcars)
+
+t1flex(table) %>% 
+  save_as_docx(path = "./table1.docx")
+```
+
+`flextable` also supports exporting to HTML, PDF, and PowerPoint documents; it also supports rendering tables as graphic files (such as png and jpeg).
+
+# Additional notes
+
+You can add content to Word and PowerPoint documents using the [`officer`](https://davidgohel.github.io/officer/index.html) package, but I haven't used it before--my end users usually just copy-and-paste the tables. This is a package I'd like to look into.

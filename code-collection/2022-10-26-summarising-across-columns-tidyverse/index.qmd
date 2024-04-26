@@ -1,0 +1,61 @@
+---
+title: 'Summarising across columns'
+author: 'Chitra M Saraswati'
+date: '2022-10-26'
+slug: summarising-across-columns-tidyverse
+categories:
+  - R
+  - tidyverse
+draft: yes
+---
+
+Something commonly done in analyses is summarising across multiple columns: for example, you might want to calculate the mean for all variables in your dataset. I'll explain how to do this using the tidyverse tools. So let's load the tidyverse package:
+
+```{r set-up, message=FALSE}
+library(tidyverse)
+```
+
+For our first example, let's calculate the mean for each column in the `airquality` dataset, grouped by month.
+
+The main function here is `across()` which lets you apply a function, or multiple functions, across multiple columns. The important options here is `.cols`, `.fns` and `.names`. I'll paste
+
+.cols, cols <tidy-select> Columns to transform. Because across() is used within functions like summarise() and mutate(), you can't select or compute upon grouping variables. .fns Functions to apply to each of the selected columns. Possible values are: • A function, e.g. mean. • A purrr-style lambda, e.g. \~ mean(.x,na.rm = TRUE) • A list of functions/lambdas, e.g. list(mean = mean, n_miss = \~ sum(is.na(.x)) • NULL: the default value, returns the selected columns in a data frame without applying a transformation. This is useful for when you want to use a function that takes a data frame. Within these functions you can use cur_column() and cur_group() to access the current column and grouping keys respectively. ... Additional arguments for the function calls in .fns. Using these ... is strongly discouraged because of issues of timing of evaluation. .names A glue specification that describes how to name the output columns. This can use {.col} to stand for the selected column name, and {.fn} to stand for the name of the function being applied. The default (NULL) is equivalent to "{.col}" for the single function case and "{.col}\_{.fn}" for the case where a list is used for .fns.
+
+In this instance, we use `.fns` to define the function we want to run. Additional options for `mean`--in this instance, `na.rm`, is added using a comma.
+
+```{r}
+airquality %>% 
+  group_by(Month) %>% 
+  summarise(across(
+    .cols = -Day,
+    .fns = mean,
+    na.rm = TRUE
+  ))
+```
+
+Here's how to count missing values for each column, grouped by month. In this instance we write the function using `~` instead of `.fns` and refer to the columns using `.x`.
+
+```{r}
+airquality %>% 
+  group_by(Month) %>% 
+  summarise(across(
+    .cols = -Day,
+    ~sum(is.na(.x))
+  ))
+```
+
+Let's check these counts using the `summary()` function for month five:
+
+```{r}
+airquality %>% 
+  filter(Month == 5) %>% select(Ozone, Solar.R) %>% 
+  summary()
+```
+
+Renaming across columns
+
+```r
+dat_allergy <- dat_allergy %>%
+  rename_with(.cols = -or_matgate_nbr,
+              ~ paste0("allergy_", .x))
+```

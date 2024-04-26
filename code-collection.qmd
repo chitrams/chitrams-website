@@ -1,0 +1,12 @@
+---
+title: "Code Collection"
+listing:
+  contents: code-collection
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title, reading-time, description, categories]
+page-layout: full
+---

@@ -1,11 +1,7 @@
 ---
-title: "Recipes"
-listing: 
-  contents: posts
-  type: grid
-  sort: "date desc"
-  categories: true 
-  sort-ui: false
-  filter-ui: false
-  fields: [image, date, title, description, categories]
+title: "Curated by Chitra"
+subtitle: "A collection of things I've learnt"
+toc: false
 ---
+
+Hello! This website is a curation of my interests, including (but not limited to): statistics, R programming, food, learning, and understanding other people.

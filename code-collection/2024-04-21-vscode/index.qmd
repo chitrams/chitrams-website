@@ -1,0 +1,21 @@
+---
+title: "Visual Studio Code: surface level and under the hood"
+author: ""
+description: "Getting started with VS Code, dealing with limited admin rights in Windows, and as an extension: understanding PATH variables and executables."
+date: "2024-04-21"
+categories:
+  - VS Code
+  - computer science
+  - workflow
+  - resources
+  
+draft: yes
+---
+
+```
+In computing, the PATH is an environment variable that specifies a set of directories where executable programs are located. When you run a command in a command-line interface (CLI) or terminal, the operating system searches through the directories listed in the PATH variable to find the executable corresponding to the command you entered.
+
+For languages like Python and tools like Quarto, when you install them, their executables (such as python.exe for Python or quarto.exe for Quarto) are placed in specific directories. By adding these directories to your PATH variable, you enable your operating system to locate and run these executables from any directory in your file system without needing to specify the full path to the executable each time.
+
+This concept is essential for managing and accessing software installed on your system efficiently.
+```
