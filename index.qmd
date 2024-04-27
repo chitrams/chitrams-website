@@ -4,4 +4,4 @@ subtitle: "A collection of things I've learnt"
 toc: false
 ---
 
-Hello! This website is a curation of my interests, including (but not limited to): statistics, R programming, food, learning, and understanding other people.
+Hello! This website is a curation of my interests, including (but not limited to): statistigitcs, R programming, food, learning, and understanding other people.
