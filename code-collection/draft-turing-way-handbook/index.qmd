@@ -1,0 +1,16 @@
+---
+title: "A guide to reproducible research: The Turing Way Handbook"
+description: "An excellent resource to ensure your data science projects are reproducible."
+author: ""
+date: "2024-04-27"
+image: "the-turing-way-logo.svg"
+image-alt: "Logo of The Turing Way"
+categories:
+  - workflow
+  - resources
+date-modified: "2024-04-27"
+---
+
+A guide for reproducible research
+
+I first came across this project when I was looking up how to do version control and get better at using Git. They do include chapters on version control, code testing, and continuous integration, but what I like about them is 
