@@ -1,13 +1,12 @@
 ---
-title: "Code Collection"
+title: "Curation"
 listing:
-  contents: .
+  contents: curation
   sort: "date desc"
   type: default
   categories: true
   sort-ui: false
-  filter-ui: [categories]
+  filter-ui: false
   fields: [date, title, reading-time, description, categories]
 page-layout: full
-comments: false
 ---

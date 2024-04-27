@@ -1,12 +1,11 @@
 ---
 title: "Recipes"
 listing: 
-  contents: .
+  contents: recipes
   type: grid
   sort: "date desc"
   categories: true 
   sort-ui: false
-  filter-ui:
-    - categories
+  filter-ui: true
   fields: [image, date, title, description, categories]
 ---
