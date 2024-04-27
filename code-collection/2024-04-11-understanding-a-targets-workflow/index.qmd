@@ -1,7 +1,7 @@
 ---
-title: "Understanding a targets workflow: An introduction"
-author: "Chitra M Saraswati"
-description: "`{targets}`: why use it, how to use it, and some resources to get you started. (Hint: reduce the mental burden of figuring out which step of the analysis you're on.)"
+title: "Understanding a targets workflow"
+author: ""
+description: "An introduction to `{targets}`: why use it, how to use it, and some resources to get you started. (In other words: reduce the mental burden of figuring out which step of the analysis you're on.)"
 date: "2024-04-11"
 date-modified: "2024-04-23"
 categories:
