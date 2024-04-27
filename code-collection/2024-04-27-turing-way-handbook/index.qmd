@@ -1,0 +1,19 @@
+---
+title: "A guide to reproducible research: The Turing Way Handbook"
+description: "An excellent resource to ensure your data science projects are reproducible."
+author: ""
+date: "2024-04-27"
+image: "the-turing-way-logo.svg"
+image-alt: "Logo of The Turing Way"
+categories:
+  - resources
+date-modified: "2024-04-27"
+---
+
+![The Turing Way Logo](the-turing-way-logo.svg)
+
+[[**The Handbook**](https://book.the-turing-way.org/) **\| [GitHub Repository](https://github.com/the-turing-way/the-turing-way)**]{style="font-size:150%"}
+
+I first came across this project when trying to figure out what version control was and how to use Git. I got what I wanted: the handbook includes chapters on [version control](https://book.the-turing-way.org/reproducible-research/vcs.html), [code testing](https://book.the-turing-way.org/reproducible-research/testing), and [continuous integration](https://book.the-turing-way.org/reproducible-research/ci.html) (including how to set up [continuous integration with GitHub Actions](https://book.the-turing-way.org/reproducible-research/ci/ci-github-actions)). What I loved about this project is they went the extra mile and also explained concepts in research and software reproducibility such as [reusable code](https://book.the-turing-way.org/reproducible-research/code-reuse), and included a chapter on [how to communicate](https://book.the-turing-way.org/communication/communication) your research.
+
+It's an excellent resource for learning about how to set up your projects for reproducibility.

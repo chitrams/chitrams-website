@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-05-04">
+<meta name="description" content="A quick and dirty summary of schema therapy from the perspective of someone undergoing schema therapy.">
 
-<title>Curated by Chitra - Code Collection</title>
+<title>Curated by Chitra - An overview of schema therapy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +25,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href=".//supporting-files/C-logo.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../..//supporting-files/C-logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,76 +69,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-reading-time','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Curated by Chitra</span>
     </a>
   </div>
@@ -149,21 +91,21 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./code-collection.html" aria-current="page"> 
+    <a class="nav-link" href="../../code-collection.html"> 
 <span class="menu-text">Code Collection</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./recipes.html"> 
+    <a class="nav-link" href="../../recipes.html"> 
 <span class="menu-text">Recipes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./curation.html"> 
+    <a class="nav-link" href="../../curation.html"> 
 <span class="menu-text">Curation</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -179,166 +121,156 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">An overview of schema therapy</h1>
+                  <div>
+        <div class="description">
+          A quick and dirty summary of schema therapy from the perspective of someone undergoing schema therapy.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">psychotherapy</div>
+                <div class="quarto-category">in summary</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 4, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(3)</span></div><div class="category" data-category="documentation">documentation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="functional programming">functional programming <span class="quarto-category-count">(1)</span></div><div class="category" data-category="resources">resources <span class="quarto-category-count">(1)</span></div><div class="category" data-category="workflow">workflow <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview-of-schema-therapy" id="toc-overview-of-schema-therapy" class="nav-link active" data-scroll-target="#overview-of-schema-therapy">Overview of schema therapy</a></li>
+  <li><a href="#how-schemas-work" id="toc-how-schemas-work" class="nav-link" data-scroll-target="#how-schemas-work">How schemas work</a>
+  <ul class="collapse">
+  <li><a href="#maladaptive-schemas" id="toc-maladaptive-schemas" class="nav-link" data-scroll-target="#maladaptive-schemas">Maladaptive schemas</a></li>
+  <li><a href="#schema-perpetuation" id="toc-schema-perpetuation" class="nav-link" data-scroll-target="#schema-perpetuation">Schema perpetuation</a></li>
+  <li><a href="#schema-healing" id="toc-schema-healing" class="nav-link" data-scroll-target="#schema-healing">Schema healing</a></li>
+  </ul></li>
+  <li><a href="#schema-modes-in-other-words-parts-of-the-self" id="toc-schema-modes-in-other-words-parts-of-the-self" class="nav-link" data-scroll-target="#schema-modes-in-other-words-parts-of-the-self">Schema modes (in other words: parts of the self)</a>
+  <ul class="collapse">
+  <li><a href="#healthy-adult" id="toc-healthy-adult" class="nav-link" data-scroll-target="#healthy-adult">Healthy adult</a></li>
+  <li><a href="#vulnerable-child" id="toc-vulnerable-child" class="nav-link" data-scroll-target="#vulnerable-child">Vulnerable child</a></li>
+  <li><a href="#adaptive-coping-modes" id="toc-adaptive-coping-modes" class="nav-link" data-scroll-target="#adaptive-coping-modes">Adaptive coping modes</a></li>
+  <li><a href="#dysfunctional-coping-modes" id="toc-dysfunctional-coping-modes" class="nav-link" data-scroll-target="#dysfunctional-coping-modes">Dysfunctional coping modes</a></li>
+  </ul></li>
+  <li><a href="#changing-your-schemas" id="toc-changing-your-schemas" class="nav-link" data-scroll-target="#changing-your-schemas">Changing your schemas</a></li>
+  <li><a href="#case-examples" id="toc-case-examples" class="nav-link" data-scroll-target="#case-examples">Case examples</a></li>
+  <li><a href="#in-summary" id="toc-in-summary" class="nav-link" data-scroll-target="#in-summary">In summary</a></li>
+  <li><a href="#additional-reading" id="toc-additional-reading" class="nav-link" data-scroll-target="#additional-reading">Additional reading</a>
+  <ul class="collapse">
+  <li><a href="#general-audience-self-help" id="toc-general-audience-self-help" class="nav-link" data-scroll-target="#general-audience-self-help">General audience (self-help)</a></li>
+  <li><a href="#deep-dive" id="toc-deep-dive" class="nav-link" data-scroll-target="#deep-dive">Deep dive</a></li>
+  </ul></li>
+  <li><a href="#appendix-development-of-schema-therapy" id="toc-appendix-development-of-schema-therapy" class="nav-link" data-scroll-target="#appendix-development-of-schema-therapy">Appendix: Development of schema therapy</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Code Collection</h1>
-</div>
-
-
-
-<div class="quarto-title-meta column-page-left">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
 
+<p>Let me preface this post by saying that I do not have a background in psychology. I’m coming at this as someone who’s interested in reading about general psychology and have a background in research, which means I’m happy to read pop-sci books, textbooks, and academic journals. And that I have a higher tolerance towards jargon-heavy texts.</p>
+<p>This is my attempt at summarising what I’ve learnt about schema therapy and how it’s useful for someone undergoing schema therapy in their psychotherapy sessions.</p>
+<section id="overview-of-schema-therapy" class="level1">
+<h1>Overview of schema therapy</h1>
+<pre><code>Schema therapy is a form of psychotherapy developed by Dr. Jeffrey Young to treat long-standing, entrenched patterns of thinking, feeling, and behaving known as "schemas." It combines elements of cognitive-behavioral therapy, attachment theory, gestalt therapy, and psychoanalysis. The therapy aims to identify and change these maladaptive schemas, often developed in childhood, through various techniques including cognitive restructuring, experiential exercises, and limited re-parenting</code></pre>
+</section>
+<section id="how-schemas-work" class="level1">
+<h1>How schemas work</h1>
+<section id="maladaptive-schemas" class="level2">
+<h2 class="anchored" data-anchor-id="maladaptive-schemas">Maladaptive schemas</h2>
+<p>For a complete list, I recommend reading (the unfortunately titled) “Reinventing Your Life.”</p>
+</section>
+<section id="schema-perpetuation" class="level2">
+<h2 class="anchored" data-anchor-id="schema-perpetuation">Schema perpetuation</h2>
+</section>
+<section id="schema-healing" class="level2">
+<h2 class="anchored" data-anchor-id="schema-healing">Schema healing</h2>
+</section>
+</section>
+<section id="schema-modes-in-other-words-parts-of-the-self" class="level1">
+<h1>Schema modes (in other words: parts of the self)</h1>
+<section id="healthy-adult" class="level2">
+<h2 class="anchored" data-anchor-id="healthy-adult">Healthy adult</h2>
+<pre><code>This part of the self represents the rational, balanced, and adaptive aspect of personality. It is responsible for making mature decisions, setting boundaries, and nurturing oneself.</code></pre>
+</section>
+<section id="vulnerable-child" class="level2">
+<h2 class="anchored" data-anchor-id="vulnerable-child">Vulnerable child</h2>
+<pre><code>The vulnerable child represents the emotional aspect of personality, particularly the inner child that experienced unmet needs, trauma, or neglect during childhood. This part of the self holds onto emotional pain, fears, and insecurities from the past.</code></pre>
+</section>
+<section id="adaptive-coping-modes" class="level2">
+<h2 class="anchored" data-anchor-id="adaptive-coping-modes">Adaptive coping modes</h2>
+<p>Compliance, avoidance, and overcompensation</p>
+<p>Coping modes developed to protect the vulnerable child from experiencing further pain and distress.</p>
+</section>
+<section id="dysfunctional-coping-modes" class="level2">
+<h2 class="anchored" data-anchor-id="dysfunctional-coping-modes">Dysfunctional coping modes</h2>
+<p>Surrender, avoidance, and overcompensation</p>
+<p>Coping modes that serve to perpetuate negative patterns of behaviour.</p>
+</section>
+</section>
+<section id="changing-your-schemas" class="level1">
+<h1>Changing your schemas</h1>
+<p>The different levels: cognition (thinking), feeling, and experiencing</p>
+<ul>
+<li>Cognitive restructuring</li>
+<li>Behavioural techniques: behaviours such as practicing assertiveness and setting boundaries</li>
+<li>Limited reparenting</li>
+<li>Chair work</li>
+<li>Experiential techniques (revisiting the past: role-playing, imagery, or visualisation)</li>
+</ul>
+</section>
+<section id="case-examples" class="level1">
+<h1>Case examples</h1>
+</section>
+<section id="in-summary" class="level1">
+<h1>In summary</h1>
+<p>I think the biggest thing I learnt from schema therapy is recognising that we all have a vulnerable child within us–and different people have different proportions as to the amount of time that they inhabit the vulnerable child vs the healthy adult.</p>
+</section>
+<section id="additional-reading" class="level1">
+<h1>Additional reading</h1>
+<section id="general-audience-self-help" class="level2">
+<h2 class="anchored" data-anchor-id="general-audience-self-help">General audience (self-help)</h2>
+<ul>
+<li>Reinventing Your Life: The breakthrough program to end negative behaviour and feel great again by Jeffrey E. Young and Janet S. Klosko (<a href="https://www.goodreads.com/book/show/43866.Reinventing_Your_Life">goodreads</a>)</li>
+<li>Breaking Negative Thinking Patterns: A schema therapy self-help and support book by Gitta Jacob, Hannie van Genderen and Laura Seebauer (<a href="https://www.goodreads.com/book/show/24344283-breaking-negative-thinking-patterns">goodreads</a>)</li>
+</ul>
+</section>
+<section id="deep-dive" class="level2">
+<h2 class="anchored" data-anchor-id="deep-dive">Deep dive</h2>
+</section>
+</section>
+<section id="appendix-development-of-schema-therapy" class="level1">
+<h1>Appendix: Development of schema therapy</h1>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="resources" data-listing-date-sort="1714147200000" data-listing-file-modified-sort="1714183431174" data-listing-date-modified-sort="1714147200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="100">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./code-collection/draft-turing-way-handbook/index.html" class="no-external">A guide to reproducible research: The Turing Way Handbook</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./code-collection/draft-turing-way-handbook/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('resources'); return false;">
-resources
-</div>
-</div>
-<div class="listing-description">
-<a href="./code-collection/draft-turing-way-handbook/index.html" class="no-external">An excellent resource to ensure your data science projects are reproducible.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./code-collection/draft-turing-way-handbook/index.html" class="no-external">
-<div class="listing-date">
-Apr 27, 2024
-</div>
-<div class="listing-reading-time">
-1 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="R,workflow" data-listing-date-sort="1712764800000" data-listing-file-modified-sort="1714097742517" data-listing-date-modified-sort="1713801600000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1278">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./code-collection/2024-04-11-understanding-a-targets-workflow/index.html" class="no-external">Understanding a targets workflow: An introduction</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./code-collection/2024-04-11-understanding-a-targets-workflow/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
-R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('workflow'); return false;">
-workflow
-</div>
-</div>
-<div class="listing-description">
-<a href="./code-collection/2024-04-11-understanding-a-targets-workflow/index.html" class="no-external"><code>{targets}</code>: why use it, how to use it, and some resources to get you started. (Hint: reduce the mental burden of figuring out which step of the analysis you’re on.)</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./code-collection/2024-04-11-understanding-a-targets-workflow/index.html" class="no-external">
-<div class="listing-date">
-Apr 11, 2024
-</div>
-<div class="listing-reading-time">
-7 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="R,documentation" data-listing-date-sort="1661011200000" data-listing-file-modified-sort="1714097742501" data-listing-date-modified-sort="1713801600000" data-listing-reading-time-sort="3" data-listing-word-count-sort="583">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./code-collection/2022-08-21-packages-for-summary-tables/index.html" class="no-external">R packages for summary tables in Word</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./code-collection/2022-08-21-packages-for-summary-tables/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
-R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('documentation'); return false;">
-documentation
-</div>
-</div>
-<div class="listing-description">
-<a href="./code-collection/2022-08-21-packages-for-summary-tables/index.html" class="no-external">Exporting summary tables from R to Word doesn’t have to be painful.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./code-collection/2022-08-21-packages-for-summary-tables/index.html" class="no-external">
-<div class="listing-date">
-Aug 21, 2022
-</div>
-<div class="listing-reading-time">
-3 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="R,functional programming" data-listing-date-sort="1660579200000" data-listing-file-modified-sort="1714097742491" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="704">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./code-collection/2022-08-16-functional-programming-in-r/index.html" class="no-external">Functional programming</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./code-collection/2022-08-16-functional-programming-in-r/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
-R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('functional programming'); return false;">
-functional programming
-</div>
-</div>
-<div class="listing-description">
-<a href="./code-collection/2022-08-16-functional-programming-in-r/index.html" class="no-external">Using <code>map</code> instead of for loops is (usually) better for you. (At the very least, you’ll learn a different way of thinking about recursion.)</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./code-collection/2022-08-16-functional-programming-in-r/index.html" class="no-external">
-<div class="listing-date">
-Aug 16, 2022
-</div>
-<div class="listing-reading-time">
-4 min
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
