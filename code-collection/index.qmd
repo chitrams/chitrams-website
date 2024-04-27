@@ -9,4 +9,5 @@ listing:
   filter-ui: [categories]
   fields: [date, title, reading-time, description, categories]
 page-layout: full
+comments: false
 ---
