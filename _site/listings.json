@@ -1,33 +1,16 @@
 [
   {
-    "listing": "/recipes.html",
-    "items": [
-      "/recipes/2024-04-21-masala-chai/index.html",
-      "/recipes/2024-04-15-vegan-banana-cookies/index.html",
-      "/recipes/2024-04-03-carrot-cake/index.html"
-    ]
-  },
-  {
-    "listing": "/curation.html",
-    "items": [
-      "/curation/2024-04-26-yoga-with-adriene-favourites/index.html"
-    ]
-  },
-  {
-    "listing": "/code-collection.html",
-    "items": [
-      "/code-collection/2024-04-27-turing-way-handbook/index.html",
-      "/code-collection/2024-04-11-understanding-a-targets-workflow/index.html",
-      "/code-collection/2022-08-21-packages-for-summary-tables/index.html",
-      "/code-collection/2022-08-16-functional-programming-in-r/index.html"
-    ]
-  },
-  {
     "listing": "/recipes/index.html",
     "items": [
       "/recipes/2024-04-21-masala-chai/index.html",
       "/recipes/2024-04-15-vegan-banana-cookies/index.html",
       "/recipes/2024-04-03-carrot-cake/index.html"
+    ]
+  },
+  {
+    "listing": "/curation/index.html",
+    "items": [
+      "/curation/2024-04-26-yoga-with-adriene-favourites/index.html"
     ]
   },
   {
@@ -37,12 +20,6 @@
       "/code-collection/2024-04-11-understanding-a-targets-workflow/index.html",
       "/code-collection/2022-08-21-packages-for-summary-tables/index.html",
       "/code-collection/2022-08-16-functional-programming-in-r/index.html"
-    ]
-  },
-  {
-    "listing": "/curation/index.html",
-    "items": [
-      "/curation/2024-04-26-yoga-with-adriene-favourites/index.html"
     ]
   }
 ]
