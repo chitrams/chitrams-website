@@ -1,16 +1,26 @@
 ---
-title: "An overview of schema therapy"
-description: "A quick and dirty summary of schema therapy from the perspective of someone undergoing schema therapy."
+title: "Understanding schema therapy"
+description: "A broad overview of schema therapy and why it could be useful, from a lay-person perspective"
 date: "2024-05-04"
-categories: [psychotherapy, in summary]
+categories:
+  - psychotherapy
+  - in summary
 draft: yes
 ---
 
-Let me preface this post by saying that I do not have a background in psychology. I'm coming at this as someone who's interested in reading about general psychology and have a background in research, which means I'm happy to read pop-sci books, textbooks, and academic journals. And that I have a higher tolerance towards jargon-heavy texts.
+# Disclaimer
 
-This is my attempt at summarising what I've learnt about schema therapy and how it's useful for someone undergoing schema therapy in their psychotherapy sessions.
+Let me preface this post by saying that **I have not formally studied psychology**. I'm coming at this as someone who's generally interested in psychology (an amateur) and has a research background: which means I'm happy to read pop-sci books, textbooks, and academic journals in equal measure; and which also means I have a higher tolerance for jargon-heavy texts. 
+
+Having said that, I *do* get bored after reading enough technical texts, so here's my attempt at summarising what I've learnt about schema therapy in an accessible (in other words, interesting) manner. I'll also list the resources I found most useful in understanding schema therapy.
+
+If you find any mistakes in this post, please leave a comment. I'm cognisant that my position as an amateur in this field means I don't know what I don't know.
 
 # Overview of schema therapy
+
+So why bother with schema therapy? 
+
+
 
 ```
 Schema therapy is a form of psychotherapy developed by Dr. Jeffrey Young to treat long-standing, entrenched patterns of thinking, feeling, and behaving known as "schemas." It combines elements of cognitive-behavioral therapy, attachment theory, gestalt therapy, and psychoanalysis. The therapy aims to identify and change these maladaptive schemas, often developed in childhood, through various techniques including cognitive restructuring, experiential exercises, and limited re-parenting
@@ -71,6 +81,8 @@ I think the biggest thing I learnt from schema therapy is recognising that we al
 # Additional reading
 
 ## General audience (self-help)
+
+The following books are well-written and accessible to people who haven't studied psychology.
 
 - Reinventing Your Life: The breakthrough program to end negative behaviour and feel great again by Jeffrey E. Young and Janet S. Klosko ([goodreads](https://www.goodreads.com/book/show/43866.Reinventing_Your_Life))
 - Breaking Negative Thinking Patterns: A schema therapy self-help and support book by Gitta Jacob, Hannie van Genderen and Laura Seebauer ([goodreads](https://www.goodreads.com/book/show/24344283-breaking-negative-thinking-patterns))
