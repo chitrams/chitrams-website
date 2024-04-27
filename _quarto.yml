@@ -1,18 +1,27 @@
 project:
   type: website
-
+  render:
+    - "*.qmd"
+    - "*.md"
+    
 website:
   title: "Curated by Chitra"
   navbar:
     left:
-      - code-collection.qmd
-      - recipes.qmd
-      - curation.qmd
+      - href: code-collection/index.qmd
+        text: Code Collection
+      - href: recipes/index.qmd
+        text: Recipes
+      - href: curation/index.qmd
+        text: Curation
     right:
-      - about.qmd
+      - href: about/index.qmd
+        text: About
       - icon: github
         href: https://github.com/chitrams/chitrams-website
   favicon: /supporting-files/C-logo.png
+
+freeze: true
 
 format:
   html:

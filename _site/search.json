@@ -138,5 +138,33 @@
     "title": "A guide to reproducible research: The Turing Way Handbook",
     "section": "",
     "text": "Links to The Handbook and GitHub Repository\n\n\n\nThe Turing Way Logo\n\n\nI first came across this project when trying to figure out what version control was and how to use Git. I got what I wanted: the handbook includes chapters on version control, code testing, and continuous integration (including how to set up continuous integration with GitHub Actions). What I loved about this project is they went the extra mile and also explained concepts in research and software reproducibility such as reusable code, and included a chapter on how to communicate your research.\nIt’s an excellent resource for learning about how to set up your projects for reproducibility."
+  },
+  {
+    "objectID": "recipes/index.html",
+    "href": "recipes/index.html",
+    "title": "Recipes",
+    "section": "",
+    "text": "Masala chai\n\n\n\ndrinks\n\n\neffort/easy\n\n\ntime/waiting\n\n\n\nA warming spiced tea with equal amounts of (heady) caffeine and sugar. This adaptation tastes similar to the one served in Dishoom London: the best masala chai I’ve ever had.\n\n\n\nApr 21, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nVegan banana cookies\n\n\n\ncookies\n\n\nvegan\n\n\neffort/easy\n\n\ntime/quick\n\n\n\nA delicious and easy-to-make cookie for the vegans in your life.\n\n\n\nApr 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nCarrot cake (and frostings)\n\n\n\ncakes\n\n\neffort/medium\n\n\ntime/medium\n\n\n\nAn easy take on the classic, with several frostings you could choose from.\n\n\n\nApr 3, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "code-collection/index.html",
+    "href": "code-collection/index.html",
+    "title": "Code Collection",
+    "section": "",
+    "text": "A guide to reproducible research: The Turing Way Handbook\n\n\n\n\n\n\nresources\n\n\n\nAn excellent resource to ensure your data science projects are reproducible.\n\n\n\n\n\nApr 27, 2024\n\n\n1 min\n\n\n\n\n\n\n\nUnderstanding a targets workflow: An introduction\n\n\n\n\n\n\nR\n\n\nworkflow\n\n\n\n{targets}: why use it, how to use it, and some resources to get you started. (Hint: reduce the mental burden of figuring out which step of the analysis you’re on.)\n\n\n\n\n\nApr 11, 2024\n\n\n7 min\n\n\n\n\n\n\n\nR packages for summary tables in Word\n\n\n\n\n\n\nR\n\n\ndocumentation\n\n\n\nExporting summary tables from R to Word doesn’t have to be painful.\n\n\n\n\n\nAug 21, 2022\n\n\n3 min\n\n\n\n\n\n\n\nFunctional programming\n\n\n\n\n\n\nR\n\n\nfunctional programming\n\n\n\nUsing map instead of for loops is (usually) better for you. (At the very least, you’ll learn a different way of thinking about recursion.)\n\n\n\n\n\nAug 16, 2022\n\n\n4 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "About",
+    "section": "",
+    "text": "This website is a curation of resources I’ve found useful and would like to refer to at a later date–ideally with a write-up of how I’ve found it useful.\nI am a medical statistician and researcher with research interests in climate change and public health. More generally, I am interested in finding ways to be better at writing, cooking, calligraphy, learning, note-taking, yoga, and understanding other people."
+  },
+  {
+    "objectID": "curation/index.html",
+    "href": "curation/index.html",
+    "title": "Curation",
+    "section": "",
+    "text": "My favourite Yoga With Adriene videos\n\n\n\n\n\n\nyoga\n\n\n\nA list for future reference.\n\n\n\n\n\nApr 26, 2024\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
   }
 ]
