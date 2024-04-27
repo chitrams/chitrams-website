@@ -1,21 +1,20 @@
 ---
 title: "About"
-image: /supporting-files/profile.jpg
+image: profile.jpg
 about:
   template: trestles
   image-shape: round
   links:
     - icon: linkedin
-      text: LinkedIn
       href: https://au.linkedin.com/in/chitra-m-saraswati
     - icon: github
-      text: GitHub
       href: https://github.com/chitrams
-    - icon: "{{< ai orcid >}}"
-      text: ORCiD
+    - text: "{{< iconify academicons google-scholar >}}"
+      href: https://scholar.google.com/citations?user=_FXal5cAAAAJ&hl=en
+    - text: "{{< iconify simple-icons orcid >}}"
       href: https://orcid.org/0000-0002-8159-0414
 ---
 
-This website is a curation of resources I've found useful and would like to refer to at a later date--ideally with a write-up of how I've found it useful.
+I am a medical statistician and researcher with interests in epidemiology, climate change, and public health. More generally, I am interested in finding ways to be better at cooking, baking, learning, note-taking, writing, yoga, statistical programming, and understanding other people.
 
-I am a medical statistician and researcher with research interests in climate change and public health. More generally, I am interested in finding ways to be better at writing, cooking, calligraphy, learning, note-taking, yoga, and understanding other people.
+I find that writing organises my thoughts, and writing as if other people are going to read what you're writing is the next level up. So here I am with a website.
