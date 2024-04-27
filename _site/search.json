@@ -137,6 +137,6 @@
     "href": "code-collection/2024-04-27-turing-way-handbook/index.html",
     "title": "A guide to reproducible research: The Turing Way Handbook",
     "section": "",
-    "text": "Links to The Handbook and GitHub Repository**\n\n\n\nThe Turing Way Logo\n\n\nI first came across this project when trying to figure out what version control was and how to use Git. I got what I wanted: the handbook includes chapters on version control, code testing, and continuous integration (including how to set up continuous integration with GitHub Actions). What I loved about this project is they went the extra mile and also explained concepts in research and software reproducibility such as reusable code, and included a chapter on how to communicate your research.\nIt’s an excellent resource for learning about how to set up your projects for reproducibility."
+    "text": "Links to The Handbook and GitHub Repository\n\n\n\nThe Turing Way Logo\n\n\nI first came across this project when trying to figure out what version control was and how to use Git. I got what I wanted: the handbook includes chapters on version control, code testing, and continuous integration (including how to set up continuous integration with GitHub Actions). What I loved about this project is they went the extra mile and also explained concepts in research and software reproducibility such as reusable code, and included a chapter on how to communicate your research.\nIt’s an excellent resource for learning about how to set up your projects for reproducibility."
   }
 ]
