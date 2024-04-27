@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Chitra M Saraswati">
+<meta name="author" content="">
 <meta name="dcterms.date" content="2022-08-16">
 <meta name="description" content="Using map instead of for loops is (usually) better for you. (At the very least, you’ll learn a different way of thinking about recursion.)">
 
@@ -106,7 +106,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -159,7 +158,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
+    <div class="quarto-title column-page">
       <h1 class="title">Functional programming</h1>
                   <div>
         <div class="description">
@@ -174,14 +173,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Chitra M Saraswati </p>
-            </div>
-    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
@@ -194,14 +187,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 
@@ -230,7 +223,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co"># a vector in double ('dbl') type.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>You only figure out which actions we’re taking (calculating the mean and median) a few lines down the for loop, after the object has been defined. There is also more room for error as we have to define the object before we run the action every time (i.e.&nbsp;creating the vector and sequencing along each column before calculating the mean and median). The functional programming approach is more concise. You can also see that <code>map</code> plays well with the pipe.</p>
 <p>Something to note: in the example above, we use <code>map_dbl</code> instead of just <code>map</code>. This is one of the many extensions to the <code>map</code> function; there is also <code>map_chr</code> to return character-type lists.</p>
-<p>I also find the following figure handy to understand how the <code>map</code> functions work: <img src="map-function-R.png" alt="The map function in R." width="300"><br> <em>From Hadley Wickham’s <a href="https://adv-r.hadley.nz/functionals.html">Advanced R</a>.</em></p>
+<p>I also find the following figure handy to understand how the <code>map</code> functions work:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="map-function-R.png" class="img-fluid figure-img" width="300"></p>
+<figcaption>The <code>map</code> function in R. Figure from Hadley Wickham’s <a href="https://adv-r.hadley.nz/functionals.html">Advanced R</a>.</figcaption>
+</figure>
+</div>
 <p>Another thing to note is there are several ways of writing out the same thing using <code>map</code>. In the following bit of code you’ll find four different ways of writing out the same function: finding the number of unique values in each column of the <code>mtcars</code> dataset.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">map_dbl</span>(mtcars, <span class="cf">function</span>(x) <span class="fu">length</span>(<span class="fu">unique</span>(x)))</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>

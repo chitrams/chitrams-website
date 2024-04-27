@@ -1,7 +1,7 @@
 ---
 title: "Functional programming"
 description: "Using `map` instead of for loops is (usually) better for you. (At the very least, you'll learn a different way of thinking about recursion.)"
-author: 'Chitra M Saraswati'
+author: ''
 date: '2022-08-16'
 slug: functional-programming
 categories: 
