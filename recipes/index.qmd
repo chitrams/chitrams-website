@@ -4,9 +4,8 @@ listing:
   contents: .
   type: grid
   sort: "date desc"
-  categories: true 
+  categories: unnumbered 
   sort-ui: false
-  filter-ui:
-    - categories
+  filter-ui: [categories]
   fields: [image, date, title, description, categories]
 ---
