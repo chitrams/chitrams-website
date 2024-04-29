@@ -1,6 +1,6 @@
 ---
-title: "Understanding schema therapy"
-description: "A broad overview of schema therapy and why it could be useful, from a lay-person perspective"
+title: "Understanding Schema Therapy"
+description: "A broad overview of schema therapy and why it could be useful, from a lay-person perspective."
 date: "2024-05-04"
 categories:
   - psychotherapy
@@ -14,7 +14,7 @@ Let me preface this post by saying that **I have not formally studied psychology
 
 Having said that, I *do* get bored after reading enough technical texts, so here's my attempt at summarising what I've learnt about schema therapy in an accessible (in other words, interesting) manner. I'll also list the resources I found most useful in understanding schema therapy.
 
-If you find any mistakes in this post, please leave a comment. I'm cognisant that my position as an amateur in this field means I don't know what I don't know.
+If you find any mistakes in this post, please do leave a comment. I'm cognisant that my position as an amateur in this field means I don't know what I don't know.
 
 # Overview of schema therapy
 

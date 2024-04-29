@@ -1,7 +1,11 @@
 ---
-title: "An overview of Cognitive Behavioural Therapy"
-description: "An incomplete bird's eye view of Cognitive Behavioural Therapy (CBT). It's more likely than not that you've encountered these techniques."
+title: "Understanding Cognitive Behavioural Therapy"
+description: "A broad overview of Cognitive Behavioural Therapy (CBT) and its usefulness. It's more likely than not that you've encountered CBT techniques."
 date: "2024-04-21"
-categories: [psychotherapy, in summary]
+categories: 
+  - psychotherapy
+  - in summary
 draft: yes
 ---
+
+

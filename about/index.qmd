@@ -17,4 +17,4 @@ about:
 
 I am a medical statistician and researcher with interests in epidemiology, climate change, and public health. More generally, I am interested in finding ways to be better at cooking, baking, learning, note-taking, writing, yoga, statistical programming, and understanding other people.
 
-I find that writing organises my thoughts, and writing as if other people are going to read what you're writing is the next level up. So here I am with a website.
+I find that [writing makes me understand better](https://paulgraham.com/words.html), and writing as if other people are going to read what you're writing is the next level up. So here I am with a [digital garden](https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/)-kind of website.
