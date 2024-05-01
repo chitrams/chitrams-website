@@ -95,7 +95,7 @@
     "href": "about/index.html",
     "title": "About",
     "section": "",
-    "text": "I am a medical statistician and researcher with interests in epidemiology, climate change, and public health. More generally, I am interested in finding ways to be better at cooking, baking, learning, note-taking, writing, yoga, statistical programming, and understanding other people.\nI find that writing makes me understand better, and writing as if other people are going to read what you’re writing is the next level up. So here I am with a digital garden-kind of website."
+    "text": "About me\nI am a medical statistician and researcher with interests in epidemiology, climate change, and public health. More generally, I am interested in finding ways to be better at cooking, baking, learning, note-taking, writing, yoga, statistical programming, and understanding other people.\nI find that writing leads to understanding, and writing as if other people are going to read what you’re writing is the next level up. So here I am with a digital garden-kind of website.\n\n\nSelected academic articles\nSaraswati, C. M., Borghi, E., da Silva Breda, J. J., Flores-Urrutia, M. C., Williams, J., Hayashi, C., ... & McLain, A. C. (2022). Estimating childhood stunting and overweight trends in the European region from sparse longitudinal data. The Journal of Nutrition, 152(7), 1773-1782. doi:10.1093/jn/nxac072.\nSaraswati, C. M., Judge, M. A., Weeda, L. J., Bassat, Q., Prata, N., Le Souëf, P. N., & Bradshaw, C. J. (2024). Net benefit of smaller human populations to environmental integrity and individual health and wellbeing. Frontiers in Public Health, 12, 1339933. doi:10.3389/fpubh.2024.1339933."
   },
   {
     "objectID": "code-collection/2022-08-21-packages-for-summary-tables/index.html",
@@ -159,5 +159,12 @@
     "title": "Chewy ANZAC biscuits",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nTo make these biscuits even chewier, substitute up to 70 g of this flour with a high-protein flour. A potential issue with doing this, however, is your flour may absorb more liquids, leading to dryness. See note in Step 5.↩︎\nYou could use white sugar in a pinch, but they will result in less chewy cookies. Adversely, substituting with dark brown sugar leads to even chewier cookies.↩︎\nAlternatively, use shredded coconut–or a mix of both.↩︎\nIf your mix is a tad dry–in other words, difficult to roll into a ball without breaking (perhaps because you substituted a different flour)–you can add a bit more melted butter.↩︎"
+  },
+  {
+    "objectID": "about/index.html#selected-academic-articles",
+    "href": "about/index.html#selected-academic-articles",
+    "title": "About",
+    "section": "Selected academic articles",
+    "text": "Selected academic articles\nSaraswati, C. M., Borghi, E., da Silva Breda, J. J., Flores-Urrutia, M. C., Williams, J., Hayashi, C., ... & McLain, A. C. (2022). Estimating childhood stunting and overweight trends in the European region from sparse longitudinal data. The Journal of Nutrition, 152(7), 1773-1782. doi:10.1093/jn/nxac072.\nSaraswati, C. M., Judge, M. A., Weeda, L. J., Bassat, Q., Prata, N., Le Souëf, P. N., & Bradshaw, C. J. (2024). Net benefit of smaller human populations to environmental integrity and individual health and wellbeing. Frontiers in Public Health, 12, 1339933. doi:10.3389/fpubh.2024.1339933."
   }
 ]

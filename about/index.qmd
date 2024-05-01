@@ -15,6 +15,14 @@ about:
       href: https://orcid.org/0000-0002-8159-0414
 ---
 
+### About me
+
 I am a medical statistician and researcher with interests in epidemiology, climate change, and public health. More generally, I am interested in finding ways to be better at cooking, baking, learning, note-taking, writing, yoga, statistical programming, and understanding other people.
 
-I find that [writing makes me understand better](https://paulgraham.com/words.html), and writing as if other people are going to read what you're writing is the next level up. So here I am with a [digital garden](https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/)-kind of website.
+I find that [writing leads to understanding](https://paulgraham.com/words.html), and writing as if other people are going to read what you're writing is the next level up. So here I am with a [digital garden](https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/)-kind of website.
+
+### Selected academic articles
+
+Saraswati, C. M., Borghi, E., da Silva Breda, J. J., Flores-Urrutia, M. C., Williams, J., Hayashi, C., \... & McLain, A. C. (2022). Estimating childhood stunting and overweight trends in the European region from sparse longitudinal data. *The Journal of Nutrition*, *152*(7), 1773-1782. [doi:10.1093/jn/nxac072](https://doi.org/10.1093/jn/nxac072).
+
+Saraswati, C. M., Judge, M. A., Weeda, L. J., Bassat, Q., Prata, N., Le Souëf, P. N., & Bradshaw, C. J. (2024). Net benefit of smaller human populations to environmental integrity and individual health and wellbeing. *Frontiers in Public Health*, *12*, 1339933. [doi:10.3389/fpubh.2024.1339933](https://doi.org/10.3389/fpubh.2024.1339933).
