@@ -1,12 +1,12 @@
 ---
-title: "My favourite Yoga With Adriene videos"
-description: "A list for future reference: handy for when I feel like doing yoga but can't figure out which video to pick."
+title: "My favourite yoga videos"
+description: "A list for future reference: handy for when I feel like doing YouTube yoga but can't figure out which video to pick."
 date: "2024-04-26"
-date-modified: "2024-04-26"
+date-modified: "2024-05-01"
 categories: [yoga]
 ---
 
-A list of my favourite yoga videos from Yoga With Adriene, along with some notes as to why I enjoy them. These are the videos I keep coming back to.
+A list of my favourite yoga videos from [Yoga With Adriene](https://www.youtube.com/user/yogawithadriene) on YouTube, along with some notes as to why I enjoy them. These are the videos I keep coming back to.
 
 # Workouts
 
@@ -29,6 +29,14 @@ A list of my favourite yoga videos from Yoga With Adriene, along with some notes
 -   [**True - Day 13: Strength and Harmony**](https://youtu.be/cNMCZGBquzI?si=Nr1SqD1KrlENZwXh) - 7/10 Intensity, 8/10 Enjoyment
 
     Good core and whole-body exercises. More on the gentle side.
+
+-   [**Yoga for Abdominal Strength**](https://www.youtube.com/watch?v=fXOz09pxoiM) - 8/10 Intensity, 8/10 Enjoyment
+
+    A solid upper-body practice.
+
+-   [**Lower Body Strength**](https://www.youtube.com/watch?v=wL8zmUMLqf8&t=3s) - 7/10 Intensity, 8/10 Enjoyment
+
+    Pretty good practice for the hips and legs. The channel doesn't have many videos explicitly labelled for lower body (although there are actually quite a few, see above) so I like that this does what it says.
 
 # Energising
 
