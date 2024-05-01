@@ -9,36 +9,36 @@ categories: [cookies, effort/easy, time/quick]
 date-modified: "2024-04-25"
 ---
 
-Ingredients
+**Ingredients**
 
 -   100 g rolled oats
--   170 g plain all-purpose flour[^1]
--   110 g light brown sugar[^2]
+-   150 g plain all-purpose flour[^1]
+-   85 g light brown sugar[^2]
 -   80 g desiccated coconut[^3]
 -   125 g salted butter, cut into cubes
--   35 g golden syrup (approx. 2 tablespoons, err on the side of too little)
+-   42 g golden syrup (approx. 2 tablespoons)
 -   2.5 g bicarbonate of soda (approx. 0.5 teaspoons)
 -   2 tablespoons boiling water
 
-[^1]: To make these biscuits even chewier, substitute up to 150 g of this flour with a high-protein flour.
+[^1]: To make these biscuits even chewier, substitute up to 70 g of this flour with a high-protein flour. A potential issue with doing this, however, is your flour may absorb more liquids, leading to dryness. See note in Step 5.
 
 [^2]: You could use white sugar in a pinch, but they will result in less chewy cookies. Adversely, substituting with dark brown sugar leads to even chewier cookies.
 
 [^3]: Alternatively, use shredded coconut--or a mix of both.
 
-You'll also need
+**You'll also need**
 
 -   Large mixing bowl
 -   Saucepan
 -   Small bowl
 
-Method
+**Method**
 
 1.  Pre-heat oven to 180°C. Line trays with baking paper.
 2.  Combine oats, flour, sugar, and desiccated coconut in a large bowl. Sift flour and sugar as necessary, making sure you get rid of lumps. Set aside.
 3.  Stir butter and syrup in a medium saucepan over low heat until smooth. In a small bowl, quickly combine baking soda with boiling water, then stir in this baking soda mixture into the saucepan. The mixture should bubble. Remove from heat.
 4.  Add the wet ingredients to the flour mixture, using a rubber spatula to scrape the sides of the saucepan. Mix to combine all ingredients together until few dry patches remain.
-5.  Roll about a tablespoon of the mixture into a ball, or roll smaller amounts for bite-sized biscuits. Place balls 5cm apart on the lined baking trays, then flatten slightly.
+5.  Roll about a tablespoon of the mixture into a ball, or roll smaller amounts for bite-sized biscuits. Place balls 5cm apart on the lined baking trays, then flatten slightly.[^4]
 6.  Bake until golden. This should take 10 minutes for bite-sized bikkies and 12 minutes for larger ones. Leave biscuits on the tray to cool before eating to ensure you get that crisp outside and chewy inside.
 
 # Notes
@@ -46,3 +46,5 @@ Method
 These biscuits last up to a week stored in an airtight container.
 
 You can also make these biscuits in advance: proceed up to step 5, then store dough in freezer for up to three months. Bake for 17 minutes from frozen.
+
+[^4]: If your mix is a tad dry--in other words, difficult to roll into a ball without breaking (perhaps because you substituted a different flour)--you can add a bit more melted butter.

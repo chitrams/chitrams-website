@@ -3,7 +3,7 @@ title: "Masala chai"
 description: "A warming spiced tea with equal amounts of (heady) caffeine and sugar. This adaptation tastes similar to the one served in Dishoom London: the best masala chai I've ever had."
 author: ""
 date: "2024-04-21"
-# image: ""
+image: "chai.jpg"
 # image-alt: ""
 categories: [drinks, effort/easy, time/waiting]
 date-modified: "2024-04-21"
@@ -11,7 +11,7 @@ date-modified: "2024-04-21"
 
 Adapted from [Dishoom: From Bombay with love](https://www.dishoom.com/cookery-book/) ([goodreads](https://www.goodreads.com/en/book/show/44569827)). Serves 4.
 
-Ingredients
+**Ingredients**
 
 -   Approximately 12cm by 2cm piece of ginger, sliced thinly into rounds and bruised
 -   2 teaspoons whole black peppercorns
@@ -25,12 +25,12 @@ Ingredients
 
 [^1]: I find any Assam will work well. All you want is a strong, dark, and robust blend. I've also used Yorkshire tea successfully. Lipton tea bags are OK in a pinch, I guess, but I find the resulting chai lacking in flavour. If you must, use more tea bags.
 
-You'll also need
+**You'll also need**
 
 -   1.75L capacity saucepan
 -   Strainer
 
-Method
+**Method**
 
 1.  Place ginger and spices into a saucepan. Pour 1 litre of boiling water over the ginger and spices. Bring to a boil, then lower heat to a simmer. Simmer for 10-15 minutes, until fragrant.
 2.  Place tea in saucepan. Turn up the heat to bring to a boil, then lower heat to a simmer. Simmer for 5 minutes.
@@ -40,3 +40,5 @@ Method
 # Notes
 
 For extra frothiness: using two large mugs, strain tea into one of the mugs, then pour tea back and forth between the two mugs, back and forth, from as large a height as you can manage. Do this a few times.
+
+![](chai.jpg){fig-align="center" width="350"}
