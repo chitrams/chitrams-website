@@ -1,6 +1,6 @@
 ---
 title: "Vegan banana cookies"
-description: "A delicious and easy-to-make cookie for the vegans in your life."
+description: "A delicious and easy-to-make cookie with common pantry ingredients."
 author: ""
 date: "2024-04-15"
 # image: ""
