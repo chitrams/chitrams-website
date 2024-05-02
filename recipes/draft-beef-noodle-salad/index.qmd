@@ -13,7 +13,7 @@ Serves 4. Adapted from David Tanis' Vietnamese Lemongrass Beef and Noodle Salad 
 
 ## All ingredients, for reference
 
-It is a lot of ingredients, but most of are things you'd have in the pantry anyway if you do a lot of Asian-style cooking. The preparation is also simple, so don't let the ingredient list intimidate you.
+It is a lot of ingredients, but most of are things you'd have in the pantry anyway if you do a lot of Asian-style cooking. The preparation is also simple, so don't let the ingredient list intimidate you. It takes me about 45 minutes to make.
 
 **Dipping sauce**
 
@@ -34,11 +34,12 @@ It is a lot of ingredients, but most of are things you'd have in the pantry anyw
 -   1 medium carrot
 -   1 small cucumber
 -   1 daikon radish
+-   A handful of bean sprouts
 
 **Beef stir-fry**
 
 -   500 g beef - sliced thinly (less than 1 cm thick)
--   3 tablespoons lemongrass - tender centres finely chopped[^2]
+-   80g lemongrass paste or 3 tablespoons lemongrass - tender centres finely chopped[^2]
 -   Vegetable oil - for stir-frying
 
 [^2]: I would use canned or lemongrass hearts as the middles can be hard to chop when fresh or frozen.
@@ -51,6 +52,8 @@ It is a lot of ingredients, but most of are things you'd have in the pantry anyw
 
 ## (1) Make the dipping sauce
 
+Grab the following ingredients:
+
 -   4 tablespoons light brown sugar
 -   3 tablespoons rice vinegar
 -   4 tablespoons lime juice (from two large limes, or use bottled)
@@ -61,28 +64,46 @@ It is a lot of ingredients, but most of are things you'd have in the pantry anyw
 
 [^3]: Use good quality fish sauce. In Australia, I prefer Squid or Red Boat. See [this blog post](https://hot-thai-kitchen.com/fish-sauce-101/) for what makes a good good fish sauce.
 
-## (2) Prep the salad
+## (2) Prep the noodles
+
+Whilst the sauce is marinating, let's prepare the noodles. Grab the noodles:
 
 -   340 g rice vermicelli noodles
--   1 head lettuce - yummy leaves washed and separated
--   1 medium carrot - cut and julienned[^4]
--   1 small cucumber - cut and julienned
--   1 daikon radish - cut and julienned
 
-[^4]: In other words, matchsticks. For instructions, see this Serious Eats [guide](https://www.seriouseats.com/how-to-cut-carrots-7963002#toc-to-cut-matchsticksjulienne).
+## (3) Prep the beef
 
-## (3) Stir-fry the beef
+Whilst the noodle cools down, we'll prepare the beef. Grab the following:
 
 -   500 g beef - sliced thinly (less than 1 cm thick)
 -   2 tablespoons fish sauce
 -   1 tablespoon light brown sugar
 -   3 garlic cloves - minced
--   3 tablespoons lemongrass - tender centres finely chopped[^5]
+-   80g lemongrass paste or 3 tablespoons lemongrass - tender centres finely chopped[^4]
+
+[^4]: I would use canned or lemongrass hearts as the middles can be hard to chop when fresh or frozen.
+
+## (4) Prep salad
+
+Whilst the beef is marinating, we'll prepare the salad. Grab the salad ingredients:
+
+-   1 head lettuce - yummy leaves washed and separated
+-   1 medium carrot - cut and julienned[^5]
+-   1 small cucumber - cut and julienned
+-   1 daikon radish - cut and julienned
+-   A handful of bean sprouts
+
+[^5]: In other words, matchsticks. For instructions, see this Serious Eats [guide](https://www.seriouseats.com/how-to-cut-carrots-7963002#toc-to-cut-matchsticksjulienne).
+
+## (5) Stir-fry beef
+
+Let's stir-fry the beef now. Grab the following:
+
+-   Marinated beef from Section 3 above
 -   Vegetable oil - for stir-frying
 
-[^5]: I would use canned or lemongrass hearts as the middles can be hard to chop when fresh or frozen.
+## (6) All together, now
 
-## (4) All together, now
+Now, to put them all together.
 
 -   Bunch coriander
 -   Bunch mint leaves
@@ -91,3 +112,5 @@ It is a lot of ingredients, but most of are things you'd have in the pantry anyw
 ## Notes
 
 I also like to substitute chicken or pork, cooked in a similar way. I haven't figured out how to substitute with tofu.
+
+The name for this salad is Bun Bo Xao.
