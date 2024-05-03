@@ -3,7 +3,7 @@ title: "Beef noodle salad"
 description: "A fresh and delightful main-course salad."
 author: ""
 date: "2024-05-02"
-# image: ""
+image: "beef-noodle-salad.jpeg"
 # image-alt: ""
 categories: [mains, effort/medium, time/medium]
 date-modified: "2024-05-02"
@@ -114,3 +114,5 @@ Now, to put them all together.
 I also like to substitute chicken or pork, cooked in a similar way. I haven't figured out how to substitute with tofu.
 
 The name for this salad is Bun Bo Xao.
+
+![](beef-noodle-salad.jpeg){fig-align="center" width="450"}
