@@ -1,0 +1,45 @@
+---
+title: "Baked porridge"
+description: "An easy, delightful and warming breakfast, perfect for colder weather."
+author: ""
+date: "2024-05-04"
+image: "baked-porridge.jpg"
+# image-alt: ""
+categories: [breakfast, effort/easy, time/medium]
+date-modified: "2024-05-04"
+---
+
+Serves 2. Adapted from [The Natural Baker](https://www.goodreads.com/book/show/35960276-the-natural-baker) by Henrietta Inman.
+
+**Ingredients**
+
+-   1 large cooking apple[^1] - about 200 g total weight
+-   40 g sultanas
+-   a few knobs of butter - about 10 g
+-   70 g rolled oats
+-   few pinches ground cinnamon - about 1.5 teaspoons
+-   few pinches ground cardamom - about 1 teaspoon
+-   a grating of nutmeg
+-   1 tablespoon honey or maple syrup
+-   1 teaspoon vanilla extract
+-   300 g dairy milk[^2]
+
+[^1]: I like to use a tart cooking apple like Granny Smith's.
+
+[^2]: If you'd like to substitute with plant-based milks like almond milk, I find that you need more of it, about 400-450 g.
+
+**You'll also need**
+
+-   An oven-proof bowl
+-   Optional: an apple corer
+
+**Method**
+
+1.  Pre-heat oven to 180°C. Either core the apples or slice them into quarters, getting rid of the seeds. Place apples in the oven-proof bowl and scatter with sultanas. Top with a few knobs of butter. Bake apple-sultana mix for about 15 minutes or until the apple skins get wrinkly.[^3]
+2.  Mix oats, spices, honey or maple syrup, vanilla extract and milk in a bowl. Remove baked apples from the oven and pour the oat mix on top of the apples.
+3.  Return the mix to the oven and bake at 180°C for another 15 minutes, or until the porridge is bubbling at the edges.
+4.  Serve immediately.
+
+[^3]: You can do this step the night before. When the apples are done, turn off the oven, leave the oven door slightly ajar, and let the apples sit there until morning.
+
+![](baked-porridge.jpg){fig-align="center" width="350"}
