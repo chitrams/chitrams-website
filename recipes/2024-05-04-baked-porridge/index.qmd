@@ -5,7 +5,7 @@ author: ""
 date: "2024-05-04"
 image: "baked-porridge.jpg"
 # image-alt: ""
-categories: [breakfast, effort/easy, time/medium]
+categories: [breakfast, effort/easy, time/quick]
 date-modified: "2024-05-04"
 ---
 
