@@ -3,7 +3,7 @@ title: "Banana bread"
 description: "One of my favourites for rescuing unwanted bananas."
 author: ""
 date: "2024-04-29"
-# image: ""
+image: "banana-bread.jpg"
 # image-alt: ""
 categories: [cakes, effort/easy, time/medium]
 date-modified: "2024-04-29"
@@ -20,8 +20,8 @@ date-modified: "2024-04-29"
 -   275-300 g all-purpose flour[^4]
 -   1 teaspoon baking powder
 -   1 teaspoon bicarb soda
--   Ground cinnamon - to taste
--   Ground nutmeg - to taste
+-   Ground cinnamon - to taste, I use about 3 teaspoons
+-   Ground nutmeg - to taste, I use about half a teaspoon
 -   A pinch (approx. 0.5 teaspoons) of fine sea salt
 -   Optional: roasted nuts - walnuts and pecans recommended
 
@@ -48,7 +48,9 @@ date-modified: "2024-04-29"
 3.  In a separate bowl, beat butter, sugar, and vanilla on medium speed with electric mixer until pale and fluffy.
 4.  Beat eggs in one at a time on low speed with electric mixer until just combined.
 5.  Beat in the banana mixture on low speed until just combined.
-6.  Sift flour, baking soda, bicarb soda, cinnamon, nutmeg, and salt.If using nuts, add them in too. Add to wet mix in three parts, stirring with a large spoon until just combined. It's OK to still have small visible flecks of dry ingredients.
+6.  Sift flour, baking soda, bicarb soda, cinnamon, nutmeg, and salt. If using nuts, add them in too. Add to wet mix in three parts, stirring with a large spoon until just combined. It's OK to still have small visible flecks of dry ingredients.
 7.  Spoon into pan and smooth the surface. If using nuts, sprinkle some on top.
 8.  Bake for one hour at 160°C or until skewer inserted into centre comes out clean.
 9.  Leave in pan for 10 minutes before turning onto a wire rack, top-side up, to cool.
+
+![](banana-bread.jpg){fig-align="center" width="350"}
