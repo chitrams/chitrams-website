@@ -7,6 +7,7 @@ image: "beef-noodle-salad.jpeg"
 # image-alt: ""
 categories: [mains, effort/medium, time/medium]
 date-modified: "2024-05-02"
+draft: yes
 ---
 
 Serves 4. Adapted from David Tanis' Vietnamese Lemongrass Beef and Noodle Salad on NYT Cooking.
