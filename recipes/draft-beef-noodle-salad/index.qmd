@@ -2,11 +2,10 @@
 title: "Beef noodle salad"
 description: "A fresh and delightful main-course salad."
 author: ""
-date: "2024-05-02"
+date: "2024-05-05"
 image: "beef-noodle-salad.jpeg"
 # image-alt: ""
 categories: [mains, effort/medium, time/medium]
-date-modified: "2024-05-02"
 draft: yes
 ---
 
@@ -18,11 +17,11 @@ Don't let the amount of ingredients intimidate you. It *is* more ingredients tha
 
 **Dipping sauce**
 
--   5 tablespoons light brown sugar (4+1)
+-   5 tablespoons light brown sugar (separated: 4+1)
 -   3 tablespoons rice vinegar
 -   4 tablespoons lime juice (from two large limes, or use bottled)
--   6 tablespoons fish sauce[^1] (4+2)
--   5 garlic cloves - minced (2+3)
+-   6 tablespoons fish sauce[^1] (separated: 4+2)
+-   5 garlic cloves - minced (separated: 2+3)
 -   3 cm piece of ginger - peeled and minced
 -   2 chillies - chopped
 
@@ -65,21 +64,19 @@ Grab the following ingredients:
 
 [^3]: Use good quality fish sauce. In Australia, I prefer Squid or Red Boat. See [this blog post](https://hot-thai-kitchen.com/fish-sauce-101/) for what makes a good good fish sauce.
 
-Put them all in a bowl and let sit for at least 15 minutes.
+Put them all in a bowl, stir to combine, then let sit for at least 15 minutes.
 
 ## (2) Prep the noodles
 
 Whilst the sauce is marinating, let's prepare the noodles.
 
-Boil some water in a large pot. When water is boiling, grab the noodles:
-
 -   340 g rice vermicelli noodles
 
-And add the noodles to the pot. Cook according to package directions.
+Boil some water in a large pot. When water has boiled, add the noodles to the pot. Cook according to package directions. Once cooked, drain the water and run the noodles under a tap of cold water. Let sit to cool.
 
 ## (3) Prep the beef
 
-Whilst the noodle cools down, we'll prepare the beef. Grab the following:
+While the noodles are cooling down, we'll prepare the beef. Grab the following:
 
 -   500 g beef - sliced thinly (less than 1 cm thick)
 -   2 tablespoons fish sauce
@@ -88,6 +85,8 @@ Whilst the noodle cools down, we'll prepare the beef. Grab the following:
 -   80g lemongrass paste or 3 tablespoons lemongrass - tender centres finely chopped[^4]
 
 [^4]: I would use canned or lemongrass hearts as the middles can be hard to chop when fresh or frozen.
+
+Combine all the above in a bowl and let sit to marinate for at least 15 minutes.
 
 ## (4) Prep salad
 
@@ -101,6 +100,10 @@ Whilst the beef is marinating, we'll prepare the salad. Grab the salad ingredien
 
 [^5]: In other words, matchsticks. For instructions, see this Serious Eats [guide](https://www.seriouseats.com/how-to-cut-carrots-7963002#toc-to-cut-matchsticksjulienne).
 
+1. With the lettuce, separate the tender leaves and wash them. Leave to dry.
+2. Julienne the carrot, cucumber, and daikon. Set aside.
+3. Blanch the bean sprouts in boiling water, or leave them raw.
+
 ## (5) Stir-fry beef
 
 Let's stir-fry the beef now. Grab the following:
@@ -108,18 +111,25 @@ Let's stir-fry the beef now. Grab the following:
 -   Marinated beef from Section 3 above
 -   Vegetable oil - for stir-frying
 
+Pour in a tablespoon of vegetable oil in the frying pan and heat up on medium-high heat. Once pan is heated, cook the marinated beef in batches, making sure you don't overcrowd the pan. Once you've cooked all the beef, set aside.
+
 ## (6) All together, now
 
-Now, to put them all together.
+Now, to put them all together. 
 
 -   Bunch coriander
 -   Bunch mint leaves
 -   4 tablespoons crushed roasted peanuts
 
+1. In your serving bowls: add the cooled rice noodles and the salad (lettuce, carrots, cucumbers, and daikon strips).
+2. Pour the dipping sauce from Section 1 on top of the salad.
+3. Add the beef on top of the salad.
+4. Garnish with coriander, mint leaves, and crushed peanuts.
+
 ## Notes
 
-I also like to substitute chicken or pork, cooked in a similar way. I haven't figured out how to substitute with tofu.
+I also like to substitute the beef with chicken or pork, cooked with the same lemongrass marinade. I haven't figured out how to substitute with tofu.
 
-The name for this salad is Bun Bo Xao.
+The name of this salad is Bun Bo Xao.
 
 ![](beef-noodle-salad.jpeg){fig-align="center" width="450"}
