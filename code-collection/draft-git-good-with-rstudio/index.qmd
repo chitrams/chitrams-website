@@ -13,19 +13,31 @@ categories:
 draft: yes
 ---
 
-Git is one of those things that I've always known I *should* learn how to use, but never got around to actually learning because my workflow wasn't crap enough to justify putting the effort into learning it. I think it also has a steep learning curve (you need to learn a different way of thinking about managing your digital workflow), and the official documentation isn't the most accessible. So I completely understand why a lot of statisticians and researchers I know aren't convinced about using Git.
+Git is one of those things that I've always known I *should* learn how to use as a statistician, but never got around to *actually* learning--my exsiting workflow was working well enough that I couldn't justify putting the effort into learning it. It's mainly unattractive because it's a steep learning curve, as you need to learn a different way of thinking about managing your digital workflow. It also doesn't help that the official documentation is difficult to navigate. So I completely understand why a lot of statisticians and researchers I know aren't super keen to learn how to use Git and version control.
 
-Recently though my work has required using version control so other people can see what I've been up to. From that, I've been pleasantly surprised to find that using Git is also useful for my own personal projects, even if I'm the only person working on it. I did struggle to set Git up in RStudio, though, as I don't have access to admin rights on my work PC which runs Windows.
+I've changed my tune now because work has necessitated the use of version control: collaborative software development requires other people to see what you've been up to. From that, I've been pleasantly surprised to find that using Git is also useful for my own personal projects, even if I'm the only person working on it. I hope I can show you how I've found Git helpful and which resources have helped me out most in learning how to use it.
+
+I also came across the issue of struggling to set Git up in RStudio as I don't have access to admin rights on my work PC, which runs Windows. So if you're running into that issue as well, I've written down what's worked for me.
 
 # Why use Git?
+
+The biggest reason I've loved using Git as a statistician is the ability to change around my analysis without being confused about which parts of the analysis I've changed. Following from this, if something breaks, I can just revert back to the previous working version. Let me explain.
+
+Say I have a working model for some data. Then if I wanted to try doing other models to see if they work instead (e.g. a GLM instead of a simple linear regression), I can create a new 'branch' that lets me play around with this data without worrying about changing the code in the previous one.
+
+Of course this is a simplification, because you could ask: why not just create a new object, say `model.fit2`, that fits a GLM? Sure you can, but what if you had a complex project that requires the model to be displayed in a table and a graph afterwards? If you find that the new model fits better than the old model, 
+
+Or if you use the new model and it breaks the whole thing, that would be very annoying.
+
+Also refer to my post on targets workflows because it's good practice to do both.
 
 # Resources to learn Git
 
 ## Useful for me
 
 -   [Happy Git and GitHub for the useR](https://happygitwithr.com/)
--   [Oh Shit, Git!?!](https://ohshitgit.com/)
 -   An interactive tutorial: [Learn Git Branching](https://learngitbranching.js.org/)
+-   [Oh Shit, Git!?!](https://ohshitgit.com/)
 
 ## Likely to be useful
 
@@ -33,7 +45,8 @@ In other words, resources I've skimmed through but haven't really used
 
 -   Think Like a Git [book](https://think-like-a-git.net/) by Sam Livingston-Gray
 -   Pro Git [book](https://book.git-scm.com/book) by Scott Cachon and Ben Straub
+-   A deep dive:
 
 # Admin rights issues
 
-Using SSH instead of HTTPS on Windows when setting up Control panel \> Edit environment variables for your account Select 'Path', click the 'Edit' button, and add the path for your Git installation.
+Using SSH instead of HTTPS on Windows when setting up **Control panel** \> **Edit environment variables** for your account Select 'Path', click the 'Edit' button, and add the path for your Git installation.
