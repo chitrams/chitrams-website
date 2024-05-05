@@ -6,6 +6,6 @@ listing:
   sort: "date desc"
   categories: unnumbered 
   sort-ui: false
-  filter-ui: [categories]
+  filter-ui: false
   fields: [image, date, title, description, categories]
 ---

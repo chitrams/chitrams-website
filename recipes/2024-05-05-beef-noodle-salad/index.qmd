@@ -6,7 +6,6 @@ date: "2024-05-05"
 image: "beef-noodle-salad.jpeg"
 # image-alt: ""
 categories: [mains, effort/medium, time/medium]
-draft: yes
 ---
 
 Serves 4. Adapted from David Tanis' Vietnamese Lemongrass Beef and Noodle Salad on NYT Cooking.
@@ -25,7 +24,7 @@ Don't let the amount of ingredients intimidate you. It *is* more ingredients tha
 -   3 cm piece of ginger - peeled and minced
 -   2 chillies - chopped
 
-[^1]: Use good quality fish sauce. In Australia, I prefer Squid or Red Boat. See [this blog post](https://hot-thai-kitchen.com/fish-sauce-101/) for what makes a good good fish sauce.
+[^1]: Use good quality fish sauce. In Australia, I prefer Squid or Red Boat. See [this blog post](https://hot-thai-kitchen.com/fish-sauce-101/) for what makes a good fish sauce.
 
 **Salad**
 
@@ -57,12 +56,10 @@ Grab the following ingredients:
 -   4 tablespoons light brown sugar
 -   3 tablespoons rice vinegar
 -   4 tablespoons lime juice (from two large limes, or use bottled)
--   4 tablespoons fish sauce[^3]
+-   4 tablespoons fish sauce
 -   2 garlic cloves - minced
 -   3 cm piece of ginger - peeled and minced
 -   2 chillies - chopped
-
-[^3]: Use good quality fish sauce. In Australia, I prefer Squid or Red Boat. See [this blog post](https://hot-thai-kitchen.com/fish-sauce-101/) for what makes a good good fish sauce.
 
 Put them all in a bowl, stir to combine, then let sit for at least 15 minutes.
 
@@ -82,9 +79,7 @@ While the noodles are cooling down, we'll prepare the beef. Grab the following:
 -   2 tablespoons fish sauce
 -   1 tablespoon light brown sugar
 -   3 garlic cloves - minced
--   80g lemongrass paste or 3 tablespoons lemongrass - tender centres finely chopped[^4]
-
-[^4]: I would use canned or lemongrass hearts as the middles can be hard to chop when fresh or frozen.
+-   80g lemongrass paste or 3 tablespoons lemongrass - tender centres finely chopped
 
 Combine all the above in a bowl and let sit to marinate for at least 15 minutes.
 
