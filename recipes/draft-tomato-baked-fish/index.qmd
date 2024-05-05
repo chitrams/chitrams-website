@@ -1,0 +1,9 @@
+---
+title: "Baked fish with tomatoes"
+categories:
+  - mains
+  - effort/easy
+  - time/quick
+date: "2024-05-12"
+draft: yes
+---
