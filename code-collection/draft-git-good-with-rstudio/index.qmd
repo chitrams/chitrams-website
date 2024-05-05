@@ -45,7 +45,7 @@ In other words, resources I've skimmed through but haven't really used
 
 -   Think Like a Git [book](https://think-like-a-git.net/) by Sam Livingston-Gray
 -   Pro Git [book](https://book.git-scm.com/book) by Scott Cachon and Ben Straub
--   A deep dive:
+-   A deep dive: Version Control with Git by Jon Loeliger and Matthew McCullough
 
 # Admin rights issues
 

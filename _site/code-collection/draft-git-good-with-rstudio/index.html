@@ -181,10 +181,16 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Git is one of those things that I’ve always known I <em>should</em> learn how to use, but never got around to actually learning because my workflow wasn’t crap enough to justify putting the effort into learning it. I think it also has a steep learning curve (you need to learn a different way of thinking about managing your digital workflow), and the official documentation isn’t the most accessible. So I completely understand why a lot of statisticians and researchers I know aren’t convinced about using Git.</p>
-<p>Recently though my work has required using version control so other people can see what I’ve been up to. From that, I’ve been pleasantly surprised to find that using Git is also useful for my own personal projects, even if I’m the only person working on it. I did struggle to set Git up in RStudio, though, as I don’t have access to admin rights on my work PC which runs Windows.</p>
+<p>Git is one of those things that I’ve always known I <em>should</em> learn how to use as a statistician, but never got around to <em>actually</em> learning–my exsiting workflow was working well enough that I couldn’t justify putting the effort into learning it. It’s mainly unattractive because it’s a steep learning curve, as you need to learn a different way of thinking about managing your digital workflow. It also doesn’t help that the official documentation is difficult to navigate. So I completely understand why a lot of statisticians and researchers I know aren’t super keen to learn how to use Git and version control.</p>
+<p>I’ve changed my tune now because work has necessitated the use of version control: collaborative software development requires other people to see what you’ve been up to. From that, I’ve been pleasantly surprised to find that using Git is also useful for my own personal projects, even if I’m the only person working on it. I hope I can show you how I’ve found Git helpful and which resources have helped me out most in learning how to use it.</p>
+<p>I also came across the issue of struggling to set Git up in RStudio as I don’t have access to admin rights on my work PC, which runs Windows. So if you’re running into that issue as well, I’ve written down what’s worked for me.</p>
 <section id="why-use-git" class="level1">
 <h1>Why use Git?</h1>
+<p>The biggest reason I’ve loved using Git as a statistician is the ability to change around my analysis without being confused about which parts of the analysis I’ve changed. Following from this, if something breaks, I can just revert back to the previous working version. Let me explain.</p>
+<p>Say I have a working model for some data. Then if I wanted to try doing other models to see if they work instead (e.g.&nbsp;a GLM instead of a simple linear regression), I can create a new ‘branch’ that lets me play around with this data without worrying about changing the code in the previous one.</p>
+<p>Of course this is a simplification, because you could ask: why not just create a new object, say <code>model.fit2</code>, that fits a GLM? Sure you can, but what if you had a complex project that requires the model to be displayed in a table and a graph afterwards? If you find that the new model fits better than the old model,</p>
+<p>Or if you use the new model and it breaks the whole thing, that would be very annoying.</p>
+<p>Also refer to my post on targets workflows because it’s good practice to do both.</p>
 </section>
 <section id="resources-to-learn-git" class="level1">
 <h1>Resources to learn Git</h1>
@@ -192,8 +198,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="useful-for-me">Useful for me</h2>
 <ul>
 <li><a href="https://happygitwithr.com/">Happy Git and GitHub for the useR</a></li>
-<li><a href="https://ohshitgit.com/">Oh Shit, Git!?!</a></li>
 <li>An interactive tutorial: <a href="https://learngitbranching.js.org/">Learn Git Branching</a></li>
+<li><a href="https://ohshitgit.com/">Oh Shit, Git!?!</a></li>
 </ul>
 </section>
 <section id="likely-to-be-useful" class="level2">
@@ -202,12 +208,13 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Think Like a Git <a href="https://think-like-a-git.net/">book</a> by Sam Livingston-Gray</li>
 <li>Pro Git <a href="https://book.git-scm.com/book">book</a> by Scott Cachon and Ben Straub</li>
+<li>A deep dive:</li>
 </ul>
 </section>
 </section>
 <section id="admin-rights-issues" class="level1">
 <h1>Admin rights issues</h1>
-<p>Using SSH instead of HTTPS on Windows when setting up Control panel &gt; Edit environment variables for your account Select ‘Path’, click the ‘Edit’ button, and add the path for your Git installation.</p>
+<p>Using SSH instead of HTTPS on Windows when setting up <strong>Control panel</strong> &gt; <strong>Edit environment variables</strong> for your account Select ‘Path’, click the ‘Edit’ button, and add the path for your Git installation.</p>
 
 
 </section>
