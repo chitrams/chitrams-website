@@ -21,32 +21,39 @@ I also came across the issue of struggling to set Git up in RStudio as I don't h
 
 # Why use Git?
 
-The biggest reason I've loved using Git as a statistician is the ability to change around my analysis without being confused about which parts of the analysis I've changed. Following from this, if something breaks, I can just revert back to the previous working version. Let me explain.
+The biggest reason I've loved using Git as a statistician is the ability to change around my analysis without being confused about which parts of the analysis I've changed. Following from this, **if something breaks, I can just revert back to the previous working version.** Let me explain.
 
-Say I have a working model for some data. Then if I wanted to try doing other models to see if they work instead (e.g. a GLM instead of a simple linear regression), I can create a new 'branch' that lets me play around with this data without worrying about changing the code in the previous one.
+Say I have a workflow that looks like this:
 
-Of course this is a simplification, because you could ask: why not just create a new object, say `model.fit2`, that fits a GLM? Sure you can, but what if you had a complex project that requires the model to be displayed in a table and a graph afterwards? If you find that the new model fits better than the old model, 
+1. {{<iconify system-uicons check>}} Read in data
+2. {{<iconify system-uicons check>}} Generate summary table for data
+3. {{<iconify system-uicons check>}} Fit two models to data
+4. {{<iconify system-uicons check>}} Generate tables of model coefficients
+5. {{<iconify system-uicons check>}} Put all tables in a report: a .Rmd file
 
-Or if you use the new model and it breaks the whole thing, that would be very annoying.
+Everything's working, the tables look pretty, and this is all saved in the `main` branch. 
 
-Also refer to my post on targets workflows because it's good practice to do both.
+Now, say that I've decided to make the tables in Step 2 look even prettier. I'll create a new branch called `prettier-tables` where I'll play around with the code. Then I find that I don't really understand how the package for making nicer tables work, and now two of the steps don't work:
+
+1. {{<iconify system-uicons check>}} Read in data
+2. {{<iconify system-uicons cross>}} Generate summary table for data
+3. {{<iconify system-uicons check>}} Fit two models to data
+4. {{<iconify system-uicons check>}} Generate tables of model coefficients
+5. {{<iconify system-uicons cross>}} Put all tables in a report: a .Rmd file
+
+The deadline's looming, my supervisor asks me to re-fit one of the models, and tells me we don't need prettier tables. I re-fit the model, which is an easy update and works fine, but the report isn't rendering becasue I screwed something up in Step 2--and I'm not sure which bits of my code are failing.
+
+This is where Git comes in: I can go back to the `main` branch when everything was working just fine and abandon the `prettier-tables` branch. Then I can make my model changes and render my report with the updates. This is especially useful in situtations where you have to figure out which parts of your code you've changed and which ones you haven't, and then change the edited bits. You don't have to think about which bits to change and worry about whether you've missed something--you can simply switch branches with one button in RStudio! It's far less stressful this way.
 
 # Resources to learn Git
 
-## Useful for me
+I've found the following resources really good:
 
--   [Happy Git and GitHub for the useR](https://happygitwithr.com/)
--   An interactive tutorial: [Learn Git Branching](https://learngitbranching.js.org/)
--   [Oh Shit, Git!?!](https://ohshitgit.com/)
+-   [Happy Git and GitHub for the useR](https://happygitwithr.com/). This resource is specific to using Git and GitHub within RStudio. Incredibly beginner-friendly.
+-   An interactive tutorial: [Learn Git Branching](https://learngitbranching.js.org/). Great for visualising Git concepts.
+-   [Oh Shit, Git!?!](https://ohshitgit.com/) is a great website that helps you troubleshoot errors in plain English.
+-   A deep dive: Version Control with Git (Second Edition) by Jon Loeliger and Matthew McCullough. Only read this once you're pretty comfortable with using Git, and if you're interested in understanding what happens underneath the surface. You don't need to read this to be able to use Git, but I've found it interesting.
 
-## Likely to be useful
-
-In other words, resources I've skimmed through but haven't really used
-
--   Think Like a Git [book](https://think-like-a-git.net/) by Sam Livingston-Gray
--   Pro Git [book](https://book.git-scm.com/book) by Scott Cachon and Ben Straub
--   A deep dive: Version Control with Git by Jon Loeliger and Matthew McCullough
-
-# Admin rights issues
+# Admin rights issues on Windows
 
 Using SSH instead of HTTPS on Windows when setting up **Control panel** \> **Edit environment variables** for your account Select 'Path', click the 'Edit' button, and add the path for your Git installation.

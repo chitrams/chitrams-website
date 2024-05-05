@@ -43,6 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -186,11 +187,26 @@ ul.task-list li input[type="checkbox"] {
 <p>I also came across the issue of struggling to set Git up in RStudio as I don’t have access to admin rights on my work PC, which runs Windows. So if you’re running into that issue as well, I’ve written down what’s worked for me.</p>
 <section id="why-use-git" class="level1">
 <h1>Why use Git?</h1>
-<p>The biggest reason I’ve loved using Git as a statistician is the ability to change around my analysis without being confused about which parts of the analysis I’ve changed. Following from this, if something breaks, I can just revert back to the previous working version. Let me explain.</p>
-<p>Say I have a working model for some data. Then if I wanted to try doing other models to see if they work instead (e.g.&nbsp;a GLM instead of a simple linear regression), I can create a new ‘branch’ that lets me play around with this data without worrying about changing the code in the previous one.</p>
-<p>Of course this is a simplification, because you could ask: why not just create a new object, say <code>model.fit2</code>, that fits a GLM? Sure you can, but what if you had a complex project that requires the model to be displayed in a table and a graph afterwards? If you find that the new model fits better than the old model,</p>
-<p>Or if you use the new model and it breaks the whole thing, that would be very annoying.</p>
-<p>Also refer to my post on targets workflows because it’s good practice to do both.</p>
+<p>The biggest reason I’ve loved using Git as a statistician is the ability to change around my analysis without being confused about which parts of the analysis I’ve changed. Following from this, <strong>if something breaks, I can just revert back to the previous working version.</strong> Let me explain.</p>
+<p>Say I have a workflow that looks like this:</p>
+<ol type="1">
+<li><iconify-icon inline="" icon="system-uicons:check" aria-label="Icon check from system-uicons Iconify.design set." title="Icon check from system-uicons Iconify.design set."></iconify-icon> Read in data</li>
+<li><iconify-icon inline="" icon="system-uicons:check" aria-label="Icon check from system-uicons Iconify.design set." title="Icon check from system-uicons Iconify.design set."></iconify-icon> Generate summary table for data</li>
+<li><iconify-icon inline="" icon="system-uicons:check" aria-label="Icon check from system-uicons Iconify.design set." title="Icon check from system-uicons Iconify.design set."></iconify-icon> Fit two models to data</li>
+<li><iconify-icon inline="" icon="system-uicons:check" aria-label="Icon check from system-uicons Iconify.design set." title="Icon check from system-uicons Iconify.design set."></iconify-icon> Generate tables of model coefficients</li>
+<li><iconify-icon inline="" icon="system-uicons:check" aria-label="Icon check from system-uicons Iconify.design set." title="Icon check from system-uicons Iconify.design set."></iconify-icon> Put all tables in a report: a .Rmd file</li>
+</ol>
+<p>Everything’s working, the tables look pretty, and this is all saved in the <code>main</code> branch.</p>
+<p>Now, say that I’ve decided to make the tables in Step 2 look even prettier. I’ll create a new branch called <code>prettier-tables</code> where I’ll play around with the code. Then I find that I don’t really understand how the package for making nicer tables work, and now two of the steps don’t work:</p>
+<ol type="1">
+<li><iconify-icon inline="" icon="system-uicons:check" aria-label="Icon check from system-uicons Iconify.design set." title="Icon check from system-uicons Iconify.design set."></iconify-icon> Read in data</li>
+<li><iconify-icon inline="" icon="system-uicons:cross" aria-label="Icon cross from system-uicons Iconify.design set." title="Icon cross from system-uicons Iconify.design set."></iconify-icon> Generate summary table for data</li>
+<li><iconify-icon inline="" icon="system-uicons:check" aria-label="Icon check from system-uicons Iconify.design set." title="Icon check from system-uicons Iconify.design set."></iconify-icon> Fit two models to data</li>
+<li><iconify-icon inline="" icon="system-uicons:check" aria-label="Icon check from system-uicons Iconify.design set." title="Icon check from system-uicons Iconify.design set."></iconify-icon> Generate tables of model coefficients</li>
+<li><iconify-icon inline="" icon="system-uicons:cross" aria-label="Icon cross from system-uicons Iconify.design set." title="Icon cross from system-uicons Iconify.design set."></iconify-icon> Put all tables in a report: a .Rmd file</li>
+</ol>
+<p>The deadline’s looming, my supervisor asks me to re-fit one of the models, and tells me we don’t need prettier tables. I re-fit the model, which is an easy update and works fine, but the report isn’t rendering becasue I screwed something up in Step 2–and I’m not sure which bits of my code are failing.</p>
+<p>This is where Git comes in: I can go back to the <code>main</code> branch when everything was working just fine and abandon the <code>prettier-tables</code> branch. Then I can make my model changes and render my report with the updates.</p>
 </section>
 <section id="resources-to-learn-git" class="level1">
 <h1>Resources to learn Git</h1>
@@ -208,7 +224,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Think Like a Git <a href="https://think-like-a-git.net/">book</a> by Sam Livingston-Gray</li>
 <li>Pro Git <a href="https://book.git-scm.com/book">book</a> by Scott Cachon and Ben Straub</li>
-<li>A deep dive:</li>
+<li>A deep dive: Version Control with Git by Jon Loeliger and Matthew McCullough</li>
 </ul>
 </section>
 </section>
