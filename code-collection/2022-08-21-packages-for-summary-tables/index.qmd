@@ -1,6 +1,6 @@
 ---
 title: "R packages for summary tables in Word"
-description: "Exporting summary tables from R to Word doesn't have to be painful."
+description: "Exporting summary tables from R to Word doesn't have to be painful. Featuring `gtsummary`, `table1`, and `flextable`."
 author: 'Chitra M Saraswati'
 date: '2022-08-21'
 date-modified: '2024-04-23'
