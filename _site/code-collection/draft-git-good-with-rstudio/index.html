@@ -166,12 +166,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#why-use-git" id="toc-why-use-git" class="nav-link active" data-scroll-target="#why-use-git">Why use Git?</a></li>
-  <li><a href="#resources-to-learn-git" id="toc-resources-to-learn-git" class="nav-link" data-scroll-target="#resources-to-learn-git">Resources to learn Git</a>
-  <ul class="collapse">
-  <li><a href="#useful-for-me" id="toc-useful-for-me" class="nav-link" data-scroll-target="#useful-for-me">Useful for me</a></li>
-  <li><a href="#likely-to-be-useful" id="toc-likely-to-be-useful" class="nav-link" data-scroll-target="#likely-to-be-useful">Likely to be useful</a></li>
-  </ul></li>
-  <li><a href="#admin-rights-issues" id="toc-admin-rights-issues" class="nav-link" data-scroll-target="#admin-rights-issues">Admin rights issues</a></li>
+  <li><a href="#resources-to-learn-git" id="toc-resources-to-learn-git" class="nav-link" data-scroll-target="#resources-to-learn-git">Resources to learn Git</a></li>
+  <li><a href="#admin-rights-issues-on-windows" id="toc-admin-rights-issues-on-windows" class="nav-link" data-scroll-target="#admin-rights-issues-on-windows">Admin rights issues on Windows</a></li>
   </ul>
 </nav>
     </div>
@@ -206,30 +202,24 @@ ul.task-list li input[type="checkbox"] {
 <li><iconify-icon inline="" icon="system-uicons:cross" aria-label="Icon cross from system-uicons Iconify.design set." title="Icon cross from system-uicons Iconify.design set."></iconify-icon> Put all tables in a report: a .Rmd file</li>
 </ol>
 <p>The deadline’s looming, my supervisor asks me to re-fit one of the models, and tells me we don’t need prettier tables. I re-fit the model, which is an easy update and works fine, but the report isn’t rendering becasue I screwed something up in Step 2–and I’m not sure which bits of my code are failing.</p>
-<p>This is where Git comes in: I can go back to the <code>main</code> branch when everything was working just fine and abandon the <code>prettier-tables</code> branch. Then I can make my model changes and render my report with the updates.</p>
+<p>This is where Git comes in: I can go back to the <code>main</code> branch when everything was working just fine and abandon the <code>prettier-tables</code> branch. Then I can make my model changes and render my report with the updates. This is especially useful in situtations where you have to figure out which parts of your code you’ve changed and which ones you haven’t, and then change the edited bits. You don’t have to think about which bits to change and worry about whether you’ve missed something–you can simply switch branches with one button in RStudio! It’s far less stressful this way.</p>
 </section>
 <section id="resources-to-learn-git" class="level1">
 <h1>Resources to learn Git</h1>
-<section id="useful-for-me" class="level2">
-<h2 class="anchored" data-anchor-id="useful-for-me">Useful for me</h2>
+<p>I’ve found the following resources really good:</p>
 <ul>
-<li><a href="https://happygitwithr.com/">Happy Git and GitHub for the useR</a></li>
-<li>An interactive tutorial: <a href="https://learngitbranching.js.org/">Learn Git Branching</a></li>
-<li><a href="https://ohshitgit.com/">Oh Shit, Git!?!</a></li>
+<li><a href="https://happygitwithr.com/">Happy Git and GitHub for the useR</a>. This resource is specific to using Git and GitHub within RStudio. Incredibly beginner-friendly.</li>
+<li>An interactive tutorial: <a href="https://learngitbranching.js.org/">Learn Git Branching</a>. Great for visualising Git concepts.</li>
+<li><a href="https://ohshitgit.com/">Oh Shit, Git!?!</a> is a great website that helps you troubleshoot errors in plain English.</li>
+</ul>
+<p>Deep Dives:</p>
+<ul>
+<li>Version Control with Git (Second Edition) by Jon Loeliger and Matthew McCullough. Only read this once you’re pretty comfortable with using Git, and if you’re interested in understanding what happens underneath the surface. You don’t need to read this to be able to use Git, but I’ve found it interesting.</li>
+<li>Pro Git</li>
 </ul>
 </section>
-<section id="likely-to-be-useful" class="level2">
-<h2 class="anchored" data-anchor-id="likely-to-be-useful">Likely to be useful</h2>
-<p>In other words, resources I’ve skimmed through but haven’t really used</p>
-<ul>
-<li>Think Like a Git <a href="https://think-like-a-git.net/">book</a> by Sam Livingston-Gray</li>
-<li>Pro Git <a href="https://book.git-scm.com/book">book</a> by Scott Cachon and Ben Straub</li>
-<li>A deep dive: Version Control with Git by Jon Loeliger and Matthew McCullough</li>
-</ul>
-</section>
-</section>
-<section id="admin-rights-issues" class="level1">
-<h1>Admin rights issues</h1>
+<section id="admin-rights-issues-on-windows" class="level1">
+<h1>Admin rights issues on Windows</h1>
 <p>Using SSH instead of HTTPS on Windows when setting up <strong>Control panel</strong> &gt; <strong>Edit environment variables</strong> for your account Select ‘Path’, click the ‘Edit’ button, and add the path for your Git installation.</p>
 
 
@@ -648,6 +638,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <script src="https://utteranc.es/client.js" repo="chitrams/code-collection-comments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Website made with <iconify-icon inline="" icon="bi:heart-fill" aria-label="Icon heart-fill from bi Iconify.design set." title="Icon heart-fill from bi Iconify.design set."></iconify-icon> and <a href="https://quarto.org/">Quarto</a> by Chitra M Saraswati</p>
+</div>
+  </div>
+</footer>
 
 
 
