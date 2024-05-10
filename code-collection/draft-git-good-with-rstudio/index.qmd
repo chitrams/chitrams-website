@@ -21,7 +21,8 @@ I also came across the issue of struggling to set Git up in RStudio as I don't h
 
 # Why use Git?
 
-The biggest reason I've loved using Git as a statistician is the ability to change around my analysis without being confused about which parts of the analysis I've changed. Following from this, **if something breaks, I can just revert back to the previous working version.** Let me explain.
+The biggest reason I've loved using Git as a statistician is the ability to change my analysis without being confused about which parts of the analysis I've changed. 
+Following from this, **if something breaks, I can just revert back to the previous working version.** Let me explain.
 
 Say I have a workflow that looks like this:
 
@@ -31,9 +32,9 @@ Say I have a workflow that looks like this:
 4. {{<iconify system-uicons check>}} Generate tables of model coefficients
 5. {{<iconify system-uicons check>}} Put all tables in a report: a .Rmd file
 
-Everything's working, the tables look pretty, and this is all saved in the `main` branch. 
+Everything's working, all tables look pretty, and this is all saved in the `main` branch. 
 
-Now, say that I've decided to make the tables in Step 2 look even prettier. I'll create a new branch called `prettier-tables` where I'll play around with the code. Then I find that I don't really understand how the package for making nicer tables work, and now two of the steps don't work:
+Now, say that I've decided to make the tables in Step 2 look even prettier. I'll create a new branch called `prettier-tables` where I'll play around with the code. Then I find that I don't really understand how the package for making nicer tables work, and now two of the steps break:
 
 1. {{<iconify system-uicons check>}} Read in data
 2. {{<iconify system-uicons cross>}} Generate summary table for data
@@ -41,9 +42,9 @@ Now, say that I've decided to make the tables in Step 2 look even prettier. I'll
 4. {{<iconify system-uicons check>}} Generate tables of model coefficients
 5. {{<iconify system-uicons cross>}} Put all tables in a report: a .Rmd file
 
-The deadline's looming, my supervisor asks me to re-fit one of the models, and tells me we don't need prettier tables. I re-fit the model, which is an easy update and works fine, but the report isn't rendering becasue I screwed something up in Step 2--and I'm not sure which bits of my code are failing.
+The deadline's looming, my supervisor asks me to re-fit one of the models, and tells me we don't need prettier tables. I re-fit the model, which is an easy update and works fine, but the report isn't rendering because I screwed something up in Step 2--and I'm not sure which bits of my code are failing.
 
-This is where Git comes in: I can go back to the `main` branch when everything was working just fine and abandon the `prettier-tables` branch. Then I can make my model changes and render my report with the updates. This is especially useful in situtations where you have to figure out which parts of your code you've changed and which ones you haven't, and then change the edited bits. You don't have to think about which bits to change and worry about whether you've missed something--you can simply switch branches with one button in RStudio! It's far less stressful this way.
+This is where Git comes in: I can go back to the `main` branch when everything was working just fine and abandon the `prettier-tables` branch. Then I can make my model changes and render my report with the updates. This is especially useful in situtations where you have to figure out which parts of your code you've changed and which ones you haven't, and subsequently change back the edited bits. You don't have to think about which bits to change and worry about whether you've missed something--you can simply switch branches with one button in RStudio! It's far less stressful this way.
 
 # Resources to learn Git
 
