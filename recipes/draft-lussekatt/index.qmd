@@ -2,4 +2,5 @@
 title: "Lussekatt"
 description: "Swedish saffron buns "
 categories: [bread, effort/medium, time/waiting]
+draft: yes
 ---

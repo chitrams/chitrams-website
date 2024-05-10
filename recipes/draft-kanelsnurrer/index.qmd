@@ -2,4 +2,5 @@
 title: "Kanelsnurrer"
 description: "Norwegian cinnamon snails, a beautiful version of cinnamon rolls with cardamom-infused yeasted dough."
 categories: [bread, effort/medium, time/waiting]
+draft: yes
 ---
