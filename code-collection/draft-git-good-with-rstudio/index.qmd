@@ -52,7 +52,11 @@ I've found the following resources really good:
 -   [Happy Git and GitHub for the useR](https://happygitwithr.com/). This resource is specific to using Git and GitHub within RStudio. Incredibly beginner-friendly.
 -   An interactive tutorial: [Learn Git Branching](https://learngitbranching.js.org/). Great for visualising Git concepts.
 -   [Oh Shit, Git!?!](https://ohshitgit.com/) is a great website that helps you troubleshoot errors in plain English.
--   A deep dive: Version Control with Git (Second Edition) by Jon Loeliger and Matthew McCullough. Only read this once you're pretty comfortable with using Git, and if you're interested in understanding what happens underneath the surface. You don't need to read this to be able to use Git, but I've found it interesting.
+
+Deep dives:
+
+- Pro Git by Scott Chacon and Ben Straub, available [here](https://git-scm.com/book/en/v2).
+- Version Control with Git (Second Edition) by Jon Loeliger and Matthew McCullough. It's not open source and is published by O'Reilly (book website [here](https://www.oreilly.com/library/view/version-control-with/9781492091189/)). I think the explanations are more detailed in the other book as well. Only read this once you're pretty comfortable with using Git, and if you're interested in understanding what happens underneath the surface. You don't need to read this to be able to use Git, but I've found it interesting.
 
 # Admin rights issues on Windows
 
