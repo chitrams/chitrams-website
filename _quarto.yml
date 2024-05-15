@@ -19,8 +19,6 @@ website:
         text: About
       - icon: github
         href: https://github.com/chitrams/chitrams-website
-  page-footer: 
-    right: "Website made with {{<iconify bi heart-fill>}} and [Quarto](https://quarto.org/) by Chitra M Saraswati"
   favicon: /supporting-files/C-logo.png
 
 freeze: true

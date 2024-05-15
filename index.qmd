@@ -8,10 +8,10 @@ I write about things I find interesting so my future self can find them more eas
 
 -   interesting problems in statistics, data science, and/or statistical programming,
 -   resources to become a better statistician and/or programmer,
--   recipes that I refer to over and over again, and
--   resources for self-improvement and wellness that I've found personally useful, such as:
+-   recipes that I frequently refer to, and
+-   resources for my own personal development that I've found useful, such as:
     -   learning how to learn,
     -   how to be a better writer,
     -   yoga,
-    -   concepts from psychotherapy, and
-    -   social psychology.
+    -   concepts from psychology, and
+    -   playing the piano.
