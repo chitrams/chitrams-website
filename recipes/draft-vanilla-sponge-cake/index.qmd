@@ -1,0 +1,7 @@
+---
+title: "Vanilla sponge cake (and modifications)"
+description: "A simple classic perfect for celebrations. Includes different filings, icings, and other modifications."
+categories: [cake, effort/medium, time/medium]
+draft: yes
+---
+
