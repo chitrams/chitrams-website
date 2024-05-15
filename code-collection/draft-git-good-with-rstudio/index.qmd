@@ -1,6 +1,5 @@
 ---
 title: "`git` good with RStudio"
-author: ""
 description: "`git`-ing started, potential traps if you don't have a programming background, resources to help you, and bonus: dealing with limited admin rights in Windows."
 date: "2024-04-23"
 categories:
