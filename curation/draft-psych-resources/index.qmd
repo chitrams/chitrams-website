@@ -4,3 +4,5 @@ description: "Some resources for "self-help" psychology that I've found useful."
 categories: [psychology, resources]
 draft: yes
 ---
+
+Books that I've found useful in understanding different modalities and general self-help
