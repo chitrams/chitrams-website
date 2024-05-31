@@ -1,0 +1,75 @@
+---
+title: "`git` good with RStudio"
+description: "`git`-ing started, potential traps if you don't have a programming background, resources to help you, and bonus: dealing with limited admin rights in Windows."
+date: "2024-05-31"
+categories:
+  - git
+  - R
+  - computer science
+  - workflow
+  - resources
+---
+
+Git is one of those things that I've always known I *should* learn how to use as a statistician, but never got around to *actually* learning--my exsiting workflow was working well enough that I couldn't justify putting the effort into learning it. It was unattractive mainly because it's a steep learning curve, as you need to learn a different way of thinking about managing your digital workflow. It also doesn't help that the official documentation is difficult to navigate. So I completely understand why a lot of statisticians and researchers I know aren't super keen to learn how to use Git and version control.
+
+I've changed my tune now because work has necessitated the use of version control: collaborative software development requires other people to see what you've been up to. From that, I've been pleasantly surprised to find that using Git is also useful for my own personal projects--yes, even when I'm the only person working on it. I hope I can show you how I've found Git helpful and which resources have helped me out most in learning how to use it.
+
+I also came across the issue of struggling to set Git up in RStudio as I don't have admin rights on my work PC, which runs Windows. So if you're running into that issue as well, I've written down what's worked for me.
+
+# Why use Git?
+
+The biggest reason I've loved using Git as a statistician is the ability to change my analysis without being confused about which parts of the analysis I've changed. 
+Following from this, **if something breaks, I can simply revert to the previous working version.** Let me explain.
+
+Say I have a workflow that looks like this:
+
+1. {{<iconify system-uicons check>}} Read in data
+2. {{<iconify system-uicons check>}} Generate summary table for data
+3. {{<iconify system-uicons check>}} Fit two models to data
+4. {{<iconify system-uicons check>}} Generate tables of model coefficients
+5. {{<iconify system-uicons check>}} Put all tables in a report: a .Rmd file
+
+Everything's working, all tables look pretty, and this is all saved in the `main` branch. 
+
+Now, say that I've decided to make the tables in Step 2 look even prettier. I'll create a new branch called `prettier-tables` where I'll play around with the code. Then I find that I don't really understand how to work the new package I'm using for making the prettier tables, and two of the steps break:
+
+1. {{<iconify system-uicons check>}} Read in data
+2. {{<iconify system-uicons cross>}} Generate summary table for data
+3. {{<iconify system-uicons check>}} Fit two models to data
+4. {{<iconify system-uicons check>}} Generate tables of model coefficients
+5. {{<iconify system-uicons cross>}} Put all tables in a report: a .Rmd file
+
+The deadline's looming, my supervisor asks me to re-fit one of the models, and tells me we don't need prettier tables. I re-fit the model, which is an easy update and works fine, but the report isn't rendering because I screwed something up in Step 2--and I'm not sure which bits of my code are failing.
+
+This is where Git comes in: I can go back to the `main` branch when everything was working just fine and abandon the `prettier-tables` branch. Then I can make my model changes and render my report with the updates. This is especially useful in situtations where you have to figure out which parts of your code you've changed and which ones you haven't, and subsequently change back the edited bits. You don't have to think about which bits to change, and worry about whether you've missed something--you can simply switch branches with one button in RStudio! It's far less stressful this way.
+
+# Resources to learn Git
+
+So how is it that I've learnt to use Git? I think what's worked best for me so far is forcing myself to put an existing workflow on to a GitHub repository and making sure that I always use version control. It helps as well that I'm collaborating with people who use Git day-to-day, so I can ask them questions when I get stuck on a particular thing. I think the hardest thing about learning Git is how inscrutable the technical language is when you're first starting out. On that note, I've found Stack Exchange and ChatGPT really useful: they are places where you can translate technical Git language into plain English. ChatGPT is especially useful if you're learning Git on your own and don't have other people you can ask your questions to.
+
+I've found the following resources incredibly useful:
+
+-   [Happy Git and GitHub for the useR](https://happygitwithr.com/). This resource is specific to using Git and GitHub within RStudio. Incredibly beginner-friendly.
+-   An interactive tutorial: [Learn Git Branching](https://learngitbranching.js.org/). Great for visualising Git concepts.
+-   [Oh Shit, Git!?!](https://ohshitgit.com/) is a great website that helps you troubleshoot errors in plain English.
+
+And once I was on top of the above resources and wanted to have a deeper dive into Git, I found the following resources really useful:
+
+- Version Control with Git (Second Edition) by Jon Loeliger and Matthew McCullough. It's not open source and is published by O'Reilly (book website [here](https://www.oreilly.com/library/view/version-control-with/9781492091189/)). I'd only read this once you're pretty comfortable with using Git, and if you're interested in understanding what happens underneath the surface. You don't need to read this to be able to use Git but I've found it interesting, and the writing engaging.
+- Pro Git by Scott Chacon and Ben Straub, available [here](https://git-scm.com/book/en/v2). This is a popular open source textbook for Git and I've found it useful, but I think it only starts making sense once you have the fundamental understanding of Git. In other words, I couldn't just pick it up and start reading it when I was first trying to figure Git out. 
+
+# Admin rights issues on Windows
+
+I came across this issue when I was trying to set up Git on my work computer, which runs Windows and which I don't have admin rights to. After I've downloaded and installed Git for Windows, I found that RStudio was struggling to "find" the Git executable. To solve this, I manually changed the path for my Git installation. I did this by:
+
+- go to **Control panel** \> **Edit environment variables for your account**,
+- select 'Path',
+- click the 'Edit' button and add the path for your Git installation.
+
+So my understanding of why this happens is: when you don't have admin rights on Windows, your computer only installs Git for your user directory, but RStudio tries to find the path to your Git executable at the system-wide level instead of within your user-specific directory. Which means you have to point to that path yourself.
+
+Another tweak I did that I think helped make it work was to use SSH instead of HTTPS. I'm not sure how exactly that would have helped, but Git started working after I made that change. Or maybe it's because I restarted the RStudio session; who knows? (If anyone understands why this would have helped, I would love an explanation.)
+
+# Conclusion
+
+So all this to say that I've learnt how to Git good (with R!) and I hope the list of resources is useful for your own Git journey. I think the main takeaways are to *actually* use Git with your project and figure out how Git is useful for you. Once you convince yourself that Git is useful for your workflow, it gets a lot easier to learn.
