@@ -1,6 +1,6 @@
 ---
 title: "Chewy ANZAC biscuits"
-description: "Chewy on the inside and crispy on the outside. Addictive."
+description: "A chewier and slightly more complex take on the classic."
 author: ""
 date: "2024-04-25"
 # image: ""
