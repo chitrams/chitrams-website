@@ -1,7 +1,58 @@
 ---
-title: "Vanilla sponge cake (and modifications)"
-description: "A simple classic perfect for celebrations. Includes different filings, icings, and other modifications."
+title: "Vanilla sponge cake (and frostings)"
+description: "A simple classic perfect for celebrations. Includes different filings, frostings, and other modifications."
 categories: [cake, effort/medium, time/medium]
 draft: yes
 ---
+
+*Source: a good friend! Makes one large 20 cm cake, which serves 10-12.*
+
+# Vanilla sponge cake
+
+**Ingredients**
+
+- 6 eggs at room temperature, whites and yolks separated[^4]
+- 150 g confectioners (icing) sugar
+- 2 teaspoons vanilla extract, or to taste[^3]
+- 155 g self-raising flour[^1]
+- 60 g freshly boiled water
+
+[^4]: It's crucial that you bring the eggs to room temperature, otherwise they won't whip up as easily and lead to your cakes being dense.
+[^1]: If you don't have this lying around: add 1.5 teaspoons of baking powder and 0.25 teaspoons of fine salt for every 125 g of all-purpose flour. Whisk or shake well.
+[^3]: I find vanilla extracts vary quite a bit. Two teaspoons should suffice with standard vanilla extract, but add as much as you like.
+
+**You'll also need**
+
+- A few mixing bowls
+- An electric mixer
+- A 20 cm round cake pan, ideally a spring-form pan (with detachable base)
+- A rubber spatula
+
+**Method**
+
+1. Separate the egg whites and egg yolks into two large bowls. Add half the sugar (75 g) to the whites, and the other half to the yolk.
+2. Beat the egg whites and sugar on high speed until firm peaks[^2] form.
+3. Add the vanilla extract to the egg yolk and sugar mix. Beat on high speed until the mixture turns pale yellow. As you're doing this, add the freshly boiled water in a steady trickle. Continue to beat the mixture until the egg yolks become fluffy and keeps the shape of the whisk for 5 seconds.[^5]
+4. Preheat the oven to 180°C.
+5. Add the egg white mixture and flour to the yolk mixture in three parts. I mix the first third in to homogenise the texture, and then gently fold the rest in with a rubber spatula.[^6]
+6. Line the bottom and sides of your cake pan with baking paper.
+7. Pour the batter into the lined cake pan. 
+8. Turn your oven down to 165°C and make sure that your oven fan is turned off. Bake for about 45 minutes, or until the top is golden and has risen sufficiently.
+9. Once the cake is finished, let it rest for 10 minutes before removing it from the cake pan. If you'd like to frost the cake, make sure it cools down to room temperature prior to frosting, or leave it in the fridge overnight. 
+
+[^2]: [This](https://www.thespruceeats.com/how-to-whip-egg-whites-2216960) is a good article about whipping egg whites, with pictures to show you what firm peaks look like.
+[^5]: It usually takes me about five minutes on the highest speed of my mixer.
+[^6]: It's important to fold it in gently so you don't deflate the air bubbles. It's a difficult balance between gently folding the mix in and making sure that it's not undermixed. Find a good YouTube video to show you how it's done.
+
+# Frostings
+
+### Basic vanilla frosting
+
+- 400 g whipping cream
+- 100 g confectioners (icing) sugar
+- Vanilla extract
+
+### Cream cheese frosting
+
+### Earl grey frosting
 
