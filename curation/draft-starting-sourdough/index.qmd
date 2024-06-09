@@ -1,0 +1,41 @@
+---
+title: "Sourdough for starters"
+description:
+category:
+draft: yes
+---
+
+# How to start making sourdough
+
+Compare how your dough looks with videos.
+
+# My favourite resources
+
+In learning how to make the best sourdough bread, I used the following resources, going from veginner to more and more advanced.
+
+## Beginner resources
+
+- The Bread Code's [flowcharts](https://www.the-sourdough-framework.com/listoflocname.html) help demistify the process
+
+## More advanced resources
+- The Bread Code’s [Sourdough Framework](https://www.the-sourdough-framework.com/) book
+- Flour Water Salt Yeast book by Ken Forkish
+- The Sourdough Journey website
+
+His PDF file that explains the different crumb structures is really helpful: https://thesourdoughjourney.com/faq-over-under-proofed/
+
+- Bread science by Emily ?
+
+# Recipes to get you started
+
+Basic: 
+
+https://youtu.be/VEtU4Co08yY?si=VK_Ap8HRPPIlOZa3
+
+More advanced recipe, higher hydration, adapted from Ken Forkish's Pain de Campagne recipe from his book Flour Water Salt Yeast:
+
+350 g white flour
+50 g rye or whole wheat
+310 g water
+12 g fine sea salt
+100 g starter

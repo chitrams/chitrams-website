@@ -2,6 +2,7 @@
 title: "Peanut butter cookies from sourdough discard"
 description: "A quick and easy use for sourdough discard."
 categories: [cookies, effort/easy, time/quick]
+image: peanut-butter-cookie.jpg
 draft: yes
 ---
 
@@ -21,7 +22,7 @@ Makes 24. Recipe adapted from the [Homemade Food Junkie blog](https://www.homema
 - Pinch of salt
 - Granulated sugar for sprinkling
 
-[^1]: Less sourdough starter means 
+[^1]: Less sourdough starter means your cookie will end up more crispy, whereas using more starter means your cookie will be chewier. I think the texture would vary as well depending on how active your starter is to begin with, so do experiment to find your ideal amount.
 
 **You'll also need**
 
@@ -38,3 +39,5 @@ Makes 24. Recipe adapted from the [Homemade Food Junkie blog](https://www.homema
 5. Add the dry ingredients to the wet ingredients in three parts. Gently fold the dry ingredients in until just combined.
 6. Line your baking tray with baking paper. To shape the cookies, make 2 cm balls out of the dough, lightly roll them around in granulated sugar, and place them 4 cm apart on the baking tray as they will expand during baking. Lightly press them with your fingers to make discs.
 7. Bake for 10 minutes until the cookies are golden-brown. Remove trays from oven and let sit for 5 minutes so the cookies can harden before moving them to wire racks to cool.
+
+![](peanut-butter-cookie.jpg){fig-align="center" width="350"}
