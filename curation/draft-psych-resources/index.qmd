@@ -1,6 +1,6 @@
 ---
 title: "Resources for psychology"
-description: "Some resources for "self-help" psychology that I've found useful."
+description: "Some resources for self-help psychology that I've found useful."
 categories: [psychology, resources]
 draft: yes
 ---
