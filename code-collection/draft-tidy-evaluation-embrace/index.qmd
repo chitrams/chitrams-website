@@ -4,3 +4,11 @@ categories:
   - R
 draft: yes
 ---
+
+Explaining how to program within R and referring to variables within fucntions when starting with functional programming 
+
+Indirection, embrace operator, and data masking
+
+- Embrace operator [vignette](https://rlang.r-lib.org/reference/embrace-operator.html)
+- Data masking [explanation](https://rlang.r-lib.org/reference/topic-data-mask.html)
+- Alternatively, "indirection" concept [explanation](https://dplyr.tidyverse.org/articles/programming.html#indirection)
