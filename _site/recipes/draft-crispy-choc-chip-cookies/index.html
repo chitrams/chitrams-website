@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="">
-<meta name="dcterms.date" content="2024-04-11">
-<meta name="description" content="An introduction to {targets}: why use it, how to use it, and some resources to get you started. (In other words: reduce the mental burden of figuring out which step of the analysis you’re on.)">
 
-<title>Curated by Chitra - Understanding a targets workflow</title>
+<title>Curated by Chitra - Crispy chocolate chip cookies</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -159,36 +122,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Understanding a targets workflow</h1>
-                  <div>
-        <div class="description">
-          An introduction to <code>{targets}</code>: why use it, how to use it, and some resources to get you started. (In other words: reduce the mental burden of figuring out which step of the analysis you’re on.)
-        </div>
-      </div>
-                          <div class="quarto-categories">
-                <div class="quarto-category">R</div>
-                <div class="quarto-category">workflow</div>
-              </div>
-                  </div>
+      <h1 class="title">Crispy chocolate chip cookies</h1>
+                      </div>
   </div>
     
   
   <div class="quarto-title-meta column-page-left">
 
       
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">April 11, 2024</p>
-      </div>
-    </div>
     
-      <div>
-      <div class="quarto-title-meta-heading">Modified</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date-modified">April 23, 2024</p>
-      </div>
-    </div>
       
     </div>
     
@@ -201,10 +143,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#why-use-a-targets-workflow" id="toc-why-use-a-targets-workflow" class="nav-link active" data-scroll-target="#why-use-a-targets-workflow">Why use a targets workflow?</a></li>
-  <li><a href="#how-to-use-targets" id="toc-how-to-use-targets" class="nav-link" data-scroll-target="#how-to-use-targets">How to use targets</a></li>
-  <li><a href="#final-thoughts" id="toc-final-thoughts" class="nav-link" data-scroll-target="#final-thoughts">Final thoughts</a></li>
-  <li><a href="#resources-for-learning-targets" id="toc-resources-for-learning-targets" class="nav-link" data-scroll-target="#resources-for-learning-targets">Resources for learning targets</a></li>
+  <li><a href="#notes" id="toc-notes" class="nav-link active" data-scroll-target="#notes">Notes</a></li>
   </ul>
 </nav>
     </div>
@@ -215,130 +154,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>I was recently introduced to the R package <code>{targets}</code> as part of learning how to develop software. As I continue to use it, I’ve been blown away by how much easier my workflow has become--even outside of software development--and I regret not having known of it sooner. It would have been nice to use this workflow when I was doing my Master’s thesis, which involved a large amount of complex and repeated analyses. So here’s my notes on the targets workflow so far: why use it, how to use it (especially if you’ve never used it before), and the resources I found most useful.</p>
-<section id="why-use-a-targets-workflow" class="level1">
-<h1>Why use a targets workflow?</h1>
-<p>Most of us doing statistical analysis work on complex projects with moving parts. What I mean by this is: say I have a workflow that involves loading the data, some exploratory data analysis, fitting the data to a model, generating a plot of the data and the fitted model, and presenting the model coefficients in a table. It’s nothing too complicated, but it <em>is</em> complex: if one part changes, the rest of the project changes too.</p>
-<p>For example, perhaps the data is updated and we want to re-run the whole analysis from start to finish. Or perhaps we decide that the model isn’t a good fit, so we fit a few other models and see which one is better; in this instance, only the model, plot, and table would change, but the rest of the project stays the same.</p>
-<p>All this is fine if you have well-annotated code and know which parts of the script to re-run. But what if you accidentally run the wrong parts of the script that are computationally intensive and time-consuming? Or what if it takes a while to re-render your table because you’ve included so many variables, and you really didn’t have to because you only wanted the plot and not the table? Or even if you’re just tweaking a few variables and then making a plot: if you miss re-naming a variable earlier on in your script, your plot might not be generated correctly because it depends on that variable.</p>
-<p>It’s in situations like these where <code>{targets}</code> can help you. Using a targets workflow means you’ll have it all laid out in front of you instead of needing to look for specific bits of code in your script and any dependencies. It’ll take the headache out of figuring out which parts of the analysis depends on which variables and functions. Then when you change a variable name (or any part of the project, really), you’ll know which parts of the analysis would need to be re-run, minus the headaches.</p>
-<p>To summarise, I find a targets workflow especially useful in the following scenarios:</p>
-<ul>
-<li>if you’re doing something complex that has a lot of moving parts;</li>
-<li>if said moving parts will change as your project progresses; and/or</li>
-<li>if you’d like to re-run your analysis with different inputs (e.g.&nbsp;a new dataset), or to create different outputs (e.g.&nbsp;plots and tables); especially if you’re re-running your analysis a lot!</li>
-</ul>
-</section>
-<section id="how-to-use-targets" class="level1">
-<h1>How to use targets</h1>
-<p>When you’re first starting to program in R–especially if you’re mainly doing statistical analysis–a targets workflow might seem an unnecessarily complex way of going about things. When I first came across the targets workflow, I felt overwhelmed and didn’t understand how it could be useful for my workflow. So the way I’d recommend going about it is to take an existing project, and to convert the scripts in that project into a targets workflow.</p>
-<p>The <a href="https://books.ropensci.org/targets/walkthrough.html">quick walkthrough</a> in the user manual is an excellent example of how to use the targets workflow–I highly recommend reading it and going through the worked example. It does a much better job than I can in giving a reproducible example of how to use targets. Then I recommend converting your project to a targets workflow by using that walkthrough, or this <a href="https://carpentries-incubator.github.io/targets-workshop/index.html">quick tutorial</a>.</p>
-<p>I’ll walk you through a conceptual overview of how I use targets. However, I highly recommend you first work through the two tutorials above.</p>
-<p>First, I make sure that I understand my workflow from beginning to end. This overview is the main advantage of using a targets workflow: you’ll have a bird’s eye view of your analysis and figure out where changes are necessary. For example, I may break down my analysis like this:</p>
-<ul>
-<li>Read in csv file of data</li>
-<li>Summarise data and generate a table</li>
-<li>Fit models</li>
-<li>Generate plot of data and fitted model</li>
-<li>Generate table of model coefficients</li>
-</ul>
-<p>Once I’ve done that and would like to start creating a targets workflow, I’ll run the following in my console:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(targets)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tarchetypes)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">tar_script</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>This creates a file in your project directory called <code>_targets.R</code>. This is the high-level overview of the project, so I open that and write out something like the following:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># _targets.R file</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Set-up ------------------------------</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(targets)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tarchetypes)</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Load packages needed for this project</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">tar_option_set</span>(</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">packages =</span> <span class="fu">c</span>(<span class="st">"tidyverse"</span>,</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>               <span class="st">"purrr"</span>)</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Set up a workspace when our code errors</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="fu">tar_option_set</span>(<span class="at">workspace_on_error =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Load functions to be used in our project</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/functions.R"</span>)</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Target objects ------------------------------</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="fu">tar_plan</span>(</span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Load data</span></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tar_file</span>(</span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    path_to_data,</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="st">"./raw/data.csv"</span></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    ),</span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tar_target</span>(</span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>    data,</span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    <span class="fu">read_csv</span>(path_to_data)</span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  ),</span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create a summary table</span></span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tar_target</span>(</span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>    data_summary_table,</span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise_data</span>(data)</span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>  ),</span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Fit a model to the data</span></span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tar_target</span>(</span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>    model,</span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>    <span class="fu">model_data</span>(data)</span>
-<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>  ),</span>
-<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create plot of the data and fitted model</span></span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tar_target</span>(</span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>    plot,</span>
-<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot_data_with_model</span>(data)</span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>  ),</span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create table of model coefficients</span></span>
-<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tar_target</span>(</span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>    table_of_model,</span>
-<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tabulate_model</span>(model)</span>
-<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Where <code>summary_table</code>, <code>model_data</code>, <code>plot_data</code>, and <code>table_of_model</code> are functions I’ve written up myself and saved in a separate script called <code>functions.R</code>.</p>
-<p>The advantage of this workflow is <strong>you can change the one part that need changing in your workflow, and the <code>{targets}</code> package will change the rest for you.</strong> I can’t emphasise how life-changing this was for me.</p>
-<p>Here’s an example. If your data changes, you just need to change the first target object <code>path_to_data</code> to point to the new data file. You can then re-run the whole analysis using <code>tar_make()</code> and your resulting summary table, fitted model, plot, and table of model coefficients will be re-created with the new data you’ve pointed to. This is so much easier than having a script and needing to change <code>data</code> to <code>new_data</code> for every instance in which it’s referred to, or by re-running the whole script yourself. How convenient is that?</p>
-<p>You can also have an overview of your workflow and what needs to be updated by running <code>tar_visnetwork()</code>.</p>
-</section>
-<section id="final-thoughts" class="level1">
-<h1>Final thoughts</h1>
-<p>Using a targets workflow requires you to change the way you approach programming. If you’re trained as a statistical programmer, I assume you’re used to writing your code in scripts. A targets workflow requires you to write your code as functions instead (otherwise known as “functional programming”).</p>
-<p>It <em>is</em> a steep learning curve and it <em>did</em> take me a while to get my head around why and how I should use a targets workflow. It’s a different way of thinking about how to program.</p>
-<p>Despite this, I do highly recommend using a targets workflow instead of having multiple R scripts, for all the reasons I’ve stated above. Utilising this workflow is a step towards reproducible research, which is always great.</p>
-</section>
-<section id="resources-for-learning-targets" class="level1">
-<h1>Resources for learning targets</h1>
-<p>I think the best way to understand why a targets workflow is useful is to actually do a project within a targets workflow. So here are some resources I found helpful:</p>
-<ul>
-<li>The targets R package <a href="https://books.ropensci.org/targets/">user manual</a> with a quick <a href="https://books.ropensci.org/targets/walkthrough.html">walkthrough</a> to get you started. I highly recommend this one if you’re trying to set up a targets workflow by yourself.</li>
-<li>For a more hands-on tutorial, I recommend this <a href="https://carpentries-incubator.github.io/targets-workshop/index.html">Carpentries workshop</a> by Joel Nitta. I really liked that this gave you a bare-bones overview of what a targets workflow looks like. I used this the first time I tried to set up a targets workflow, but I also had the benefit of having someone walk me through using targets.</li>
-</ul>
-<p>More readings on targets:</p>
-<ul>
-<li>The official targets <a href="https://docs.ropensci.org/targets/">website</a></li>
-<li>Within the official website: a list of <a href="https://github.com/ropensci/targets#example-projects">examples</a> for targets workflows</li>
-</ul>
+<p>Makes 18 cookies. Adapted from <a href="https://jeffreymorgenthaler.com/chocolate-chip-cookies/">Jeffrey Morgenthaler’s</a> chocolate chip cookies.</p>
+<p>115g butter, room temperature 75g light brown sugar 125 g white sugar<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> 1 large egg 5 ml vanilla extract 175g flour 2g salt 2g baking soda 160g chocolate chips</p>
+<p>With a mixer, cream the butter and sugars together. Add the egg and vanilla extract and beat until everything is smooth and incorporated.</p>
+<p>In a separate bowl, whisk together the flour, salt, and baking soda until they’re all incorporated, too. Then start slowly folding that mixture into the wet ingredients.</p>
+<p>Add the chocolate chips and nuts after that dough is done.</p>
+<p>I like to wrap them up in plastic wrap and then let the dough rest in the fridge overnight, but you don’t have to. Either way, you want to make sure the dough is at room temperature before you pop them in the oven.</p>
+<p>I use a one-ounce scoop to measure out twelve perfect little dough balls on a sheet pan.</p>
+<p>Bake at 400 degrees Fahrenheit/205 degrees Celsius for ten minutes on the middle rack of your oven.</p>
+<p>I like to finish mine with some flaky sea salt.</p>
+<p>Makes about 20 cookies total.</p>
+<section id="notes" class="level2">
+<h2 class="anchored" data-anchor-id="notes">Notes</h2>
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Don’t reduce the amount of sugar, or the cookies will turn out a lot less crispy. You already know these aren’t good for you.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -747,8 +585,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-<script src="https://utteranc.es/client.js" repo="chitrams/code-collection-comments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
 
