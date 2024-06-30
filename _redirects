@@ -1,2 +1,6 @@
 https://chitrams.netlify.app/* https://chitra-ms.com/:splat 301!
 http://chitrams.netlify.app/* http://chitra-ms.com/:splat 301!
+#
+# For more details:
+# Instructions: https://docs.netlify.com/routing/redirects/
+# Options: https://docs.netlify.com/routing/redirects/redirect-options/
