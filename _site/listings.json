@@ -2,6 +2,7 @@
   {
     "listing": "/recipes/index.html",
     "items": [
+      "/recipes/2024-07-14-sweet-corn-soup/index.html",
       "/recipes/2024-06-09-peanut-butter-sourdough-cookies/index.html",
       "/recipes/2024-05-05-beef-noodle-salad/index.html",
       "/recipes/2024-05-04-baked-porridge/index.html",
@@ -13,12 +14,6 @@
     ]
   },
   {
-    "listing": "/curation/index.html",
-    "items": [
-      "/curation/2024-04-26-yoga-with-adriene-favourites/index.html"
-    ]
-  },
-  {
     "listing": "/code-collection/index.html",
     "items": [
       "/code-collection/2024-05-31-git-good-with-rstudio/index.html",
@@ -26,6 +21,12 @@
       "/code-collection/2024-04-11-understanding-a-targets-workflow/index.html",
       "/code-collection/2022-08-21-packages-for-summary-tables/index.html",
       "/code-collection/2022-08-16-functional-programming-in-r/index.html"
+    ]
+  },
+  {
+    "listing": "/curation/index.html",
+    "items": [
+      "/curation/2024-04-26-yoga-with-adriene-favourites/index.html"
     ]
   }
 ]
