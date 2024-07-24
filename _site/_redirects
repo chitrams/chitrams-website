@@ -1,5 +1,10 @@
-https://chitrams.netlify.app/* https://chitra-ms.com/:splat 301!
-http://chitrams.netlify.app/* http://chitra-ms.com/:splat 301!
+https://chitrams.netlify.app/*     https://chitra-ms.com/:splat 301!
+http://chitrams.netlify.app/*      http://chitra-ms.com/:splat 301!
+
+# Redirects for subdomains
+/recipes/*               https://recipes.chitra-ms.com/:splat 200!
+/code-collection/*       https://code.chitra-ms.com/:splat 200!
+/curation/*              https://curation.chitra-ms.com/:splat 200!
 
 #
 # For more details:
