@@ -8,11 +8,11 @@ website:
   title: "Curated by Chitra"
   navbar:
     left:
-      - href: code-collection/index.qmd
+      - href: https://code.chitra-ms.com
         text: Code Collection
-      - href: recipes/index.qmd
+      - href: https://recipes.chitra-ms.com
         text: Recipes
-      - href: curation/index.qmd
+      - href: https://curation.chitra-ms.com
         text: Curation
     right:
       - href: about/index.qmd
