@@ -1,18 +1,45 @@
 ---
-title: "How the internet works"
-description: "Starting from debugging my website: a rabbithole into what the Web is, what the internet is, and the best resources to understand them."
+title: "Resources on web development and how the internet works"
+description: "Going down the rabbit hole: debugging my website led me to learn what domain names, servers, the World Wide Web, and the internet is."
 author: ''
-date: '2024-07-25'
+date: '2024-07-24'
+date-modified: '2024-07-25'
 categories: 
   - computer science
+  - resources
 ---
 
+It's interesting how the internet is such a big part of our lives, but less than 24 hours ago I couldn't tell you what it was, exactly. And I think most people are in this same position. You have a general idea of how the internet works as it relates to you, but you don't bother diving into the details--just like how you don't need to understand how an engine works to drive a car. But then I came across an issue that needed me to dive deeper into how the system works, so here is a list of excellent resources that I've found helpful.
+
+For context, I was (and am still) struggling with adding subdomains to this website and getting each page to correctly link to a subdomain. I would like, for example, for [chitra-ms.com/code-collection/](https://chitra-ms.com/code-collection) to have the URL code.chitra-ms.com instead. I still haven't figured out how exactly to go about this, but I ended up going into the following rabbit holes:
+
+- domain names, domain name systems (DNS), and domain name registrars, which led to:
+- hosting services and backend services, which led to:
+- what a web page is, which led to:
+- the mechanisms of the web (HTTP, HTML, CSS, file transfers), which led to:
+- how does the internet work?
+
+It's been a fascinating journey.
+
+I found that there are a lot of resources out there to learn web development. MOOCs on Coursera and edX; standalone sites such as Codecademy and freeCodeCamp. What I've found learning on these platforms, though, is that I end up not learning very much and get frustrated easily. I thought it was the gamification and oversimplification that I found annoying. But then I came across a blog post by Andrew Latta (on [Medium](https://medium.com/@andrewlatta/why-learning-to-code-is-so-damn-hard-303eae632820), [Archive.org](https://web.archive.org/web/20230630111131/https://www.thinkful.com/blog/why-learning-to-code-is-so-damn-hard/)) that clearly explains why the journey of learning to code can be so frustrating and explains why these resources aren't that great once you get to a certain level.
+
+Enter [The Odin Project](https://www.theodinproject.com/). This is a different way of learning to program that's more holistic and teaches you to make your own projects instead of over-simplifying and gamifying your code. It's excellent for learning about web development and gives you context for why you're learning the things you're learning too.
+
+I continued my web-surfing from The Odin Project to find the following excellent resources on the topic. They're all clearly written and give excellent explanations. I know I'm using "excellent" a lot, but I really am blown by how well these resources were written and organised--and that we all have free access to these quality resources.
+
 ## Resources 
-- The Odin Project https://www.theodinproject.com/ which led me to the resources below
-- How the web works by MDN https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics then go through it one by one to understand:
+- [The Odin Project](https://www.theodinproject.com/), which led me to the resources below.
+- A guide to [how the web works](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics) by the Mozilla Developer Network (MDN), which has pages for the following topics:
   - How linking works
   - How URLs work
   - How domain names work
-- Background info on the web https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/The_web_and_web_standards
-- History of the World Wide Web https://en.wikipedia.org/wiki/History_of_the_World_Wide_Web
-- How DNS works: a web-comic https://howdns.works/ 
+  - How a domain name system (DNS) work
+- [Background information on the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/The_web_and_web_standards), also by MDN.
+- A history of the World Wide Web on [Wikipedia](https://en.wikipedia.org/wiki/History_of_the_World_Wide_Web).
+- How DNS works: [a web-comic](https://howdns.works/).
+
+## Casual reads
+- Tubes: A Journey to the Centre of the Internet by Andrew Blum. An excellent narrative non-fiction that explains the physical reality of the internet.
+- Computer Networking: A Top-Down Approach by James F. Kurose and Keith W. Ross. An excellent textbook that explains how the internet works. I like that they provide context for the concepts taught, good examples, and just excellent readability. You can also find James Kurose explaining the internet at five levels (from child to expert) in [this video](https://www.youtube.com/watch?v=0EqKnvzo3no).
+
+I'll update this list of resources as I dive deeper into my web development journey.
