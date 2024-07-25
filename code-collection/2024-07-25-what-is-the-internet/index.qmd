@@ -6,3 +6,13 @@ date: '2024-07-25'
 categories: 
   - computer science
 ---
+
+## Resources 
+- The Odin Project https://www.theodinproject.com/ which led me to the resources below
+- How the web works by MDN https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics then go through it one by one to understand:
+  - How linking works
+  - How URLs work
+  - How domain names work
+- Background info on the web https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/The_web_and_web_standards
+- History of the World Wide Web https://en.wikipedia.org/wiki/History_of_the_World_Wide_Web
+- How DNS works: a web-comic https://howdns.works/ 
