@@ -1,0 +1,8 @@
+---
+title: "How the internet works"
+description: "Starting from debugging my website: a rabbithole into what the Web is, what the internet is, and the best resources to understand them."
+author: ''
+date: '2024-07-25'
+categories: 
+  - computer science
+---
