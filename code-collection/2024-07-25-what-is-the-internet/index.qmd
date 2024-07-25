@@ -1,6 +1,6 @@
 ---
 title: "Resources on web development and how the internet works"
-description: "Going down the rabbit hole: debugging my website led me to learn what domain names, servers, the World Wide Web, and the internet is."
+description: "Going down the rabbit hole: debugging my website led to learning about domain names, servers, the World Wide Web, and how the internet works."
 author: ''
 date: '2024-07-24'
 date-modified: '2024-07-25'
