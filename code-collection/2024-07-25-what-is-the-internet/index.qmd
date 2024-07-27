@@ -39,7 +39,7 @@ I continued my web-surfing from The Odin Project to find the following excellent
 - How DNS works: [a web-comic](https://howdns.works/).
 
 ## Casual reads
-- Tubes: A Journey to the Centre of the Internet by Andrew Blum. An excellent narrative non-fiction that explains the physical reality of the internet.
-- Computer Networking: A Top-Down Approach by James F. Kurose and Keith W. Ross. An excellent textbook that explains how the internet works. I like that they provide context for the concepts taught, good examples, and just excellent readability. You can also find James Kurose explaining the internet at five levels (from child to expert) in [this video](https://www.youtube.com/watch?v=0EqKnvzo3no).
+- Tubes: A Journey to the Centre of the Internet by Andrew Blum ([Goodreads](https://www.goodreads.com/book/show/13036199-tubes)). An excellent narrative non-fiction that explains the physical reality of the internet.
+- Computer Networking: A Top-Down Approach by James F. Kurose and Keith W. Ross ([Goodreads](https://www.goodreads.com/book/show/83847.Computer_Networking)). An excellent textbook that explains how the internet works. I like that they provide context for the concepts taught, good examples, and just excellent readability. You can also find James Kurose explaining the internet at five levels (from child to expert) in [this video](https://www.youtube.com/watch?v=0EqKnvzo3no).
 
 I'll update this list of resources as I dive deeper into my web development journey.
