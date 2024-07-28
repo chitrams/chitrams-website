@@ -8,6 +8,12 @@ categories:
 draft: yes
 ---
 
+Questions to answer:
+- What is Python? What is conda? What is Anaconda3? What is Jupyter? And how does this all play together with VS Code?
+- Maybe add screenshots so people know what I'm talking about
+- Why initialising your environment can be hard
+- Resources I've found useful and trying to figure out what's going on...
+
 - To go into the Python interpreter in VS Code > Command Prompt, type `python`
 - TO exit, type `exit()` or `quit()` or use the keyboard shortcut Ctrl + Z followed by Enter on Windows
 
