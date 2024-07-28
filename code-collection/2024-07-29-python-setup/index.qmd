@@ -1,0 +1,20 @@
+---
+title: "Setting up python"
+description: "How to set python up on a Windows machine without admin rights, conda and anaconda, using VS Code to run python."
+author: ''
+date: '2024-07-29'
+categories: 
+  - python
+draft: yes
+---
+
+- To go into the Python interpreter in VS Code > Command Prompt, type `python`
+- TO exit, type `exit()` or `quit()` or use the keyboard shortcut Ctrl + Z followed by Enter on Windows
+
+How I installed it without admin rights:
+- Download anaconda
+- Add the three lines to PATH: Edit Environment Variables to your account
+	- anaconda3
+	- anaconda3/Scripts
+	- anaconda3/Library/bin
+- Then in VS code change the default terminal to command prompt instead of PwerShell (still not sure hwy this helps)
