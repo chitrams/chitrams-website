@@ -1,0 +1,18 @@
+---
+title: "Combine multiple ggplot2 plots"
+description: "How to arrange multiple ggplot2 plots in one space using `patchwork`, `grid.arrange()` in `gridExtra`, `ggarrange()` in `ggpubr`, and `plot_grid()` in `cowplot`"
+author: ''
+date: '2024-09-29'
+categories: 
+  - R
+draft: yes
+---
+
+## `[patchwork](https://patchwork.data-imaginist.com/)`
+
+## `grid.arrange()` in `[gridExtra](https://cran.r-project.org/web/packages/gridExtra/vignettes/arrangeGrob.html)`
+
+## `ggarrange()` in `[ggpubr](https://rpkgs.datanovia.com/ggpubr/reference/ggarrange.html)`
+
+## `plot_grid()` in `[cowplot](https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html)`
+
