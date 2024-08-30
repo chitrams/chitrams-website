@@ -2,11 +2,20 @@
 title: "Combine multiple ggplot2 plots"
 description: "How to arrange multiple ggplot2 plots in one space using `patchwork`, `grid.arrange()` in `gridExtra`, `ggarrange()` in `ggpubr`, and `plot_grid()` in `cowplot`"
 author: ''
-date: '2024-09-29'
+date: '2024-08-20'
 categories: 
   - R
 draft: yes
 ---
+
+## Use case
+
+```{r}
+#| label: analysis-set-up
+
+library(palmerpenguins)
+
+```
 
 ## `[patchwork](https://patchwork.data-imaginist.com/)`
 
@@ -16,3 +25,4 @@ draft: yes
 
 ## `plot_grid()` in `[cowplot](https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html)`
 
+## Which one is best?
