@@ -1,0 +1,26 @@
+---
+title: "Basics of supercomputing"
+description: "How to orient yourself if you have never used a supercomputer"
+author: ''
+date: '2024-08-30'
+categories: 
+  - computer science
+draft: yes
+---
+
+
+## Things common to all HPCs
+In other words, the practicalities of using a sueprcomputer
+
+- Slurm queueing system
+- Data node, login nodes, etc
+
+## Starting with computers
+
+Computer architecture is an important concept to learn. You could get by without it but you'd be so much better off if you actually understood what's going on underneath the hood. 
+
+Sure you don't need it if you have a plug-and-play software, but if you need to debug that's where things get tricky. 
+
+[#TODO insert youtube channel of crash course CS here]
+
+## Parallel programming and software
