@@ -6,9 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Some resources for self-help psychology that I’ve found useful.">
+<meta name="author" content="">
+<meta name="dcterms.date" content="2024-08-30">
+<meta name="description" content="How to orient yourself if you have never used a supercomputer.">
 
-<title>Resources for psychology – Curated by Chitra</title>
+<title>Basics of high-performance computing systems – Curated by Chitra</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -122,24 +124,29 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Resources for psychology</h1>
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Basics of high-performance computing systems</h1>
                   <div>
         <div class="description">
-          Some resources for self-help psychology that I’ve found useful.
+          How to orient yourself if you have never used a supercomputer.
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">psychology</div>
-                <div class="quarto-category">resources</div>
+                <div class="quarto-category">computer science</div>
               </div>
                   </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page">
+  <div class="quarto-title-meta column-page-left">
 
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 30, 2024</p>
+      </div>
+    </div>
     
       
     </div>
@@ -148,19 +155,93 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#hpc-concepts" id="toc-hpc-concepts" class="nav-link active" data-scroll-target="#hpc-concepts">HPC concepts</a>
+  <ul class="collapse">
+  <li><a href="#linux-command-line-and-text-editor-skills" id="toc-linux-command-line-and-text-editor-skills" class="nav-link" data-scroll-target="#linux-command-line-and-text-editor-skills">Linux command line and text editor skills</a></li>
+  <li><a href="#hpc-components" id="toc-hpc-components" class="nav-link" data-scroll-target="#hpc-components">HPC components</a></li>
+  <li><a href="#job-scheduling-system-slurm" id="toc-job-scheduling-system-slurm" class="nav-link" data-scroll-target="#job-scheduling-system-slurm">Job scheduling system (Slurm)</a></li>
+  <li><a href="#computer-architecture" id="toc-computer-architecture" class="nav-link" data-scroll-target="#computer-architecture">Computer architecture</a></li>
+  <li><a href="#networking-concepts" id="toc-networking-concepts" class="nav-link" data-scroll-target="#networking-concepts">Networking concepts</a></li>
+  </ul></li>
+  <li><a href="#additional-concepts" id="toc-additional-concepts" class="nav-link" data-scroll-target="#additional-concepts">Additional concepts</a>
+  <ul class="collapse">
+  <li><a href="#file-transfer-tools" id="toc-file-transfer-tools" class="nav-link" data-scroll-target="#file-transfer-tools">File transfer tools</a></li>
+  <li><a href="#scripting-skills" id="toc-scripting-skills" class="nav-link" data-scroll-target="#scripting-skills">Scripting skills</a></li>
+  <li><a href="#resource-management" id="toc-resource-management" class="nav-link" data-scroll-target="#resource-management">Resource management</a></li>
+  </ul></li>
+  <li><a href="#good-starting-points" id="toc-good-starting-points" class="nav-link" data-scroll-target="#good-starting-points">Good starting points</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
 
-<p>Books that I’ve found useful in understanding different modalities and general self-help</p>
+<p>I’m currently learning how to run an R workflow on a supercomputer. I’ve never used a supercomputer before. It’s been quite the journey and I thought I’d compile this list of resources so that anyone else who needs to start learning how to use supercomputers can have a friendly guide to help them start and get going.</p>
+<p>The best way to understand how supercomputers work is to understand how computers work to begin with, including computer architecture and computer networks. I’ll write separate posts on these topics and link them here.</p>
+<p>In this post I will refer to this use of supercomputers as high-performance computing (HPC). These terms (“supercomputing” and “HPC”) are often used interchangeably but I would like to make a distinction here, in the context of advanced computing. Supercomputers are only a subset of HPCs. HPC is a broader term that encompasses the use of supercomputers and other powerful computing resources to solve advanced computational problems.</p>
+<p>But if you’re short on time, here are some of the most important concepts.</p>
+<section id="hpc-concepts" class="level1">
+<h1>HPC concepts</h1>
+<p>Here are the concepts that I found most important in understanding how to use a HPC.</p>
+<ul>
+<li>Basic skills in using the Linux command line and a text editor such as Vim.</li>
+<li>Understanding the HPC components such as login nodes, compute nodes, and data nodes.</li>
+<li>Understanding the job scheduling system, such as Slurm.</li>
+<li>A basic understanding of computer architecture.</li>
+<li>A basic understanding of networking concepts.</li>
+</ul>
+<p>Let’s break them down one by one.</p>
+<section id="linux-command-line-and-text-editor-skills" class="level2">
+<h2 class="anchored" data-anchor-id="linux-command-line-and-text-editor-skills">Linux command line and text editor skills</h2>
+<p>A basic understanding of how to use the Linux command line is useful as you’ll mostly be on the command line. Then you want to be able to use text editors like Vim or Nano to edit scripts and configuration files.</p>
+<p>Here are the resources I found useful for quickly learning Vim: - A quick introduction to what’s going on when you really have no clue: <a href="https://linuxhandbook.com/basic-vim-commands/">this guide</a> from the Linux Handbook. - An interactive tutorial for learning Vim: <a href="https://www.openvim.com/">OpenVim</a>. I liked this because it allows you to actually see what happens on the screen as you’re typing things out. - Otherwise you could try out the built-in <code>vimtutor</code> by typing in <code>vimtutor</code> in your terminal (assuming Vim is already installed on your device). - For information on how to do more advanced things in Vim, <a href="https://learnvim.irian.to/">this guide</a> is pretty good.</p>
+</section>
+<section id="hpc-components" class="level2">
+<h2 class="anchored" data-anchor-id="hpc-components">HPC components</h2>
+</section>
+<section id="job-scheduling-system-slurm" class="level2">
+<h2 class="anchored" data-anchor-id="job-scheduling-system-slurm">Job scheduling system (Slurm)</h2>
+<p>Slurm is the most widely used job scheduling system for HPC clusters, but there are other job schedulers used too. Familiarise yourself with them.</p>
+<p>I found <a href="https://slurm.schedmd.com/quickstart.html">this</a> to be a good guide to Slurm.</p>
+</section>
+<section id="computer-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="computer-architecture">Computer architecture</h2>
+<p>Specifically, I would want to know how the processors, memory, and storage components</p>
+</section>
+<section id="networking-concepts" class="level2">
+<h2 class="anchored" data-anchor-id="networking-concepts">Networking concepts</h2>
+<p>Specifically, a basic understanding of how to use SSH for secure remote access and data transfer.</p>
+</section>
+</section>
+<section id="additional-concepts" class="level1">
+<h1>Additional concepts</h1>
+<section id="file-transfer-tools" class="level2">
+<h2 class="anchored" data-anchor-id="file-transfer-tools">File transfer tools</h2>
+<p>Tools such as scp, sftp, or rsync for transferring data into and out of the HPC system.</p>
+</section>
+<section id="scripting-skills" class="level2">
+<h2 class="anchored" data-anchor-id="scripting-skills">Scripting skills</h2>
+</section>
+<section id="resource-management" class="level2">
+<h2 class="anchored" data-anchor-id="resource-management">Resource management</h2>
+</section>
+</section>
+<section id="good-starting-points" class="level1">
+<h1>Good starting points</h1>
+<p>If this is overwhelming: I get it! I only compiled this list after a month of working on it.</p>
+<p>What you could do is go to your supercomputer’s help page and see if they have user documentation that you can use. Pawsey, the supercomputing research centre that I use, has an excellent and comprehensive <a href="https://pawsey.atlassian.net/wiki/spaces/US/overview">user support documentation</a>, a Supercomputing User Training <a href="https://www.youtube.com/playlist?list=PLmu61dgAX-aYlqIy2VgH8s8UD2oUIA3KS">playlist</a>, and a support team who’s there to ensure that we use the resources well as we are partnered with a university.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -582,6 +663,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
+</script>
+<script src="https://utteranc.es/client.js" repo="chitrams/code-collection-comments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
 

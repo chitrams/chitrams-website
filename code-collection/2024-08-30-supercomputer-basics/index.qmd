@@ -1,5 +1,5 @@
 ---
-title: "Basics of high-performance computing systems"
+title: "Basics of high-performance computing systems for research"
 description: "How to orient yourself if you have never used a supercomputer."
 author: ''
 date: '2024-08-30'
@@ -8,19 +8,17 @@ categories:
 draft: yes
 ---
 
-I'm currently learning how to run an R workflow on a supercomputer. I've never used a supercomputer before. It's been quite the journey and I thought I'd compile this list of resources so that anyone else who needs to start learning how to use supercomputers can have a friendly guide to help them start and get going. 
+I'm currently learning how to run an R workflow on a supercomputer. I've never come across supercomputers before and didn't even know how and where to get started. It's been quite the journey and I thought I'd compile this list of resources so anyone else who wants to learn how to use supercomputers can have a friendly guide to get them started.
 
-The best way to understand how supercomputers work is to understand how computers work to begin with, including computer architecture and computer networks. I'll write separate posts on these topics and link them here.
-
-In this post I will refer to this use of supercomputers as high-performance computing (HPC). 
-These terms ("supercomputing" and "HPC") are often used interchangeably but I would like to make a distinction here, in the context of advanced computing.
+Before I dive into it, I would like to distinguish between using supercomputers and high-performance computing (HPC). 
+These terms ("supercomputing" and "HPC") are often used interchangeably, but there is a distinction here in the context of advanced computing.
 Supercomputers are only a subset of HPCs. HPC is a broader term that encompasses the use of supercomputers and other powerful computing resources to solve advanced computational problems. 
 
-But if you're short on time, here are some of the most important concepts.
+The following is an opinionated list of what I believe to be the most important concepts to understand when you're first starting out. Of course, you can run programs on high-performance computers without necessarily needing to understand the following concepts, especially if you've been given pre-written scripts to run your programs. I believe however that the following concepts are necessary if you'd like to optimise your HPC usage.
 
 # HPC concepts
 
-Here are the concepts that I found most important in understanding how to use a HPC. 
+Here are the concepts that I found most important.
 
 - Basic skills in using the Linux command line and a text editor such as Vim. 
 - Understanding the HPC components such as login nodes, compute nodes, and data nodes.
@@ -32,7 +30,9 @@ Let's break them down one by one.
 
 ## Linux command line and text editor skills
 
-A basic understanding of how to use the Linux command line is useful as you'll mostly be on the command line. Then you want to be able to use text editors like Vim or Nano to edit scripts and configuration files.
+A basic understanding of how to use the Linux command line is useful as you'll mostly be using the command line when accessing HPCs. When you're on the command line, you also want to be able to use text editors like Vim or Nano to edit scripts and configuration files.
+
+The textbooks I most enjoyed using were Bash and Linux and the command line. They give accessible explanations of what's going on.
 
 Here are the resources I found useful for quickly learning Vim:
 - A quick introduction to what's going on when you really have no clue: [this guide](https://linuxhandbook.com/basic-vim-commands/) from the Linux Handbook.
@@ -41,6 +41,10 @@ Here are the resources I found useful for quickly learning Vim:
 - For information on how to do more advanced things in Vim, [this guide](https://learnvim.irian.to/) is pretty good.
 
 ## HPC components
+
+Understanding the components of the HPC you're using is important so you know what's going on when you use it.
+
+Most 
 
 ## Job scheduling system (Slurm)
 
@@ -51,6 +55,8 @@ I found [this](https://slurm.schedmd.com/quickstart.html) to be a good guide to 
 ## Computer architecture
 
 Specifically, I would want to know how the processors, memory, and storage components
+
+The best way to understand how supercomputers work is to understand how computers work to begin with, including computer architecture and computer networks. I'll write separate posts on these topics and link them here.
 
 ## Networking concepts
 
@@ -66,8 +72,10 @@ Tools such as scp, sftp, or rsync for transferring data into and out of the HPC 
 
 ## Resource management
 
+
+
 # Good starting points
 
-If this is overwhelming: I get it! I only compiled this list after a month of working on it.
+If this is overwhelming: I get it! I only compiled this list after having spent every day, over a month, reading up and watching videos on how to use supercomputers.
 
 What you could do is go to your supercomputer's help page and see if they have user documentation that you can use. Pawsey, the supercomputing research centre that I use, has an excellent and comprehensive [user support documentation](https://pawsey.atlassian.net/wiki/spaces/US/overview), a Supercomputing User Training [playlist](https://www.youtube.com/playlist?list=PLmu61dgAX-aYlqIy2VgH8s8UD2oUIA3KS), and a support team who's there to ensure that we use the resources well as we are partnered with a university.

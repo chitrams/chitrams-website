@@ -1,0 +1,15 @@
+{
+  "hash": "c2e3002dc9f66ff6da553eb884757fef",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Combine multiple ggplot2 plots\"\ndescription: \"How to arrange multiple ggplot2 plots in one space using `patchwork`, `grid.arrange()` in `gridExtra`, `ggarrange()` in `ggpubr`, and `plot_grid()` in `cowplot`\"\nauthor: ''\ndate: '2024-08-20'\ncategories: \n  - R\ndraft: yes\n---\n\n\n\n\n\n## Use case\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(palmerpenguins)\n```\n:::\n\n\n\n\n\n## `[patchwork](https://patchwork.data-imaginist.com/)`\n\n## `grid.arrange()` in `[gridExtra](https://cran.r-project.org/web/packages/gridExtra/vignettes/arrangeGrob.html)`\n\n## `ggarrange()` in `[ggpubr](https://rpkgs.datanovia.com/ggpubr/reference/ggarrange.html)`\n\n## `plot_grid()` in `[cowplot](https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html)`\n\n## Which one is best?\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
