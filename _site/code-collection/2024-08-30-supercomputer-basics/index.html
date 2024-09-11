@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2024-08-30">
 <meta name="description" content="How to orient yourself if you have never used a supercomputer.">
 
-<title>Basics of high-performance computing systems – Curated by Chitra</title>
+<title>Basics of high-performance computing systems for research – Curated by Chitra</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -125,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Basics of high-performance computing systems</h1>
+      <h1 class="title">Basics of high-performance computing systems for research</h1>
                   <div>
         <div class="description">
           How to orient yourself if you have never used a supercomputer.
@@ -168,13 +188,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#computer-architecture" id="toc-computer-architecture" class="nav-link" data-scroll-target="#computer-architecture">Computer architecture</a></li>
   <li><a href="#networking-concepts" id="toc-networking-concepts" class="nav-link" data-scroll-target="#networking-concepts">Networking concepts</a></li>
   </ul></li>
-  <li><a href="#additional-concepts" id="toc-additional-concepts" class="nav-link" data-scroll-target="#additional-concepts">Additional concepts</a>
-  <ul class="collapse">
-  <li><a href="#file-transfer-tools" id="toc-file-transfer-tools" class="nav-link" data-scroll-target="#file-transfer-tools">File transfer tools</a></li>
-  <li><a href="#scripting-skills" id="toc-scripting-skills" class="nav-link" data-scroll-target="#scripting-skills">Scripting skills</a></li>
-  <li><a href="#resource-management" id="toc-resource-management" class="nav-link" data-scroll-target="#resource-management">Resource management</a></li>
-  </ul></li>
   <li><a href="#good-starting-points" id="toc-good-starting-points" class="nav-link" data-scroll-target="#good-starting-points">Good starting points</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -185,13 +200,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>I’m currently learning how to run an R workflow on a supercomputer. I’ve never used a supercomputer before. It’s been quite the journey and I thought I’d compile this list of resources so that anyone else who needs to start learning how to use supercomputers can have a friendly guide to help them start and get going.</p>
-<p>The best way to understand how supercomputers work is to understand how computers work to begin with, including computer architecture and computer networks. I’ll write separate posts on these topics and link them here.</p>
-<p>In this post I will refer to this use of supercomputers as high-performance computing (HPC). These terms (“supercomputing” and “HPC”) are often used interchangeably but I would like to make a distinction here, in the context of advanced computing. Supercomputers are only a subset of HPCs. HPC is a broader term that encompasses the use of supercomputers and other powerful computing resources to solve advanced computational problems.</p>
-<p>But if you’re short on time, here are some of the most important concepts.</p>
+<p>I’m currently learning how to run an R workflow on a supercomputer. I’ve never come across supercomputers before and didn’t even know how and where to start. It’s been quite the journey and I thought I’d compile this list of resources so anyone else who wants to learn how to use supercomputers can have a friendly guide to get them started.</p>
+<p>Before I dive into it, I would like to distinguish between using supercomputers and high-performance computing (HPC). These terms (“supercomputing” and “HPC”) are often used interchangeably, as you will see me do in this post, but there is a distinction here in the context of advanced computing. Supercomputers are only a subset of HPCs. HPC is a broader term that encompasses the use of supercomputers and other powerful computing resources to solve advanced computational problems.</p>
+<p>The following is an opinionated list of what I believe to be the most important concepts to learn when you’re first starting out with HPC. Of course, you can run programs on high-performance computers without necessarily needing to understand the following concepts, especially if you’ve been given pre-written scripts to run your programs. However, I still think it’s helpful to understand the following concepts if you’d like to optimise your HPC usage.</p>
 <section id="hpc-concepts" class="level1">
 <h1>HPC concepts</h1>
-<p>Here are the concepts that I found most important in understanding how to use a HPC.</p>
+<p>Here are the concepts that I found most important.</p>
 <ul>
 <li>Basic skills in using the Linux command line and a text editor such as Vim.</li>
 <li>Understanding the HPC components such as login nodes, compute nodes, and data nodes.</li>
@@ -202,11 +216,20 @@ ul.task-list li input[type="checkbox"] {
 <p>Let’s break them down one by one.</p>
 <section id="linux-command-line-and-text-editor-skills" class="level2">
 <h2 class="anchored" data-anchor-id="linux-command-line-and-text-editor-skills">Linux command line and text editor skills</h2>
-<p>A basic understanding of how to use the Linux command line is useful as you’ll mostly be on the command line. Then you want to be able to use text editors like Vim or Nano to edit scripts and configuration files.</p>
+<p>A basic understanding of how to use the Linux command line is useful as you’ll mostly be using the command line when accessing HPCs. When you’re on the command line, you also want to be able to use text editors like Vim or Nano to edit scripts and configuration files.</p>
+<p>The textbooks I most enjoyed using were Bash and Linux and the command line. They give accessible explanations of what’s going on.</p>
 <p>Here are the resources I found useful for quickly learning Vim: - A quick introduction to what’s going on when you really have no clue: <a href="https://linuxhandbook.com/basic-vim-commands/">this guide</a> from the Linux Handbook. - An interactive tutorial for learning Vim: <a href="https://www.openvim.com/">OpenVim</a>. I liked this because it allows you to actually see what happens on the screen as you’re typing things out. - Otherwise you could try out the built-in <code>vimtutor</code> by typing in <code>vimtutor</code> in your terminal (assuming Vim is already installed on your device). - For information on how to do more advanced things in Vim, <a href="https://learnvim.irian.to/">this guide</a> is pretty good.</p>
 </section>
 <section id="hpc-components" class="level2">
 <h2 class="anchored" data-anchor-id="hpc-components">HPC components</h2>
+<p>Understanding the components of the supercomputer you’re using is important so you have a general idea of how processes and data move between its components. As an example, the following is a simplified and generalised architecture of a supercomputer, courtesy of <span class="citation" data-cites="pawsey2023">Pawsey Supercomputing Research Centre (<a href="#ref-pawsey2023" role="doc-biblioref">2023</a>)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="supercomputer-architecture.png" class="img-fluid figure-img" width="700"></p>
+<figcaption>General architecture of a supercomputer.</figcaption>
+</figure>
+</div>
+<p>It’s useful to understand how to access the compute nodes and storage nodes from the login node; how to move data to and from the storage system from your local computer; and how to use the job scheduling system, which is the next topic.</p>
 </section>
 <section id="job-scheduling-system-slurm" class="level2">
 <h2 class="anchored" data-anchor-id="job-scheduling-system-slurm">Job scheduling system (Slurm)</h2>
@@ -215,35 +238,33 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="computer-architecture" class="level2">
 <h2 class="anchored" data-anchor-id="computer-architecture">Computer architecture</h2>
-<p>Specifically, I would want to know how the processors, memory, and storage components</p>
+<p>The best way to understand how supercomputers work is to understand how computers work to begin with, including computer architecture and computer networks. Specifically, I would want to know how processors, memory, and storage components work.</p>
+<p>I’ll write separate posts on these topics and link them here.</p>
 </section>
 <section id="networking-concepts" class="level2">
 <h2 class="anchored" data-anchor-id="networking-concepts">Networking concepts</h2>
 <p>Specifically, a basic understanding of how to use SSH for secure remote access and data transfer.</p>
-</section>
-</section>
-<section id="additional-concepts" class="level1">
-<h1>Additional concepts</h1>
-<section id="file-transfer-tools" class="level2">
-<h2 class="anchored" data-anchor-id="file-transfer-tools">File transfer tools</h2>
-<p>Tools such as scp, sftp, or rsync for transferring data into and out of the HPC system.</p>
-</section>
-<section id="scripting-skills" class="level2">
-<h2 class="anchored" data-anchor-id="scripting-skills">Scripting skills</h2>
-</section>
-<section id="resource-management" class="level2">
-<h2 class="anchored" data-anchor-id="resource-management">Resource management</h2>
+<p>For file transfer tools specifically, I found it useful to understand how to use tools such as <code>scp</code>, <code>sftp</code>, or <code>rsync</code> for transferring data into and out of the HPC system.</p>
 </section>
 </section>
 <section id="good-starting-points" class="level1">
 <h1>Good starting points</h1>
-<p>If this is overwhelming: I get it! I only compiled this list after a month of working on it.</p>
-<p>What you could do is go to your supercomputer’s help page and see if they have user documentation that you can use. Pawsey, the supercomputing research centre that I use, has an excellent and comprehensive <a href="https://pawsey.atlassian.net/wiki/spaces/US/overview">user support documentation</a>, a Supercomputing User Training <a href="https://www.youtube.com/playlist?list=PLmu61dgAX-aYlqIy2VgH8s8UD2oUIA3KS">playlist</a>, and a support team who’s there to ensure that we use the resources well as we are partnered with a university.</p>
+<p>If this is overwhelming: I get it! I only compiled this list after having spent over a month–every day–reading up and watching videos on how to use supercomputers.</p>
+<p>What you could do is go to your supercomputer centre’s help page and see if they have user documentation that you can use and a support team you can reach out to. <a href="https://pawsey.org.au/">Pawsey</a>, the supercomputing research centre I’m with, has an excellent and comprehensive <a href="https://pawsey.atlassian.net/wiki/spaces/US/overview">user support documentation</a>, a Supercomputing User Training <a href="https://www.youtube.com/playlist?list=PLmu61dgAX-aYlqIy2VgH8s8UD2oUIA3KS">playlist</a>, and a responsive support team who helps us optimise our workflow. At one point I just needed to talk to someone and ask for help, so it was really good to have access to the support team.</p>
+<p>I also think it’s helpful to simply talk to someone who’s used supercomputers before. That way you can: 1) have a general idea of what you need to do, tailored to your workflow; and 2) have it pointed out to you what you don’t know about supercomputers. I found it really helpful to chat with colleagues who have worked with supercomputers. Alternatively, drop me a line and I will do my best to help!</p>
+</section>
+<section id="references" class="level1">
+
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-pawsey2023" class="csl-entry" role="listitem">
+Pawsey Supercomputing Research Centre. 2023. <span>“Connecting to a Supercomputer.”</span> <em>Pawsey User Support Guide</em>. <a href="https://pawsey.atlassian.net/wiki/spaces/US/pages/51925858/Connecting+to+a+Supercomputer">https://pawsey.atlassian.net/wiki/spaces/US/pages/51925858/Connecting+to+a+Supercomputer</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
