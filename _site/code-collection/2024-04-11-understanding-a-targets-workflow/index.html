@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2024-04-11">
 <meta name="description" content="An introduction to {targets}: why use it, how to use it, and some resources to get you started. (In other words: reduce the mental burden of figuring out which step of the analysis you’re on.)">
 
-<title>Understanding a targets workflow – Curated by Chitra</title>
+<title>Understanding a {targets} workflow – Curated by Chitra</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -159,7 +159,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Understanding a targets workflow</h1>
+      <h1 class="title">Understanding a <code>{targets}</code> workflow</h1>
                   <div>
         <div class="description">
           An introduction to <code>{targets}</code>: why use it, how to use it, and some resources to get you started. (In other words: reduce the mental burden of figuring out which step of the analysis you’re on.)
@@ -203,6 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#why-use-a-targets-workflow" id="toc-why-use-a-targets-workflow" class="nav-link active" data-scroll-target="#why-use-a-targets-workflow">Why use a targets workflow?</a></li>
   <li><a href="#how-to-use-targets" id="toc-how-to-use-targets" class="nav-link" data-scroll-target="#how-to-use-targets">How to use targets</a></li>
+  <li><a href="#an-example-workflow" id="toc-an-example-workflow" class="nav-link" data-scroll-target="#an-example-workflow">An example workflow</a></li>
   <li><a href="#final-thoughts" id="toc-final-thoughts" class="nav-link" data-scroll-target="#final-thoughts">Final thoughts</a></li>
   <li><a href="#resources-for-learning-targets" id="toc-resources-for-learning-targets" class="nav-link" data-scroll-target="#resources-for-learning-targets">Resources for learning targets</a></li>
   </ul>
@@ -215,9 +216,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>I was recently introduced to the R package <code>{targets}</code> as part of learning how to develop software. As I continue to use it, I’ve been blown away by how much easier my workflow has become--even outside of software development--and I regret not having known of it sooner. It would have been nice to use this workflow when I was doing my Master’s thesis, which involved a large amount of complex and repeated analyses. So here’s my notes on the targets workflow so far: why use it, how to use it (especially if you’ve never used it before), and the resources I found most useful.</p>
-<section id="why-use-a-targets-workflow" class="level1">
-<h1>Why use a targets workflow?</h1>
+<p>I was recently introduced to the R package <code>{targets}</code> as part of learning how to develop software. As I continue to use it, I’ve been blown away by how much easier my workflow has become—even outside of software development—and I regret not having known of it sooner. It would have been nice to use this workflow when I was doing my Master’s thesis, which involved a large amount of complex and repeated analyses. So here’s my notes on the targets workflow so far: why use it, how to use it (especially if you’ve never used it before), and the resources I found most useful.</p>
+<section id="why-use-a-targets-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="why-use-a-targets-workflow">Why use a targets workflow?</h2>
 <p>Most of us doing statistical analysis work on complex projects with moving parts. What I mean by this is: say I have a workflow that involves loading the data, some exploratory data analysis, fitting the data to a model, generating a plot of the data and the fitted model, and presenting the model coefficients in a table. It’s nothing too complicated, but it <em>is</em> complex: if one part changes, the rest of the project changes too.</p>
 <p>For example, perhaps the data is updated and we want to re-run the whole analysis from start to finish. Or perhaps we decide that the model isn’t a good fit, so we fit a few other models and see which one is better; in this instance, only the model, plot, and table would change, but the rest of the project stays the same.</p>
 <p>All this is fine if you have well-annotated code and know which parts of the script to re-run. But what if you accidentally run the wrong parts of the script that are computationally intensive and time-consuming? Or what if it takes a while to re-render your table because you’ve included so many variables, and you really didn’t have to because you only wanted the plot and not the table? Or even if you’re just tweaking a few variables and then making a plot: if you miss re-naming a variable earlier on in your script, your plot might not be generated correctly because it depends on that variable.</p>
@@ -226,21 +227,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>if you’re doing something complex that has a lot of moving parts;</li>
 <li>if said moving parts will change as your project progresses; and/or</li>
-<li>if you’d like to re-run your analysis with different inputs (e.g.&nbsp;a new dataset), or to create different outputs (e.g.&nbsp;plots and tables); especially if you’re re-running your analysis a lot!</li>
+<li>if you’d like to re-run your analysis with different inputs (e.g.&nbsp;a new dataset), or to create different outputs (e.g.&nbsp;plots and tables)—especially if you’re re-running your analysis a lot!</li>
 </ul>
 </section>
-<section id="how-to-use-targets" class="level1">
-<h1>How to use targets</h1>
-<p>When you’re first starting to program in R–especially if you’re mainly doing statistical analysis–a targets workflow might seem an unnecessarily complex way of going about things. When I first came across the targets workflow, I felt overwhelmed and didn’t understand how it could be useful for my workflow. So the way I’d recommend going about it is to take an existing project, and to convert the scripts in that project into a targets workflow.</p>
+<section id="how-to-use-targets" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-use-targets">How to use targets</h2>
+<p>When you’re first starting to program in R—especially if you’re mainly doing statistical analysis—a targets workflow might seem an unnecessarily complex way of going about things. When I first came across the targets workflow, I felt overwhelmed and didn’t understand how it could be useful for my workflow. So the way I’d recommend going about it is to take an existing project, and to convert the scripts in that project into a targets workflow.</p>
 <p>The <a href="https://books.ropensci.org/targets/walkthrough.html">quick walkthrough</a> in the user manual is an excellent example of how to use the targets workflow–I highly recommend reading it and going through the worked example. It does a much better job than I can in giving a reproducible example of how to use targets. Then I recommend converting your project to a targets workflow by using that walkthrough, or this <a href="https://carpentries-incubator.github.io/targets-workshop/index.html">quick tutorial</a>.</p>
 <p>I’ll walk you through a conceptual overview of how I use targets. However, I highly recommend you first work through the two tutorials above.</p>
-<p>First, I make sure that I understand my workflow from beginning to end. This overview is the main advantage of using a targets workflow: you’ll have a bird’s eye view of your analysis and figure out where changes are necessary. For example, I may break down my analysis like this:</p>
+</section>
+<section id="an-example-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="an-example-workflow">An example workflow</h2>
+<p>So you can follow along, I’ve created a repo that demos a simple targets workflow <a href="https://github.com/chitrams/demo-simple-targets">here</a>.</p>
+<p>First, I make sure that I understand my workflow from beginning to end. This overview is the main advantage of using a targets workflow: you’ll have a bird’s eye view of your analysis and figure out where changes are necessary. In this example, I’ve broken down my analysis to the following steps:</p>
 <ul>
-<li>Read in csv file of data</li>
-<li>Summarise data and generate a table</li>
-<li>Fit models</li>
-<li>Generate plot of data and fitted model</li>
-<li>Generate table of model coefficients</li>
+<li>read in csv file of data;</li>
+<li>summarise data and generate a table;</li>
+<li>fit models; and finally,</li>
+<li>generate a plot of the data and fitted model.</li>
 </ul>
 <p>Once I’ve done that and would like to start creating a targets workflow, I’ll run the following in my console:</p>
 <div class="cell">
@@ -316,14 +320,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Here’s an example. If your data changes, you just need to change the first target object <code>path_to_data</code> to point to the new data file. You can then re-run the whole analysis using <code>tar_make()</code> and your resulting summary table, fitted model, plot, and table of model coefficients will be re-created with the new data you’ve pointed to. This is so much easier than having a script and needing to change <code>data</code> to <code>new_data</code> for every instance in which it’s referred to, or by re-running the whole script yourself. How convenient is that?</p>
 <p>You can also have an overview of your workflow and what needs to be updated by running <code>tar_visnetwork()</code>.</p>
 </section>
-<section id="final-thoughts" class="level1">
-<h1>Final thoughts</h1>
+<section id="final-thoughts" class="level2">
+<h2 class="anchored" data-anchor-id="final-thoughts">Final thoughts</h2>
 <p>Using a targets workflow requires you to change the way you approach programming. If you’re trained as a statistical programmer, I assume you’re used to writing your code in scripts. A targets workflow requires you to write your code as functions instead (otherwise known as “functional programming”).</p>
 <p>It <em>is</em> a steep learning curve and it <em>did</em> take me a while to get my head around why and how I should use a targets workflow. It’s a different way of thinking about how to program.</p>
 <p>Despite this, I do highly recommend using a targets workflow instead of having multiple R scripts, for all the reasons I’ve stated above. Utilising this workflow is a step towards reproducible research, which is always great.</p>
 </section>
-<section id="resources-for-learning-targets" class="level1">
-<h1>Resources for learning targets</h1>
+<section id="resources-for-learning-targets" class="level2">
+<h2 class="anchored" data-anchor-id="resources-for-learning-targets">Resources for learning targets</h2>
 <p>I think the best way to understand why a targets workflow is useful is to actually do a project within a targets workflow. So here are some resources I found helpful:</p>
 <ul>
 <li>The targets R package <a href="https://books.ropensci.org/targets/">user manual</a> with a quick <a href="https://books.ropensci.org/targets/walkthrough.html">walkthrough</a> to get you started. I highly recommend this one if you’re trying to set up a targets workflow by yourself.</li>

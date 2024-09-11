@@ -9,7 +9,7 @@ categories:
   - workflow
 ---
 
-I was recently introduced to the R package `{targets}` as part of learning how to develop software. As I continue to use it, I've been blown away by how much easier my workflow has become--even outside of software development--and I regret not having known of it sooner. It would have been nice to use this workflow when I was doing my Master's thesis, which involved a large amount of complex and repeated analyses. So here's my notes on the targets workflow so far: why use it, how to use it (especially if you've never used it before), and the resources I found most useful.
+I was recently introduced to the R package `{targets}` as part of learning how to develop software. As I continue to use it, I've been blown away by how much easier my workflow has become—even outside of software development—and I regret not having known of it sooner. It would have been nice to use this workflow when I was doing my Master's thesis, which involved a large amount of complex and repeated analyses. So here's my notes on the targets workflow so far: why use it, how to use it (especially if you've never used it before), and the resources I found most useful.
 
 ## Why use a targets workflow?
 
@@ -37,13 +37,14 @@ I'll walk you through a conceptual overview of how I use targets. However, I hig
 
 ## An example workflow
 
-First, I make sure that I understand my workflow from beginning to end. This overview is the main advantage of using a targets workflow: you'll have a bird's eye view of your analysis and figure out where changes are necessary. For example, I may break down my analysis like this:
+So you can follow along, I've created a repo that demos a simple targets workflow [here](https://github.com/chitrams/demo-simple-targets).
 
--   Read in csv file of data
--   Summarise data and generate a table
--   Fit models
--   Generate plot of data and fitted model
--   Generate table of model coefficients
+First, I make sure that I understand my workflow from beginning to end. This overview is the main advantage of using a targets workflow: you'll have a bird's eye view of your analysis and figure out where changes are necessary. In this example, I've broken down my analysis to the following steps:
+
+-   read in csv file of data;
+-   summarise data and generate a table;
+-   fit models; and finally,
+-   generate a plot of the data and fitted model.
 
 Once I've done that and would like to start creating a targets workflow, I'll run the following in my console:
 
