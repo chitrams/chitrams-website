@@ -1,5 +1,5 @@
 ---
-title: "Understanding a targets workflow"
+title: "Understanding a `{targets}` workflow"
 author: ""
 description: "An introduction to `{targets}`: why use it, how to use it, and some resources to get you started. (In other words: reduce the mental burden of figuring out which step of the analysis you're on.)"
 date: "2024-04-11"
@@ -9,9 +9,9 @@ categories:
   - workflow
 ---
 
-I was recently introduced to the R package `{targets}` as part of learning how to develop software. As I continue to use it, I've been blown away by how much easier my workflow has become\--even outside of software development\--and I regret not having known of it sooner. It would have been nice to use this workflow when I was doing my Master's thesis, which involved a large amount of complex and repeated analyses. So here's my notes on the targets workflow so far: why use it, how to use it (especially if you've never used it before), and the resources I found most useful.
+I was recently introduced to the R package `{targets}` as part of learning how to develop software. As I continue to use it, I've been blown away by how much easier my workflow has become--even outside of software development--and I regret not having known of it sooner. It would have been nice to use this workflow when I was doing my Master's thesis, which involved a large amount of complex and repeated analyses. So here's my notes on the targets workflow so far: why use it, how to use it (especially if you've never used it before), and the resources I found most useful.
 
-# Why use a targets workflow?
+## Why use a targets workflow?
 
 Most of us doing statistical analysis work on complex projects with moving parts. What I mean by this is: say I have a workflow that involves loading the data, some exploratory data analysis, fitting the data to a model, generating a plot of the data and the fitted model, and presenting the model coefficients in a table. It's nothing too complicated, but it *is* complex: if one part changes, the rest of the project changes too.
 
@@ -25,15 +25,17 @@ To summarise, I find a targets workflow especially useful in the following scena
 
 -   if you're doing something complex that has a lot of moving parts;
 -   if said moving parts will change as your project progresses; and/or
--   if you'd like to re-run your analysis with different inputs (e.g. a new dataset), or to create different outputs (e.g. plots and tables); especially if you're re-running your analysis a lot!
+-   if you'd like to re-run your analysis with different inputs (e.g. a new dataset), or to create different outputs (e.g. plots and tables)—especially if you're re-running your analysis a lot!
 
-# How to use targets
+## How to use targets
 
-When you're first starting to program in R--especially if you're mainly doing statistical analysis--a targets workflow might seem an unnecessarily complex way of going about things. When I first came across the targets workflow, I felt overwhelmed and didn't understand how it could be useful for my workflow. So the way I'd recommend going about it is to take an existing project, and to convert the scripts in that project into a targets workflow.
+When you're first starting to program in R—especially if you're mainly doing statistical analysis—a targets workflow might seem an unnecessarily complex way of going about things. When I first came across the targets workflow, I felt overwhelmed and didn't understand how it could be useful for my workflow. So the way I'd recommend going about it is to take an existing project, and to convert the scripts in that project into a targets workflow.
 
 The [quick walkthrough](https://books.ropensci.org/targets/walkthrough.html) in the user manual is an excellent example of how to use the targets workflow--I highly recommend reading it and going through the worked example. It does a much better job than I can in giving a reproducible example of how to use targets. Then I recommend converting your project to a targets workflow by using that walkthrough, or this [quick tutorial](https://carpentries-incubator.github.io/targets-workshop/index.html).
 
 I'll walk you through a conceptual overview of how I use targets. However, I highly recommend you first work through the two tutorials above.
+
+## An example workflow
 
 First, I make sure that I understand my workflow from beginning to end. This overview is the main advantage of using a targets workflow: you'll have a bird's eye view of your analysis and figure out where changes are necessary. For example, I may break down my analysis like this:
 
@@ -117,7 +119,7 @@ tar_plan(
 
 ```
 
-Where `summary_table`, `model_data`, `plot_data`, and `table_of_model`  are functions I've written up myself and saved in a separate script called `functions.R`.
+Where `summary_table`, `model_data`, `plot_data`, and `table_of_model` are functions I've written up myself and saved in a separate script called `functions.R`.
 
 The advantage of this workflow is **you can change the one part that need changing in your workflow, and the `{targets}` package will change the rest for you.** I can't emphasise how life-changing this was for me.
 
@@ -125,7 +127,7 @@ Here's an example. If your data changes, you just need to change the first targe
 
 You can also have an overview of your workflow and what needs to be updated by running `tar_visnetwork()`.
 
-# Final thoughts
+## Final thoughts
 
 Using a targets workflow requires you to change the way you approach programming. If you're trained as a statistical programmer, I assume you're used to writing your code in scripts. A targets workflow requires you to write your code as functions instead (otherwise known as "functional programming").
 
@@ -133,7 +135,7 @@ It *is* a steep learning curve and it *did* take me a while to get my head aroun
 
 Despite this, I do highly recommend using a targets workflow instead of having multiple R scripts, for all the reasons I've stated above. Utilising this workflow is a step towards reproducible research, which is always great.
 
-# Resources for learning targets
+## Resources for learning targets
 
 I think the best way to understand why a targets workflow is useful is to actually do a project within a targets workflow. So here are some resources I found helpful:
 
