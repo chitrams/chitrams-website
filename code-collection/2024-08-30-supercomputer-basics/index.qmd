@@ -32,13 +32,18 @@ A basic understanding of how to use the Linux command line is useful as you'll m
 
 The textbooks I most enjoyed using were Bash and Linux and the command line. They give accessible explanations of what's going on.
 
-Here are the resources I found useful for quickly learning Vim: - A quick introduction to what's going on when you really have no clue: [this guide](https://linuxhandbook.com/basic-vim-commands/) from the Linux Handbook. - An interactive tutorial for learning Vim: [OpenVim](https://www.openvim.com/). I liked this because it allows you to actually see what happens on the screen as you're typing things out. - Otherwise you could try out the built-in `vimtutor` by typing in `vimtutor` in your terminal (assuming Vim is already installed on your device). - For information on how to do more advanced things in Vim, [this guide](https://learnvim.irian.to/) is pretty good.
+Here are the resources I found useful for quickly learning Vim:
+
+-   A quick introduction to what's going on when you really have no clue: [this guide](https://linuxhandbook.com/basic-vim-commands/) from the Linux Handbook.
+-   An interactive tutorial for learning Vim: [OpenVim](https://www.openvim.com/). I liked this because it allows you to actually see what happens on the screen as you're typing things out. I preferred this over the game [Vim Adventures](https://vim-adventures.com/) as 1) you can clearly see the progression of what you're learning; and 2) it's free.
+-   Otherwise you could try out the built-in `vimtutor` by typing in `vimtutor` in your terminal (assuming Vim is already installed on your device).
+-   For information on how to do more advanced things in Vim, [this guide](https://learnvim.irian.to/) is pretty good.
 
 ### HPC components
 
 Understanding the components of the supercomputer you're using is important so you have a general idea of how processes and data move between its components. As an example, the following is a simplified and generalised architecture of a supercomputer, courtesy of @pawsey2023.
 
-![General architecture of a supercomputer.](supercomputer-architecture.png){fig-align="center" width="700"}
+![General architecture of a supercomputer.](supercomputer-architecture.png){fig-align="center" width="550"}
 
 It's useful to understand how to access the compute nodes and storage nodes from the login node; how to move data to and from the storage system from your local computer; and how to use the job scheduling system, which is the next topic.
 
