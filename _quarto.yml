@@ -20,6 +20,7 @@ website:
       - icon: github
         href: https://github.com/chitrams/chitrams-website
   favicon: /supporting-files/C-logo.png
+  draft-mode: gone
 
 freeze: true
 

@@ -2,38 +2,46 @@
 title: "Kanelsnurrer"
 description: "Norwegian cinnamon snails, a beautiful version of cinnamon rolls with cardamom-infused yeasted dough."
 categories: [bread, effort/medium, time/waiting]
-draft: yes
+draft: true
 ---
 
 Adapted from the Nordic Baking Book.
 
 Ingredients
 
-- 320 ml full-cream milk
-- 150 g butter
-- 1 tablespoon finely ground cardamom seeds
-- 50 g fresh yeast
-- 1 egg
-- 125 g sugar
-- 1 teaspooon salt
-- 750 g strong wheat flour
+-   320 ml full-cream milk
 
-- All-purpose flour for dusting
-- Egg wash
+-   150 g butter
+
+-   1 tablespoon finely ground cardamom seeds
+
+-   50 g fresh yeast
+
+-   1 egg
+
+-   125 g sugar
+
+-   1 teaspooon salt
+
+-   750 g strong wheat flour
+
+-   All-purpose flour for dusting
+
+-   Egg wash
 
 Filling
 
-- 200 g butter, softened
-- 2 tablespoons ground cinnamon
-- 100 g sugar
+-   200 g butter, softened
+-   2 tablespoons ground cinnamon
+-   100 g sugar
 
 Decoration
 
-- Pearl sugar, optional
-- White icing, optional
+-   Pearl sugar, optional
+-   White icing, optional
 
 Method
 
-1. Combine milk, butter, and cardamom in a small pan. Heat until the butter melts. Leave to cool until cool to touch, slightly warmer than room temperature, and dissolve the yeast in this liquid.
-2. Transfer the liquid and yeast mix to a large bowl. Add the egg, sugar, salt, and flour; knead until smooth, shiny, and elastic. The dough should come off the sides of the bowl easily.
-3. Cover the bowl with a clean dish towel, and leave to rise until doubled in size.
+1.  Combine milk, butter, and cardamom in a small pan. Heat until the butter melts. Leave to cool until cool to touch, slightly warmer than room temperature, and dissolve the yeast in this liquid.
+2.  Transfer the liquid and yeast mix to a large bowl. Add the egg, sugar, salt, and flour; knead until smooth, shiny, and elastic. The dough should come off the sides of the bowl easily.
+3.  Cover the bowl with a clean dish towel, and leave to rise until doubled in size.

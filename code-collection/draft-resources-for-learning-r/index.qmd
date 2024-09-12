@@ -6,7 +6,7 @@ date: "2024-04-11"
 categories:
   - R
   - resources
-draft: yes
+draft: true
 ---
 
 These are the resources that's helped me out most with learning how to program in R.

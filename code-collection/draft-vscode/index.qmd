@@ -9,10 +9,10 @@ categories:
   - workflow
   - resources
   
-draft: yes
+draft: true
 ---
 
-```
+```         
 In computing, the PATH is an environment variable that specifies a set of directories where executable programs are located. When you run a command in a command-line interface (CLI) or terminal, the operating system searches through the directories listed in the PATH variable to find the executable corresponding to the command you entered.
 
 For languages like Python and tools like Quarto, when you install them, their executables (such as python.exe for Python or quarto.exe for Quarto) are placed in specific directories. By adding these directories to your PATH variable, you enable your operating system to locate and run these executables from any directory in your file system without needing to specify the full path to the executable each time.

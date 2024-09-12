@@ -104,6 +104,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<meta name="quarto:status" content="draft">
 
 
 </head>
@@ -111,7 +112,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner"><div id="quarto-draft-alert" class="alert alert-warning"><i class="bi bi-pencil-square"></i>Draft</div>
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -218,21 +219,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="whats-going-on-please-explain" class="level1">
-<h1>What’s going on, please explain?</h1>
-<section id="quarto-vs-blogdown" class="level2">
-<h2 class="anchored" data-anchor-id="quarto-vs-blogdown">Quarto vs <code>blogdown</code></h2>
+<section id="whats-going-on-please-explain" class="level2">
+<h2 class="anchored" data-anchor-id="whats-going-on-please-explain">What’s going on, please explain?</h2>
+<section id="quarto-vs-blogdown" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-vs-blogdown">Quarto vs <code>blogdown</code></h3>
 <p>How to use quarto to build a website, its user manual: https://quarto.org/docs/websites/</p>
 </section>
-<section id="publishing" class="level2">
-<h2 class="anchored" data-anchor-id="publishing">Publishing</h2>
+<section id="publishing" class="level3">
+<h3 class="anchored" data-anchor-id="publishing">Publishing</h3>
 <p>Netlify is simply a publishing platform; you can also use GitHub pages and Quarto pub. <a href="https://quarto.org/docs/publishing/">Here’s a list</a> of all the different places you can publish.</p>
 </section>
 </section>
-<section id="my-workflow" class="level1">
-<h1>My workflow</h1>
-<section id="rstudio-ide" class="level2">
-<h2 class="anchored" data-anchor-id="rstudio-ide">RStudio IDE</h2>
+<section id="my-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="my-workflow">My workflow</h2>
+<section id="rstudio-ide" class="level3">
+<h3 class="anchored" data-anchor-id="rstudio-ide">RStudio IDE</h3>
 <p>Creating new posts, I use <code>quartopost()</code> from the <a href="https://petzi53.github.io/quartopost/">quartopost</a> package. It provides a shiny dialog window similar to blogdown’s “New Post” add-in.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"petzi53/quartopost"</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(quartopost)</span>
@@ -243,22 +244,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Then I commit my changes and push to GitHub. You will see that changes have been made in your <code>posts</code> and <code>_site</code> folders.</p>
 <p>After I’ve done this, my webpage should reflect these changes.</p>
 </section>
-<section id="the-terminal" class="level2">
-<h2 class="anchored" data-anchor-id="the-terminal">The terminal</h2>
+<section id="the-terminal" class="level3">
+<h3 class="anchored" data-anchor-id="the-terminal">The terminal</h3>
 <p><code>quarto render</code></p>
 <p><code>git push</code></p>
 </section>
 </section>
-<section id="resources" class="level1">
-<h1>Resources</h1>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
 <ul>
 <li><p>A <a href="https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/">blog post by Samantha Csik</a> about adding a blog to your quarto website. This also helps explain the site structure, if you’re not across that.</p></li>
 <li><p>A guide to publishing a Quarto website with GitHub and Netlify: a <a href="https://jadeyryan.com/blog/2023-11-19_publish-quarto-website/">blog post by Jadey Ryan</a>. This is a good guide to set up Netlify, but at this time of writing there’s an issue with configuring the Quarto Netlify plugin. If you follow the instructions in his section <a href="https://jadeyryan.com/blog/2023-11-19_publish-quarto-website/#configure-continuous-deployment">4.1 Configure Netlify plugin</a>, the build will fail when you run it (<a href="https://github.com/quarto-dev/netlify-plugin-quarto/issues/8">GitHub issue</a>). This is also an issue in the <a href="https://quarto.org/docs/publishing/netlify.html#rendering-on-netlify">Quarto docs</a> where the same instructions are laid out.</p></li>
 <li><p>Some excellent guides on writing Quarto blogs: one by <a href="https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/en">Bea Milz</a> and a comprehensive one by Albert Rapp</p></li>
 </ul>
 </section>
-<section id="advanced-blogging" class="level1">
-<h1>Advanced blogging</h1>
+<section id="advanced-blogging" class="level2">
+<h2 class="anchored" data-anchor-id="advanced-blogging">Advanced blogging</h2>
 <ul>
 <li>Continuous deployment using GitHub actions vs Netlify. Instructions from <a href="https://docs.netlify.com/site-deploys/create-deploys/">Netlify Docs</a>.</li>
 </ul>

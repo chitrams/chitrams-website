@@ -6,7 +6,7 @@ slug: summarising-across-columns-tidyverse
 categories:
   - R
   - tidyverse
-draft: yes
+draft: true
 ---
 
 Something commonly done in analyses is summarising across multiple columns: for example, you might want to calculate the mean for all variables in your dataset. I'll explain how to do this using the tidyverse tools. So let's load the tidyverse package:
@@ -54,7 +54,7 @@ airquality %>%
 
 Renaming across columns
 
-```r
+``` r
 dat_allergy <- dat_allergy %>%
   rename_with(.cols = -or_matgate_nbr,
               ~ paste0("allergy_", .x))

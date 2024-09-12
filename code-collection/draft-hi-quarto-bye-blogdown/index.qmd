@@ -7,22 +7,22 @@ categories:
   - R
   - workflow
   - documentation
-draft: yes
+draft: true
 ---
 
-# What's going on, please explain?
+## What's going on, please explain?
 
-## Quarto vs `blogdown`
+### Quarto vs `blogdown`
 
 How to use quarto to build a website, its user manual: https://quarto.org/docs/websites/
 
-## Publishing
+### Publishing
 
 Netlify is simply a publishing platform; you can also use GitHub pages and Quarto pub. [Here's a list](https://quarto.org/docs/publishing/) of all the different places you can publish.
 
-# My workflow
+## My workflow
 
-## RStudio IDE
+### RStudio IDE
 
 Creating new posts, I use `quartopost()` from the [quartopost](https://petzi53.github.io/quartopost/) package. It provides a shiny dialog window similar to blogdown's "New Post" add-in.
 
@@ -41,13 +41,13 @@ Then I commit my changes and push to GitHub. You will see that changes have been
 
 After I've done this, my webpage should reflect these changes.
 
-## The terminal
+### The terminal
 
 `quarto render`
 
 `git push`
 
-# Resources
+## Resources
 
 -   A [blog post by Samantha Csik](https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/) about adding a blog to your quarto website. This also helps explain the site structure, if you're not across that.
 
@@ -55,6 +55,6 @@ After I've done this, my webpage should reflect these changes.
 
 -   Some excellent guides on writing Quarto blogs: one by [Bea Milz](https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/en) and a comprehensive one by Albert Rapp
 
-# Advanced blogging
+## Advanced blogging
 
 -   Continuous deployment using GitHub actions vs Netlify. Instructions from [Netlify Docs](https://docs.netlify.com/site-deploys/create-deploys/).

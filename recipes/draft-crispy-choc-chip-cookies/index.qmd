@@ -1,21 +1,13 @@
 ---
 title: "Crispy chocolate chip cookies"
-draft: yes
+draft: true
 ---
 
-Makes 18 cookies. Adapted from [Jeffrey Morgenthaler's](https://jeffreymorgenthaler.com/chocolate-chip-cookies/) chocolate chip cookies. 
+Makes 18 cookies. Adapted from [Jeffrey Morgenthaler's](https://jeffreymorgenthaler.com/chocolate-chip-cookies/) chocolate chip cookies.
 
-115g butter, room temperature
-75g light brown sugar
-125 g white sugar[^1]
-1 large egg
-5 ml vanilla extract
-175g flour
-2g salt
-2g baking soda
-160g chocolate chips
+115g butter, room temperature 75g light brown sugar 125 g white sugar[^1] 1 large egg 5 ml vanilla extract 175g flour 2g salt 2g baking soda 160g chocolate chips
 
-
+[^1]: Don't reduce the amount of sugar, or the cookies will turn out a lot less crispy. You already know these aren't good for you.
 
 With a mixer, cream the butter and sugars together. Add the egg and vanilla extract and beat until everything is smooth and incorporated.
 
@@ -34,5 +26,3 @@ I like to finish mine with some flaky sea salt.
 Makes about 20 cookies total.
 
 ## Notes
-
-[^1]: Don't reduce the amount of sugar, or the cookies will turn out a lot less crispy. You already know these aren't good for you.
