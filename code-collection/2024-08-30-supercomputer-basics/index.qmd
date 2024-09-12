@@ -41,7 +41,7 @@ Here are the resources I found useful for quickly learning Vim:
 
 ### HPC components
 
-Understanding the components of the supercomputer you're using is important so you have a general idea of how processes and data move between its components. As an example, the following is a simplified and generalised architecture of a supercomputer, courtesy of @pawsey2023.
+Understanding the components of the supercomputer you're using is important so you have a general idea of how processes and data move between its components. As an example, the following is a simplified and generalised architecture of a supercomputer, courtesy of Pawsey [@pawsey2023].
 
 ![General architecture of a supercomputer.](supercomputer-architecture.png){fig-align="center" width="550"}
 
