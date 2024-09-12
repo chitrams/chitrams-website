@@ -1,0 +1,66 @@
+---
+title: "Chewy and crispy chocolate chip cookies"
+description: "Otherwise known as Chitra's spreadsheet cookies: my ideal cookie is chewy on the inside and crispy on the outside."
+author: ""
+date: "2024-09-11"
+image: "cookies.jpeg"
+# image-alt: ""
+categories: [cookies, effort/medium, time/medium]
+date-modified: "2024-04-25"
+---
+
+Makes approximately 40 cookies. This recipe was my own creation.
+
+**Ingredients**
+
+-   225 g unsalted butter
+-   1-2 ice cubes
+-   200 g all purpose flour
+-   150 g bread flour[^1]
+-   1 teaspoon baking soda
+-   1 teaspoon baking powder
+-   1 teaspoon fine salt
+-   110 grams granulated sugar[^2]
+-   2 large eggs
+-   1 teaspoon vanilla extract
+-   150 grams dark brown sugar
+-   225 grams dark chocolate, bars preferred
+
+[^1]: These cookies are chewy due to the extra protein (bread flour) and added moisture from the brown sugar. You can choose to use all-purpose flour entirely if it’s too much of a fuss, and it’ll still be quite chewy.
+
+[^2]: You can substitute with castor sugar but I find that granulated sugar gives a crispier crust.
+
+**You’ll also need**
+
+-   1 small saucepan
+-   1 small bowl, 1 medium bowl, and 1 large bowl
+-   An electric mixer
+-   A wooden spoon
+
+**Method**
+
+Start by making browned butter. Melt the butter in a medium saucepan over medium-high heat. Cook, frequently swirling the pan gently, until particles begin to turn golden brown and butter smells nutty, about 5 minutes. Remove from heat and continue swirling the pan until the butter is a rich brown, about 15 seconds longer. Transfer to a small bowl and whisk in the ice cubes. Then transfer the bowl to refrigerator and allow to cool completely, for about 20 minutes, whisking occasionally.
+
+Now combine flour, baking soda, and salt in the medium bowl. Whisk until ingredients are combined. Set aside.
+
+Roughly chop up the dark chocolate if you haven’t done so already. Set aside.
+
+In the large bowl, mix together granulated sugar, eggs, and vanilla extract on medium-high speed until mixture is pale brownish-yellow and falls off the whisk in thick ribbons when lifted, about 5 minutes.
+
+Fit paddle attachment onto mixer. When brown butter mixture has cooled (it should be just starting to turn opaque again and firm around the edges), add brown sugar and cooled brown butter to the sugar and egg mixture. Mix on medium speed to combine, about 30 seconds, being careful not to overmix.
+
+Add flour mixture to the liquids and mix together using a wooden spoon until barely combined, with some dry flour still remaining. Add chocolate and mix until dough comes together.
+
+Transfer dough to an airtight container and refrigerate for at least a few hours and up to 3 days.
+
+When ready to bake, pre-heat oven to 160ºC. Line baking tray with baking paper. Roll dough into balls about 25 g each and place them 5 cm apart on the baking tray, as they will expand when baking. Lightly flattening the balls with your fingers. Bake for 12-15 minutes until golden brown.
+
+Once removed from oven, let cool on the trays for at least five minutes so it has time to firm up. Transfer to a wire rack or eat immediately.
+
+These cookies store well in an air-tight container for up to one week.
+
+![](cookies.jpeg){fig-align="center" width="650"}
+
+## Notes
+
+You can freeze these cookies by making the dough, wrapping it up tightly in cling film, and moving it to the freezer instead of the fridge. The night before you're ready to bake, move the cookie dough to the fridge to thaw overnight, then proceed as above.
