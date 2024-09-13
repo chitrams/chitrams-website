@@ -1,0 +1,33 @@
+---
+title: "List of command line tips and resources"
+author: ""
+description: "How to unleash some command line magic and make things less painful, especially if you're just starting out."
+date: "2024-09-13"
+# date-modified: "2024-09-11"
+categories:
+  - resources
+---
+
+As I use the command line more and more, I realise there are more efficient ways of going about things that may not be obvious when you first start. Here's a list of the most useful commands, concepts, and shortcuts I've come across when using the command line.
+
+I will update this list as I come across more concepts that I find helpful.
+
+## Shortcuts to generally save time
+
+-   `tab` to auto-complete names (files, folders, or programs) in your current directory
+-   `ctrl` + `c` to cancel what you've written and start fresh, or terminates a process that's currently running
+-   `cd` + `-` to change to the last directory that you were in (especially useful if you're switching back and forth between two directories)
+-   `ctrl` + `r` to search through your command line history
+
+## Shortcuts for text editing
+
+-   `ctrl` + `a` moves the cursor to the beginning of the line
+-   `ctrl` + `e` moves the cursor to the end of the line
+-   `alt` + `f` (or `alt` + `→` on a Mac) moves the cursor to the next word
+-   `alt` + `b` (or `alt` + `←` on a Mac) moves the cursor back to the previous word
+-   `ctrl` + `k` deletes the text from the cursor to the end of the line
+-   `ctrl` + `u` deletes the text from the cursor to the beginning of the line
+
+## Resources
+
+-   *The Linux Command Line* by William Shotts (freely available [here](https://linuxcommand.org/tlcl.php)) provides a friendly introduction to what you need to know about the command line.

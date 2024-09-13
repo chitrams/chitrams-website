@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="">
+<meta name="dcterms.date" content="2024-09-13">
+<meta name="description" content="How to unleash some command line magic and make things less painful, especially if you’re just starting out.">
 
-<title>Code Collection – Curated by Chitra</title>
+<title>List of command line tips and resources – Curated by Chitra</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="..//supporting-files/C-logo.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../..//supporting-files/C-logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,65 +70,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-reading-time','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -138,7 +81,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Curated by Chitra</span>
     </a>
   </div>
@@ -149,21 +92,21 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../code-collection/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../code-collection/index.html"> 
 <span class="menu-text">Code Collection</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../recipes/index.html"> 
+    <a class="nav-link" href="../../recipes/index.html"> 
 <span class="menu-text">Recipes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../curation/index.html"> 
+    <a class="nav-link" href="../../curation/index.html"> 
 <span class="menu-text">Curation</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about/index.html"> 
+    <a class="nav-link" href="../../about/index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -182,14 +125,28 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Code Collection</h1>
-                      </div>
+      <h1 class="title">List of command line tips and resources</h1>
+                  <div>
+        <div class="description">
+          How to unleash some command line magic and make things less painful, especially if you’re just starting out.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">resources</div>
+              </div>
+                  </div>
   </div>
     
   
   <div class="quarto-title-meta column-page-left">
 
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">September 13, 2024</p>
+      </div>
+    </div>
     
       
     </div>
@@ -199,8 +156,16 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="R">R</div><div class="category" data-category="computer science">computer science</div><div class="category" data-category="documentation">documentation</div><div class="category" data-category="functional programming">functional programming</div><div class="category" data-category="git">git</div><div class="category" data-category="resources">resources</div><div class="category" data-category="workflow">workflow</div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#shortcuts-to-generally-save-time" id="toc-shortcuts-to-generally-save-time" class="nav-link active" data-scroll-target="#shortcuts-to-generally-save-time">Shortcuts to generally save time</a></li>
+  <li><a href="#shortcuts-for-text-editing" id="toc-shortcuts-for-text-editing" class="nav-link" data-scroll-target="#shortcuts-for-text-editing">Shortcuts for text editing</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -208,271 +173,38 @@ window.Quarto = {
 
 
 
+<p>As I use the command line more and more, I realise there are more efficient ways of going about things that may not be obvious when you first start. Here’s a list of the most useful commands, concepts, and shortcuts I’ve come across when using the command line.</p>
+<p>I will update this list as I come across more concepts that I find helpful.</p>
+<section id="shortcuts-to-generally-save-time" class="level2">
+<h2 class="anchored" data-anchor-id="shortcuts-to-generally-save-time">Shortcuts to generally save time</h2>
+<ul>
+<li><code>tab</code> to auto-complete names (files, folders, or programs) in your current directory</li>
+<li><code>ctrl</code> + <code>c</code> to cancel what you’ve written and start fresh, or terminates a process that’s currently running</li>
+<li><code>cd</code> + <code>-</code> to change to the last directory that you were in (especially useful if you’re switching back and forth between two directories)</li>
+<li><code>ctrl</code> + <code>r</code> to search through your command line history</li>
+</ul>
+</section>
+<section id="shortcuts-for-text-editing" class="level2">
+<h2 class="anchored" data-anchor-id="shortcuts-for-text-editing">Shortcuts for text editing</h2>
+<ul>
+<li><code>ctrl</code> + <code>a</code> moves the cursor to the beginning of the line</li>
+<li><code>ctrl</code> + <code>e</code> moves the cursor to the end of the line</li>
+<li><code>alt</code> + <code>f</code> (or <code>alt</code> + <code>→</code> on a Mac) moves the cursor to the next word</li>
+<li><code>alt</code> + <code>b</code> (or <code>alt</code> + <code>←</code> on a Mac) moves the cursor back to the previous word</li>
+<li><code>ctrl</code> + <code>k</code> deletes the text from the cursor to the end of the line</li>
+<li><code>ctrl</code> + <code>u</code> deletes the text from the cursor to the beginning of the line</li>
+</ul>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<ul>
+<li><em>The Linux Command Line</em> by William Shotts (freely available <a href="https://linuxcommand.org/tlcl.php">here</a>) provides a friendly introduction to what you need to know about the command line.</li>
+</ul>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="resources" data-listing-date-sort="1726156800000" data-listing-file-modified-sort="1726196422529" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="266">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../code-collection/2024-09-14-command-line-tips/index.html" class="no-external">List of command line tips and resources</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../code-collection/2024-09-14-command-line-tips/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('resources'); return false;">
-resources
-</div>
-</div>
-<div class="listing-description">
-<a href="../code-collection/2024-09-14-command-line-tips/index.html" class="no-external">How to unleash some command line magic and make things less painful, especially if you’re just starting out.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../code-collection/2024-09-14-command-line-tips/index.html" class="no-external">
-<div class="listing-date">
-Sep 13, 2024
-</div>
-<div class="listing-reading-time">
-2 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="computer science" data-listing-date-sort="1724947200000" data-listing-file-modified-sort="1726188114664" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="913">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../code-collection/2024-08-30-supercomputer-basics/index.html" class="no-external">Basics of high-performance computing systems for research</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../code-collection/2024-08-30-supercomputer-basics/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('computer science'); return false;">
-computer science
-</div>
-</div>
-<div class="listing-description">
-<a href="../code-collection/2024-08-30-supercomputer-basics/index.html" class="no-external">How to orient yourself if you have never used a supercomputer.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../code-collection/2024-08-30-supercomputer-basics/index.html" class="no-external">
-<div class="listing-date">
-Aug 30, 2024
-</div>
-<div class="listing-reading-time">
-5 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="computer science,resources" data-listing-date-sort="1721750400000" data-listing-file-modified-sort="1723812409700" data-listing-date-modified-sort="1721836800000" data-listing-reading-time-sort="3" data-listing-word-count-sort="596">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../code-collection/2024-07-25-what-is-the-internet/index.html" class="no-external">Resources on web development and how the internet works</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../code-collection/2024-07-25-what-is-the-internet/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('computer science'); return false;">
-computer science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('resources'); return false;">
-resources
-</div>
-</div>
-<div class="listing-description">
-<a href="../code-collection/2024-07-25-what-is-the-internet/index.html" class="no-external">Going down the rabbit hole: debugging my website led to learning about domain names, servers, the World Wide Web, and how the internet works.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../code-collection/2024-07-25-what-is-the-internet/index.html" class="no-external">
-<div class="listing-date">
-Jul 24, 2024
-</div>
-<div class="listing-reading-time">
-3 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="git,R,computer science,workflow,resources" data-listing-date-sort="1717084800000" data-listing-file-modified-sort="1723812409699" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1212">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../code-collection/2024-05-31-git-good-with-rstudio/index.html" class="no-external"><code>git</code> good with RStudio</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../code-collection/2024-05-31-git-good-with-rstudio/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('git'); return false;">
-git
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
-R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('computer science'); return false;">
-computer science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('workflow'); return false;">
-workflow
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('resources'); return false;">
-resources
-</div>
-</div>
-<div class="listing-description">
-<a href="../code-collection/2024-05-31-git-good-with-rstudio/index.html" class="no-external"><code>git</code>-ing started, potential traps if you don’t have a programming background, resources to help you, and bonus: dealing with limited admin rights in Windows.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../code-collection/2024-05-31-git-good-with-rstudio/index.html" class="no-external">
-<div class="listing-date">
-May 31, 2024
-</div>
-<div class="listing-reading-time">
-7 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="resources" data-listing-date-sort="1714147200000" data-listing-file-modified-sort="1723812409699" data-listing-date-modified-sort="1714147200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="105">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../code-collection/2024-04-27-turing-way-handbook/index.html" class="no-external">The Turing Way Handbook</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../code-collection/2024-04-27-turing-way-handbook/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('resources'); return false;">
-resources
-</div>
-</div>
-<div class="listing-description">
-<a href="../code-collection/2024-04-27-turing-way-handbook/index.html" class="no-external">An excellent resource to ensure your research and/or data science projects are reproducible.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../code-collection/2024-04-27-turing-way-handbook/index.html" class="no-external">
-<div class="listing-date">
-Apr 27, 2024
-</div>
-<div class="listing-reading-time">
-1 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="R,workflow" data-listing-date-sort="1712764800000" data-listing-file-modified-sort="1726188891501" data-listing-date-modified-sort="1725984000000" data-listing-reading-time-sort="9" data-listing-word-count-sort="1610">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../code-collection/2024-04-11-understanding-a-targets-workflow/index.html" class="no-external">Understanding a <code>{targets}</code> workflow</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../code-collection/2024-04-11-understanding-a-targets-workflow/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
-R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('workflow'); return false;">
-workflow
-</div>
-</div>
-<div class="listing-description">
-<a href="../code-collection/2024-04-11-understanding-a-targets-workflow/index.html" class="no-external">An introduction to <code>{targets}</code>: why use it, how to use it, and some resources to get you started. (In other words: reduce the mental burden of figuring out which step of the analysis you’re on.)</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../code-collection/2024-04-11-understanding-a-targets-workflow/index.html" class="no-external">
-<div class="listing-date">
-Apr 11, 2024
-</div>
-<div class="listing-reading-time">
-9 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="R,documentation" data-listing-date-sort="1661011200000" data-listing-file-modified-sort="1723812409699" data-listing-date-modified-sort="1713801600000" data-listing-reading-time-sort="3" data-listing-word-count-sort="583">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../code-collection/2022-08-21-packages-for-summary-tables/index.html" class="no-external">R packages for summary tables in Word</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../code-collection/2022-08-21-packages-for-summary-tables/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
-R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('documentation'); return false;">
-documentation
-</div>
-</div>
-<div class="listing-description">
-<a href="../code-collection/2022-08-21-packages-for-summary-tables/index.html" class="no-external">Exporting summary tables from R to Word doesn’t have to be painful. Featuring <code>gtsummary</code>, <code>table1</code>, and <code>flextable</code>.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../code-collection/2022-08-21-packages-for-summary-tables/index.html" class="no-external">
-<div class="listing-date">
-Aug 21, 2022
-</div>
-<div class="listing-reading-time">
-3 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="R,functional programming" data-listing-date-sort="1660579200000" data-listing-file-modified-sort="1723812409698" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="701">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../code-collection/2022-08-16-functional-programming-in-r/index.html" class="no-external">Functional programming</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../code-collection/2022-08-16-functional-programming-in-r/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
-R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('functional programming'); return false;">
-functional programming
-</div>
-</div>
-<div class="listing-description">
-<a href="../code-collection/2022-08-16-functional-programming-in-r/index.html" class="no-external">Using <code>map</code> instead of for loops is (usually) better for you. (At the very least, you’ll learn a different way of thinking about recursion.)</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../code-collection/2022-08-16-functional-programming-in-r/index.html" class="no-external">
-<div class="listing-date">
-Aug 16, 2022
-</div>
-<div class="listing-reading-time">
-4 min
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -892,6 +624,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
+</script>
+<script src="https://utteranc.es/client.js" repo="chitrams/code-collection-comments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
 
