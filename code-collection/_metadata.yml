@@ -10,4 +10,6 @@ title-block-banner: true
 comments: 
   utterances:
     repo: chitrams/code-collection-comments
-    
+
+website: 
+  draft-mode: gone
