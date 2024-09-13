@@ -1,6 +1,6 @@
 ---
 title: "Chewy and crispy chocolate chip cookies"
-description: "Otherwise known as Chitra's spreadsheet cookies: my ideal cookie is chewy on the inside and crispy on the outside."
+description: "Otherwise known as my spreadsheet cookies, from the number of iterations it took to get to my ideal cookie: chewy on the inside and crispy on the outside."
 author: ""
 date: "2024-09-11"
 image: "cookies.jpeg"
@@ -9,7 +9,7 @@ categories: [cookies, effort/medium, time/medium]
 date-modified: "2024-04-25"
 ---
 
-Makes approximately 40 cookies. This recipe was my own creation.
+Makes approximately 40 cookies. This recipe is own creation.
 
 **Ingredients**
 
@@ -41,19 +41,17 @@ Makes approximately 40 cookies. This recipe was my own creation.
 
 Start by making browned butter. Melt the butter in a medium saucepan over medium-high heat. Cook, frequently swirling the pan gently, until particles begin to turn golden brown and butter smells nutty, about 5 minutes. Remove from heat and continue swirling the pan until the butter is a rich brown, about 15 seconds longer. Transfer to a small bowl and whisk in the ice cubes. Then transfer the bowl to refrigerator and allow to cool completely, for about 20 minutes, whisking occasionally.
 
-Now combine flour, baking soda, and salt in the medium bowl. Whisk until ingredients are combined. Set aside.
+Now let's make the cookie dough.
 
-Roughly chop up the dark chocolate if you haven’t done so already. Set aside.
-
-In the large bowl, mix together granulated sugar, eggs, and vanilla extract on medium-high speed until mixture is pale brownish-yellow and falls off the whisk in thick ribbons when lifted, about 5 minutes.
-
-Fit paddle attachment onto mixer. When brown butter mixture has cooled (it should be just starting to turn opaque again and firm around the edges), add brown sugar and cooled brown butter to the sugar and egg mixture. Mix on medium speed to combine, about 30 seconds, being careful not to overmix.
-
-Add flour mixture to the liquids and mix together using a wooden spoon until barely combined, with some dry flour still remaining. Add chocolate and mix until dough comes together.
+1.  Combine flour, baking soda, and salt in the medium bowl. Whisk until ingredients are combined. Set aside.
+2.  Roughly chop up the dark chocolate if you haven’t done so already. Set aside.
+3.  In the large bowl, mix together granulated sugar, eggs, and vanilla extract on medium-high speed. Mix until mixture is pale yellow and falls off the whisk in thick ribbons when lifted, about 5 minutes.
+4.  Fit paddle attachment onto mixer. When brown butter mixture has cooled (it should be just starting to turn opaque again and firm around the edges), add brown sugar and cooled brown butter to the sugar and egg mixture. Mix on medium speed to combine, about 30 seconds, being careful not to over-mix.
+5.  Add flour mixture to the liquids and mix together using a wooden spoon until barely combined, with some dry flour still remaining. Add chocolate pieces and mix until dough just comes together, being careful not to over-mix.
 
 Transfer dough to an airtight container and refrigerate for at least a few hours and up to 3 days.
 
-When ready to bake, pre-heat oven to 160ºC. Line baking tray with baking paper. Roll dough into balls about 25 g each and place them 5 cm apart on the baking tray, as they will expand when baking. Lightly flattening the balls with your fingers. Bake for 12-15 minutes until golden brown.
+When ready to bake, pre-heat oven to 160ºC. Line baking trays with baking paper. Roll dough into balls about 25 g each and place them 5 cm apart on the baking tray, as they will expand when baking. Lightly flatten the balls with your fingers. Bake for 12-15 minutes until golden brown.
 
 Once removed from oven, let cool on the trays for at least five minutes so it has time to firm up. Transfer to a wire rack or eat immediately.
 
