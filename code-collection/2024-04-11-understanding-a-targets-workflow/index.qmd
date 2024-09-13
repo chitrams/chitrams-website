@@ -3,7 +3,7 @@ title: "Understanding a `{targets}` workflow"
 author: ""
 description: "An introduction to `{targets}`: why use it, how to use it, and some resources to get you started. (In other words: reduce the mental burden of figuring out which step of the analysis you're on.)"
 date: "2024-04-11"
-date-modified: "2024-04-23"
+date-modified: "2024-09-11"
 categories:
   - R
   - workflow
@@ -55,7 +55,7 @@ library(tarchetypes)
 tar_script()
 ```
 
-This creates a file in your project directory called `_targets.R`. This is the high-level overview of the project, so I open that and write out something like the following:
+This creates a file in your project directory called `_targets.R`. This is the high-level overview of the project, so I open that and write out the following:
 
 ```{r, eval=FALSE}
 # _targets.R file
@@ -67,9 +67,13 @@ library(tarchetypes)
 
 # Load packages needed for this project
 tar_option_set(
-  packages = c("tidyverse",
-               "purrr")
-  )
+  packages = c(
+    "tidyverse",
+    "purrr",
+    "palmerpenguins",
+    "gtsummary",
+    "rlang")
+)
 
 # Set up a workspace when our code errors
 tar_option_set(workspace_on_error = TRUE)
@@ -79,50 +83,72 @@ source("R/functions.R")
 
 # Target objects ------------------------------
 
-tar_plan(
+tar_assign({
   
-  # Load data
-  tar_file(
-    path_to_data,
-    "./raw/data.csv"
-    ),
-    
-  tar_target(
-    data,
-    read_csv(path_to_data)
-  ),
+  file <- tar_target(
+    "./data/raw_data_2024-08-24.csv",
+    format = "file")
   
-  # Create a summary table
-  tar_target(
-    data_summary_table,
-    summarise_data(data)
-  ),
+  data <- read_csv(file) |>
+    tar_target()
   
-  # Fit a model to the data
-  tar_target(
-    model,
-    model_data(data)
-  ),
+  # Specify variables of interest for subsequent analyses
   
-  # Create plot of the data and fitted model
-  tar_target(
-    plot,
-    plot_data_with_model(data)
-  ),
-
-  # Create table of model coefficients
-  tar_target(
-    table_of_model,
-    tabulate_model(model)
-  )
+  xvar <- "body_mass_g" |>
+    tar_target()
   
-)
+  yvar <- "flipper_length_mm" |>
+    tar_target()
+  
+  groupvar <- "species" |>
+    tar_target()
+  
+  # Tabulate, model, and plot
+  
+  table <- penguin_table(
+    data = data,
+    xvar, yvar, groupvar,
+    bill_length_mm,
+    bill_depth_mm,
+    groupvar = groupvar
+  ) |>
+    tar_target()
+  
+  model <- fit_model(
+    data = data,
+    xvar = xvar,
+    yvar = yvar
+  ) |>
+    tar_target()
+  
+  plot <- plot_model(
+    model = model,
+    data = data,
+    xvar = xvar,
+    yvar = yvar,
+    groupvar = groupvar
+  ) |>
+    tar_target()
+  
+})
 
 ```
 
+Let's break this down one by one.
+
+### Set-up of `_targets.R`
+
+The first part of the script sets up the project. It loads the `targets` and `tarchetypes` packages and then loads other packages needed for the targets workflow. `tar_option_set(workspace_on_error = TRUE)` will allow you to load the target objects into your workspace if you run into any errors, making it easier for debugging. Finally, load the functions to be used in your project; alternatively you can write all the functions you need within the `_targets.R` script, but I find it easier to navigate if have a separate `functions.R` script, especially when the project starts getting bigger.
+
+### target objects in `_targets.R`
+
 Where `summary_table`, `model_data`, `plot_data`, and `table_of_model` are functions I've written up myself and saved in a separate script called `functions.R`.
 
+### Making changes
+
 The advantage of this workflow is **you can change the one part that need changing in your workflow, and the `{targets}` package will change the rest for you.** I can't emphasise how life-changing this was for me.
+
+### Putting it all together
 
 Here's an example. If your data changes, you just need to change the first target object `path_to_data` to point to the new data file. You can then re-run the whole analysis using `tar_make()` and your resulting summary table, fitted model, plot, and table of model coefficients will be re-created with the new data you've pointed to. This is so much easier than having a script and needing to change `data` to `new_data` for every instance in which it's referred to, or by re-running the whole script yourself. How convenient is that?
 
