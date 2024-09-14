@@ -1,8 +1,10 @@
 ---
-title: Introduction to IIDM at MMAC 2024
+title: Introduction to IIDM at MMCA 2024
 description: "An intro to the IIDM team at the Perth MMA Conference 2024."
 date: 2024-09-09
 ---
+
+This talk is an introduction to the Intervention and Infectious Disease Modelling (IIDM) team based at [The Kids Research Institute Australia](https://www.thekids.org.au/our-research/early-environment/infection-and-vaccines/intervention-and-infectious-disease-modelling/). This was presented at the [Malaria Modellers Australia Conference 2024](https://www.mmca2024.org/).
 
 Not working yet. Some useful links:
 
@@ -11,9 +13,9 @@ Not working yet. Some useful links:
 -   GitHub discussions [one](https://github.com/quarto-dev/quarto-cli/discussions/5863) and [here](https://github.com/quarto-dev/quarto-cli/discussions/7918) is a specific discussion that I think might be most useful for my use case?
 
 ```{=html}
-<object data="2024-09-09-talk.pdf" type="application/pdf" width="100%" height="100%" style="min-height:100vh;">
+<object data="2024-09-09-talk.pdf" type="application/pdf" width="100%" height="95%" style="min-height:100vh;">
     <p>It appears you don't have a PDF plugin for this browser.
-    No biggie... you can <a href="2024-09-09-talk.pdf">click here to
+    No biggie! You can <a href="2024-09-09-talk.pdf">click here to
     download the PDF file.</a></p>
 </object>
 ```
