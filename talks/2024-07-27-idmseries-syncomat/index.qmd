@@ -1,0 +1,15 @@
+---
+title: "`syncomat` demo at the IDM series"
+description: "Demonstrating how to use `syncomat` and explaining reproducible research at an Infectious Disease Modelling seminar series."
+date: 2024-07-27
+---
+
+This talk was part of the Infectious Disease Modelling seminar series at The Kids Research Institute Australia.
+
+```{=html}
+<object data="2024-07-27-talk.pdf" type="application/pdf" width="100%" height="95%" style="min-height:100vh;">
+    <p>It appears you don't have a PDF plugin for this browser.
+    No biggie! You can <a href="2024-07-27-talk.pdf">click here to
+    download the PDF file.</a></p>
+</object>
+```

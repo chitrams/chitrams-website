@@ -695,9 +695,9 @@
   {
     "objectID": "talks/2024-09-09-MMAC-IIDM-intro/index.html",
     "href": "talks/2024-09-09-MMAC-IIDM-intro/index.html",
-    "title": "Introduction to IIDM at MMAC 2024",
+    "title": "Introduction to IIDM at MMCA 2024",
     "section": "",
-    "text": "Not working yet. Some useful links:\n\nQuarto help page: https://quarto.org/docs/output-formats/html-multi-format.html\nAndrew Heiss’ CV page and source code (PDF embedded with iframe)\nGitHub discussions one and here is a specific discussion that I think might be most useful for my use case?\n\n\n    It appears you don't have a PDF plugin for this browser.\n    No biggie... you can click here to\n    download the PDF file."
+    "text": "This talk is an introduction to the Intervention and Infectious Disease Modelling (IIDM) team based at The Kids Research Institute Australia. This was presented at the Malaria Modellers Australia Conference 2024.\nNot working yet. Some useful links:\n\nQuarto help page: https://quarto.org/docs/output-formats/html-multi-format.html\nAndrew Heiss’ CV page and source code (PDF embedded with iframe)\nGitHub discussions one and here is a specific discussion that I think might be most useful for my use case?\n\n\n    It appears you don't have a PDF plugin for this browser.\n    No biggie! You can click here to\n    download the PDF file."
   },
   {
     "objectID": "talks/index.html",
@@ -705,5 +705,12 @@
     "title": "Talks",
     "section": "",
     "text": "Introduction to IIDM at MMAC 2024\n\n\nAn intro to the IIDM team at the Perth MMA Conference 2024.\n\n\n\nSep 9, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "talks/2024-07-27-idmseries-syncomat/index.html",
+    "href": "talks/2024-07-27-idmseries-syncomat/index.html",
+    "title": "syncomat demo at the IDM series",
+    "section": "",
+    "text": "This talk was part of the Infectious Disease Modelling seminar series at The Kids Research Institute Australia.\n\n    It appears you don't have a PDF plugin for this browser.\n    No biggie! You can click here to\n    download the PDF file."
   }
 ]
