@@ -1,0 +1,11 @@
+---
+title: "Talks"
+listing: 
+  contents: .
+  type: grid
+  sort: "date desc"
+  categories: unnumbered 
+  sort-ui: false
+  filter-ui: false
+  fields: [image, date, title, description, categories]
+---
