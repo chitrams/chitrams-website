@@ -1,47 +1,62 @@
 ---
 title: "Kanelsnurrer"
-description: "Norwegian cinnamon snails, a beautiful version of cinnamon rolls with cardamom-infused yeasted dough."
+description: "Norwegian cinnamon snails: a beautiful version of cinnamon rolls with cardamom-infused yeasted dough."
+author: ""
+date: "2024-09-26"
+date-modified: "2024-10-02"
 categories: [bread, effort/medium, time/waiting]
-draft: true
+image: "kanelsnurrer_opt.jpg"
 ---
 
-Adapted from the Nordic Baking Book.
+Adapted from the [Nordic Baking Book](https://www.goodreads.com/book/show/40223825-the-nordic-baking-book) by Magnus Nilsson. Makes about 15 large buns.
 
 Ingredients
 
 -   320 ml full-cream milk
-
 -   150 g butter
-
 -   1 tablespoon finely ground cardamom seeds
-
--   50 g fresh yeast
-
+-   50 g fresh yeast or 1 packet (about 5 g) dried, instant yeast
 -   1 egg
-
--   125 g sugar
-
--   1 teaspooon salt
-
+-   125 g caster (superfine) sugar
+-   1 teaspoon salt
 -   750 g strong wheat flour
-
 -   All-purpose flour for dusting
-
 -   Egg wash
 
 Filling
 
--   200 g butter, softened
+-   110 g butter, softened
 -   2 tablespoons ground cinnamon
--   100 g sugar
+-   80 g granulated sugar
 
 Decoration
 
+-   Egg wash: 1 egg and half quantity of milk[^1]
 -   Pearl sugar, optional
--   White icing, optional
+
+[^1]: In a large bowl (larger than you think you'll need), crack the egg and add about half the quantity of milk. Whisk vigorously until well-combined.
+
+You'll also need
+
+-   An electric mixer with a dough hook
+-   A rolling pin
+-   A bench scraper
+-   A pastry brush
 
 Method
 
-1.  Combine milk, butter, and cardamom in a small pan. Heat until the butter melts. Leave to cool until cool to touch, slightly warmer than room temperature, and dissolve the yeast in this liquid.
-2.  Transfer the liquid and yeast mix to a large bowl. Add the egg, sugar, salt, and flour; knead until smooth, shiny, and elastic. The dough should come off the sides of the bowl easily.
-3.  Cover the bowl with a clean dish towel, and leave to rise until doubled in size.
+1.  Combine milk, butter, and cardamom in a small pan. Heat until the butter melts. Leave to cool until cool to touch–slightly warmer than room temperature–and dissolve the yeast in this liquid.
+2.  Transfer the liquid and yeast mix to a large bowl. Add the egg, sugar, salt, and flour; knead until smooth, shiny, and elastic. I like to use an electric mixer with a dough hook to start off with. The dough should come off the sides of the bowl easily.
+3.  Cover the bowl with a clean dish towel, and leave to rise until doubled in size: about an hour or two.
+4.  When dough has doubled in size, place dough on lightly floured surface. Roll out dough to a 40 by 60 cm rectangle.
+5.  Using the bench scraper, spread the softened butter on the rolled out dough, all the way to the edges. Then sprinkle ground cinnamon and granulated sugar all over as evenly as you can.
+6.  Take the short side of the dough and fold it onto itself: you should now have a 40 by 30 cm rectangle. Cut into 3 cm strips for twist. There are several ways to shape these buns; my favourite way to do it is shown in [this video](https://youtu.be/I6qcTo1PJ0g?si=NlmAEY4bF_mWAoTs&t=301), but you can also twist them [like this](https://youtu.be/vG7mTzwOdzk?si=DLc8KX_uVv__UZWM) (more detailed explanation [here](https://youtu.be/CJYtyWsXU9w?si=gZd6YqVHOC53WicP)).
+7.  Place the twisted buns on to a lined baking tray. Cover the buns with a tea towel as you go. Then leave the buns for 1-2 hours until they are about 1.5 times in size.
+8.  Pre-heat oven to 200ºC fan-forced. Brush the egg wash, very lightly, on to the buns. If you have the pearl sugar, sprinkle them on now.
+9.  Bake buns for 10-12 minutes or until golden. Remove from oven and cool on wire racks.
+
+## Notes
+
+These buns are best eaten the day they are baked; they get rather dry after 24 hours. If you must store them, spray with a little bit of water before you're about to eat it and microwave for 10-20 seconds on medium.
+
+![](kanelsnurrer_opt.jpg){fig-align="center" width="650"}

@@ -6,7 +6,6 @@ date: "2024-09-11"
 image: "cookies.jpeg"
 # image-alt: ""
 categories: [cookies, effort/medium, time/medium]
-date-modified: "2024-04-25"
 ---
 
 Makes approximately 40 cookies. This recipe is my own creation.
