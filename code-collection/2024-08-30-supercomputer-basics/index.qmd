@@ -30,7 +30,7 @@ Let's break them down one by one.
 
 A basic understanding of how to use the command line is useful as you'll mostly be using the command line when accessing HPCs. When you're on the command line, you also want to be able to use text editors like Vim or Nano to edit scripts and configuration files.
 
-The textbook I enjoyed most for this was *The Linux Command Line* by William Shotts (freely available [here](https://linuxcommand.org/tlcl.php)). It gives an accessible and friendly explanation of what's going on.
+The textbook I enjoyed most for this was *The Linux Command Line* by William Shotts (freely available [here](https://linuxcommand.org/tlcl.php)). It gives an accessible and friendly explanation of what's going on. See also my [list of command line tips and resources](https://chitra-ms.com/code-collection/2024-09-13-command-line-tips/).
 
 My preferred text editor is Vim. Here are the resources I found most helpful in learning how to use Vim:
 
@@ -71,6 +71,6 @@ If this is overwhelming: I get it! I only compiled this list after having spent 
 
 What you could do is go to your supercomputer centre's help page and see if they have user documentation that you can use and a support team you can reach out to. [Pawsey](https://pawsey.org.au/), the supercomputing research centre I'm with, has an excellent and comprehensive [user support documentation](https://pawsey.atlassian.net/wiki/spaces/US/overview), a Supercomputing User Training [playlist](https://www.youtube.com/playlist?list=PLmu61dgAX-aYlqIy2VgH8s8UD2oUIA3KS), and a responsive support team who helps us optimise our workflow. At one point I just needed to talk to someone and ask for help, so it was really good to have access to the support team.
 
-I also think it's helpful to simply talk to someone who's used supercomputers before. That way you can: 1) have a general idea of what you need to do, tailored to your workflow; and 2) have it pointed out to you what you don't know about supercomputers. I found it really helpful to chat with colleagues who have worked with supercomputers. Alternatively, drop me a line and I will do my best to help!
+I also think it's helpful to simply talk to someone who's used supercomputers before. That way you can: 1) have a general idea of what you need to do, tailored to your workflow; and 2) have it pointed out to you what you don't know about supercomputers. I found it really helpful to chat with colleagues who have worked with supercomputers. Alternatively, feel free to drop me a line and I will do my best to help!
 
 ## References
