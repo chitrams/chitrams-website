@@ -1,0 +1,96 @@
+---
+title: "Containers on HPCs"
+description: "Understanding containers and how they work on HPCs"
+author: ""
+date: "2024-10-04"
+categories: []
+draft: TRUE
+---
+
+Here is how I've run R on a supercomputer, whilst also accessing Slurm:
+
+The issue with running through a container, as such:
+
+``` bash
+singularity exec tidyverse_4.4.1.sif Rscript launch.R
+```
+
+Is it's not very reproducible. You have to know that you're running tidyverse 4.4.1 bla bla, and beyond that: the `launch.R` script will not be able to access Slurm. In other words, if the R script runs a bash script, for example by:
+
+``` r
+sys_command = paste(
+  "sbatch --verbose", 
+  sbatch_options, 
+  sbatch_array, 
+  bash_file, 
+  bash_inputs
+  )
+```
+
+This will not run, as you cannot call `sbatch` and `squeue` from within a container.
+
+The alternative is to locally install R on your supercomputer. This is easily done by using conda, or in this instance mamba (a faster alternative as it's written on C++ code).
+
+## Installing software on your supercomputer
+
+(The following is possibly a gist instead)
+
+What I did was:
+
+Try to see if mamba is already pre-loaded as a module on your supercomputer. You can do this by searching using `module avail mamba`. If not, install mamba yourself.
+
+(Assuming you didn't have this pre-loaded) Use a Miniforge distribution, as it's already pre-configured. [Here](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html) are the installation steps.
+
+I then used `wget` as per the instructions on their repository [here](https://github.com/conda-forge/miniforge). So I typed into my shell terminal, logged in to Pawsey:
+
+``` bash
+cd $MYSOFTWARE
+wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+```
+
+Then create a directory on your software partition to store all this. I named the directory miniconda3.
+
+``` bash
+cd $MYSOFTWARE
+mkdir miniconda3
+
+# Run the downloaded script
+bash Miniforge3.sh -b -u -p $MYSOFTWARE/miniconda3
+```
+
+Then initialise mamba in that directory.
+
+``` bash
+$MYSOFTWARE/miniconda3/bin/mamba activate
+```
+
+Then add the following to your `.bashrc` file:
+
+``` bash
+export PATH="/software/projects/pawsey1104/chitrams/miniconda3/bin:$PATH"
+```
+
+But I find that when you run `mamba init` this should initialise everything for you. So instead you could do:
+
+``` bash
+$MYSOFTWARE/miniconda3/bin/mamba activate
+$MYSOFTWARE/miniconda3/bin/mamba activate my-project
+```
+
+You will be asked to intialise mamba by running `mamba init`. I think you only have to do this once. Then once you've done this, you will be asked to restart the terminal. Once you restart the terminal you will find that you have (base) appended as a pre-fix.
+
+Now you can run:
+
+``` bash
+mamba activate my-project
+```
+
+and start downloading R.
+
+``` bash
+mamba install r-base=4.4.1 r-tidyverse
+Rscript launch.R
+
+# For any packages that aren't yet installed:
+mamba install r-<package-name>
+```
