@@ -153,6 +153,7 @@ div.csl-indent {
       </div>
                           <div class="quarto-categories">
                 <div class="quarto-category">computer science</div>
+                <div class="quarto-category">HPC</div>
               </div>
                   </div>
   </div>
@@ -168,6 +169,12 @@ div.csl-indent {
       </div>
     </div>
     
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">November 14, 2024</p>
+      </div>
+    </div>
       
     </div>
     
@@ -182,7 +189,8 @@ div.csl-indent {
   <ul>
   <li><a href="#hpc-concepts" id="toc-hpc-concepts" class="nav-link active" data-scroll-target="#hpc-concepts">HPC concepts</a>
   <ul class="collapse">
-  <li><a href="#linux-command-line-and-text-editor-skills" id="toc-linux-command-line-and-text-editor-skills" class="nav-link" data-scroll-target="#linux-command-line-and-text-editor-skills">Linux command line and text editor skills</a></li>
+  <li><a href="#linux-command-line" id="toc-linux-command-line" class="nav-link" data-scroll-target="#linux-command-line">Linux command line</a></li>
+  <li><a href="#text-editor-skills" id="toc-text-editor-skills" class="nav-link" data-scroll-target="#text-editor-skills">Text editor skills</a></li>
   <li><a href="#hpc-components" id="toc-hpc-components" class="nav-link" data-scroll-target="#hpc-components">HPC components</a></li>
   <li><a href="#job-scheduling-system-slurm" id="toc-job-scheduling-system-slurm" class="nav-link" data-scroll-target="#job-scheduling-system-slurm">Job scheduling system (Slurm)</a></li>
   <li><a href="#computer-architecture" id="toc-computer-architecture" class="nav-link" data-scroll-target="#computer-architecture">Computer architecture</a></li>
@@ -200,7 +208,7 @@ div.csl-indent {
 
 
 
-<p>I’m currently learning how to run an R workflow on a supercomputer. I’ve never come across supercomputers before and didn’t even know how and where to start. It’s been quite the journey and I thought I’d compile this list of resources so anyone else who wants to learn how to use supercomputers can have a friendly guide to get them started.</p>
+<p>I’m learning how to run an R workflow on a supercomputer. I’ve not come across supercomputers before and didn’t know how and where to start learning how to use it. It’s been quite the journey and I thought I’d compile this list of resources so anyone else who wants to learn how to use supercomputers can have a friendly guide to get them started.</p>
 <p>Before I dive into it, I would like to distinguish between using supercomputers and high-performance computing (HPC). These terms (“supercomputing” and “HPC”) are often used interchangeably, as you will see me do in this post, but there is a distinction here in the context of advanced computing. Supercomputers are only a subset of HPCs. HPC is a broader term that encompasses the use of supercomputers and other powerful computing resources to solve advanced computational problems.</p>
 <p>The following is an opinionated list of what I believe to be the most important concepts to learn when you’re first starting out with HPC. Of course, you can run programs on high-performance computers without necessarily needing to understand the following concepts, especially if you’ve been given pre-written scripts to run your programs. However, I still think it’s helpful to understand the following concepts if you’d like to optimise your HPC usage.</p>
 <section id="hpc-concepts" class="level2">
@@ -214,10 +222,17 @@ div.csl-indent {
 <li>A basic understanding of networking concepts.</li>
 </ul>
 <p>Let’s break them down one by one.</p>
-<section id="linux-command-line-and-text-editor-skills" class="level3">
-<h3 class="anchored" data-anchor-id="linux-command-line-and-text-editor-skills">Linux command line and text editor skills</h3>
+<section id="linux-command-line" class="level3">
+<h3 class="anchored" data-anchor-id="linux-command-line">Linux command line</h3>
 <p>A basic understanding of how to use the command line is useful as you’ll mostly be using the command line when accessing HPCs. When you’re on the command line, you also want to be able to use text editors like Vim or Nano to edit scripts and configuration files.</p>
-<p>The textbook I enjoyed most for this was <em>The Linux Command Line</em> by William Shotts (freely available <a href="https://linuxcommand.org/tlcl.php">here</a>). It gives an accessible and friendly explanation of what’s going on. See also my <a href="https://chitra-ms.com/code-collection/2024-09-13-command-line-tips/">list of command line tips and resources</a>.</p>
+<p><strong>Resources</strong></p>
+<ul>
+<li><strong>The Linux Command Line</strong> by William Shotts (freely available <a href="https://linuxcommand.org/tlcl.php">here</a>) is a textbook I really enjoyed. It gives an accessible and friendly explanation of what’s going on. See also my <a href="https://chitra-ms.com/code-collection/2024-09-13-command-line-tips/">list of command line tips and resources</a>.</li>
+<li><strong>Unix and Linux: Visual QuickStart Guide</strong> (4e) by Deborah Ray and Eric Ray (<a href="https://books.google.com.au/books/about/Unix_and_Linux.html?id=M-z1SWdCKkwC&amp;redir_esc=y">Google Books</a>) is more comprehensive than The Linux Command Line. It describes the whole Unix system, which I found really useful. Pick this up after you feel more comfortable with the command line.</li>
+</ul>
+</section>
+<section id="text-editor-skills" class="level3">
+<h3 class="anchored" data-anchor-id="text-editor-skills">Text editor skills</h3>
 <p>My preferred text editor is Vim. Here are the resources I found most helpful in learning how to use Vim:</p>
 <ul>
 <li>A quick introduction to what’s going on when you really have no clue: <a href="https://linuxhandbook.com/basic-vim-commands/">this guide</a> from the Linux Handbook.</li>
@@ -255,9 +270,18 @@ div.csl-indent {
 </section>
 <section id="good-starting-points" class="level2">
 <h2 class="anchored" data-anchor-id="good-starting-points">Good starting points</h2>
-<p>If this is overwhelming: I get it! I only compiled this list after having spent over a month–every day–reading up and watching videos on how to use supercomputers.</p>
-<p>What you could do is go to your supercomputer centre’s help page and see if they have user documentation that you can use and a support team you can reach out to. <a href="https://pawsey.org.au/">Pawsey</a>, the supercomputing research centre I’m with, has an excellent and comprehensive <a href="https://pawsey.atlassian.net/wiki/spaces/US/overview">user support documentation</a>, a Supercomputing User Training <a href="https://www.youtube.com/playlist?list=PLmu61dgAX-aYlqIy2VgH8s8UD2oUIA3KS">playlist</a>, and a responsive support team who helps us optimise our workflow. At one point I just needed to talk to someone and ask for help, so it was really good to have access to the support team.</p>
-<p>I also think it’s helpful to simply talk to someone who’s used supercomputers before. That way you can: 1) have a general idea of what you need to do, tailored to your workflow; and 2) have it pointed out to you what you don’t know about supercomputers. I found it really helpful to chat with colleagues who have worked with supercomputers. Alternatively, feel free to drop me a line and I will do my best to help!</p>
+<p>If this is overwhelming: I get it! I only compiled this list after having spent over a month–every day–reading up and watching videos on how to use supercomputers. Here are some other places you could get good information from:</p>
+<ul>
+<li>Go to your supercomputing centre’s help page and see if they have user documentation that you can use and a support team you can reach out to. <a href="https://pawsey.org.au/">Pawsey</a>, the supercomputing research centre I’m with, has an excellent and comprehensive <a href="https://pawsey.atlassian.net/wiki/spaces/US/overview">user support documentation</a>, a Supercomputing User Training <a href="https://www.youtube.com/playlist?list=PLmu61dgAX-aYlqIy2VgH8s8UD2oUIA3KS">playlist</a>, and a responsive support team who helps us optimise our workflow. At one point I just needed to talk to someone and ask for help, so it was really good to have access to the support team.</li>
+<li>Go to other supercomputing centres’ help pages and look at their user documentations and videos. A few of my favourites:
+<ul>
+<li><p>HPC2N (Sweden) have really good written guides. Some of my favourites are their <a href="https://docs.hpc2n.umu.se/tutorials/clusterguide/">Beginner’s intro to clusters</a> and <a href="https://hpc2n.github.io/intro-course/batch/">their explanation of Slurm</a>.</p></li>
+<li><p>SciNet HPC at the University of Toronto has excellent YouTube videos. My favourite is their <a href="https://youtu.be/jdFd_U2-pqg?si=48Ds8ezITdBvn5Zl">Intro to Advanced Research Computing</a>.</p></li>
+</ul></li>
+<li>Talk to someone!</li>
+</ul>
+<p>I think it’s really helpful to talk to someone who’s used supercomputers before. That way you can: 1) have a general idea of what you need to do, tailored to your workflow; and 2) get an idea of what topic you need to read up on next.</p>
+<p>Alternatively, feel free to drop me a line and I will do my best to help!</p>
 </section>
 <section id="references" class="level2">
 

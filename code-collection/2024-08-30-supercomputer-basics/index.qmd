@@ -3,12 +3,14 @@ title: "Basics of high-performance computing systems for research"
 description: "How to orient yourself if you have never used a supercomputer."
 author: ''
 date: '2024-08-30'
+date-modified: '2024-11-14'
 categories: 
   - computer science
+  -
 bibliography: references.bib
 ---
 
-I'm currently learning how to run an R workflow on a supercomputer. I've never come across supercomputers before and didn't even know how and where to start. It's been quite the journey and I thought I'd compile this list of resources so anyone else who wants to learn how to use supercomputers can have a friendly guide to get them started.
+I'm learning how to run an R workflow on a supercomputer. I've not come across supercomputers before and didn't know how and where to start learning how to use it. It's been quite the journey and I thought I'd compile this list of resources so anyone else who wants to learn how to use supercomputers can have a friendly guide to get them started.
 
 Before I dive into it, I would like to distinguish between using supercomputers and high-performance computing (HPC). These terms ("supercomputing" and "HPC") are often used interchangeably, as you will see me do in this post, but there is a distinction here in the context of advanced computing. Supercomputers are only a subset of HPCs. HPC is a broader term that encompasses the use of supercomputers and other powerful computing resources to solve advanced computational problems.
 
@@ -26,11 +28,16 @@ Here are the concepts that I found most important.
 
 Let's break them down one by one.
 
-### Linux command line and text editor skills
+### Linux command line
 
 A basic understanding of how to use the command line is useful as you'll mostly be using the command line when accessing HPCs. When you're on the command line, you also want to be able to use text editors like Vim or Nano to edit scripts and configuration files.
 
-The textbook I enjoyed most for this was *The Linux Command Line* by William Shotts (freely available [here](https://linuxcommand.org/tlcl.php)). It gives an accessible and friendly explanation of what's going on. See also my [list of command line tips and resources](https://chitra-ms.com/code-collection/2024-09-13-command-line-tips/).
+**Resources**
+
+-   **The Linux Command Line** by William Shotts (freely available [here](https://linuxcommand.org/tlcl.php)) is a textbook I really enjoyed. It gives an accessible and friendly explanation of what's going on. See also my [list of command line tips and resources](https://chitra-ms.com/code-collection/2024-09-13-command-line-tips/).
+-   **Unix and Linux: Visual QuickStart Guide** (4e) by Deborah Ray and Eric Ray ([Google Books](https://books.google.com.au/books/about/Unix_and_Linux.html?id=M-z1SWdCKkwC&redir_esc=y)) is more comprehensive than The Linux Command Line. It describes the whole Unix system, which I found really useful. Pick this up after you feel more comfortable with the command line.
+
+### Text editor skills
 
 My preferred text editor is Vim. Here are the resources I found most helpful in learning how to use Vim:
 
@@ -67,10 +74,17 @@ For file transfer tools specifically, I found it useful to understand how to use
 
 ## Good starting points
 
-If this is overwhelming: I get it! I only compiled this list after having spent over a month–every day–reading up and watching videos on how to use supercomputers.
+If this is overwhelming: I get it! I only compiled this list after having spent over a month–every day–reading up and watching videos on how to use supercomputers. Here are some other places you could get good information from:
 
-What you could do is go to your supercomputer centre's help page and see if they have user documentation that you can use and a support team you can reach out to. [Pawsey](https://pawsey.org.au/), the supercomputing research centre I'm with, has an excellent and comprehensive [user support documentation](https://pawsey.atlassian.net/wiki/spaces/US/overview), a Supercomputing User Training [playlist](https://www.youtube.com/playlist?list=PLmu61dgAX-aYlqIy2VgH8s8UD2oUIA3KS), and a responsive support team who helps us optimise our workflow. At one point I just needed to talk to someone and ask for help, so it was really good to have access to the support team.
+-   Go to your supercomputing centre's help page and see if they have user documentation that you can use and a support team you can reach out to. [Pawsey](https://pawsey.org.au/), the supercomputing research centre I'm with, has an excellent and comprehensive [user support documentation](https://pawsey.atlassian.net/wiki/spaces/US/overview), a Supercomputing User Training [playlist](https://www.youtube.com/playlist?list=PLmu61dgAX-aYlqIy2VgH8s8UD2oUIA3KS), and a responsive support team who helps us optimise our workflow. At one point I just needed to talk to someone and ask for help, so it was really good to have access to the support team.
+-   Go to other supercomputing centres' help pages and look at their user documentations and videos. A few of my favourites:
+    -   HPC2N (Sweden) have really good written guides. Some of my favourites are their [Beginner's intro to clusters](https://docs.hpc2n.umu.se/tutorials/clusterguide/) and [their explanation of Slurm](https://hpc2n.github.io/intro-course/batch/).
 
-I also think it's helpful to simply talk to someone who's used supercomputers before. That way you can: 1) have a general idea of what you need to do, tailored to your workflow; and 2) have it pointed out to you what you don't know about supercomputers. I found it really helpful to chat with colleagues who have worked with supercomputers. Alternatively, feel free to drop me a line and I will do my best to help!
+    -   SciNet HPC at the University of Toronto has excellent YouTube videos. My favourite is their [Intro to Advanced Research Computing](https://youtu.be/jdFd_U2-pqg?si=48Ds8ezITdBvn5Zl).
+-   Talk to someone!
+
+I think it's really helpful to talk to someone who's used supercomputers before. That way you can: 1) have a general idea of what you need to do, tailored to your workflow; and 2) get an idea of what topic you need to read up on next.
+
+Alternatively, feel free to drop me a line and I will do my best to help!
 
 ## References
