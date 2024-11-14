@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="">
-<meta name="dcterms.date" content="2024-08-30">
-<meta name="description" content="How to orient yourself if you have never used a supercomputer.">
+<meta name="dcterms.date" content="2024-10-05">
+<meta name="description" content="Fundamentals of computer science and understanding computer architecture.">
 
-<title>Basics of high-performance computing systems for research – Curated by Chitra</title>
+<title>Resources to understand what computers are – Curated by Chitra</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +23,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -145,15 +125,15 @@ div.csl-indent {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Basics of high-performance computing systems for research</h1>
+      <h1 class="title">Resources to understand what computers are</h1>
                   <div>
         <div class="description">
-          How to orient yourself if you have never used a supercomputer.
+          Fundamentals of computer science and understanding computer architecture.
         </div>
       </div>
                           <div class="quarto-categories">
                 <div class="quarto-category">computer science</div>
-                <div class="quarto-category"></div>
+                <div class="quarto-category">resources</div>
               </div>
                   </div>
   </div>
@@ -165,14 +145,14 @@ div.csl-indent {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 30, 2024</p>
+        <p class="date">October 5, 2024</p>
       </div>
     </div>
     
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">November 14, 2024</p>
+        <p class="date-modified">November 3, 2024</p>
       </div>
     </div>
       
@@ -187,17 +167,8 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#hpc-concepts" id="toc-hpc-concepts" class="nav-link active" data-scroll-target="#hpc-concepts">HPC concepts</a>
-  <ul class="collapse">
-  <li><a href="#linux-command-line" id="toc-linux-command-line" class="nav-link" data-scroll-target="#linux-command-line">Linux command line</a></li>
-  <li><a href="#text-editor-skills" id="toc-text-editor-skills" class="nav-link" data-scroll-target="#text-editor-skills">Text editor skills</a></li>
-  <li><a href="#hpc-components" id="toc-hpc-components" class="nav-link" data-scroll-target="#hpc-components">HPC components</a></li>
-  <li><a href="#job-scheduling-system-slurm" id="toc-job-scheduling-system-slurm" class="nav-link" data-scroll-target="#job-scheduling-system-slurm">Job scheduling system (Slurm)</a></li>
-  <li><a href="#computer-architecture" id="toc-computer-architecture" class="nav-link" data-scroll-target="#computer-architecture">Computer architecture</a></li>
-  <li><a href="#networking-concepts" id="toc-networking-concepts" class="nav-link" data-scroll-target="#networking-concepts">Networking concepts</a></li>
-  </ul></li>
-  <li><a href="#good-starting-points" id="toc-good-starting-points" class="nav-link" data-scroll-target="#good-starting-points">Good starting points</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#dipping-your-toes" id="toc-dipping-your-toes" class="nav-link active" data-scroll-target="#dipping-your-toes">Dipping your toes</a></li>
+  <li><a href="#more-advanced-topics" id="toc-more-advanced-topics" class="nav-link" data-scroll-target="#more-advanced-topics">More advanced topics</a></li>
   </ul>
 </nav>
     </div>
@@ -208,93 +179,26 @@ div.csl-indent {
 
 
 
-<p>I’m learning how to run an R workflow on a supercomputer. I’ve not come across supercomputers before and didn’t know how and where to start learning how to use it. It’s been quite the journey and I thought I’d compile this list of resources so anyone else who wants to learn how to use supercomputers can have a friendly guide to get them started.</p>
-<p>Before I dive into it, I would like to distinguish between using supercomputers and high-performance computing (HPC). These terms (“supercomputing” and “HPC”) are often used interchangeably, as you will see me do in this post, but there is a distinction here in the context of advanced computing. Supercomputers are only a subset of HPCs. HPC is a broader term that encompasses the use of supercomputers and other powerful computing resources to solve advanced computational problems.</p>
-<p>The following is an opinionated list of what I believe to be the most important concepts to learn when you’re first starting out with HPC. Of course, you can run programs on high-performance computers without necessarily needing to understand the following concepts, especially if you’ve been given pre-written scripts to run your programs. However, I still think it’s helpful to understand the following concepts if you’d like to optimise your HPC usage.</p>
-<section id="hpc-concepts" class="level2">
-<h2 class="anchored" data-anchor-id="hpc-concepts">HPC concepts</h2>
-<p>Here are the concepts that I found most important.</p>
+<p><em>3 November update: This list will be updated as I find more resources.</em></p>
+<p>As I do more and more programming, I’m finding computer science unavoidable. Specifically, the hardware side of things. I think it’s important to understand the basics of how computers work–in other words, “computer architecture”-if you want to write better code.</p>
+<p>I never received a formal education in computer science, so it was important to find resources that were accessible. Here’s my round-up of the best resources I found.</p>
+<section id="dipping-your-toes" class="level2">
+<h2 class="anchored" data-anchor-id="dipping-your-toes">Dipping your toes</h2>
 <ul>
-<li>Basic skills in using the Linux command line and a text editor such as Vim.</li>
-<li>Understanding the HPC components such as login nodes, compute nodes, and data nodes.</li>
-<li>Understanding the job scheduling system, such as Slurm.</li>
-<li>A basic understanding of computer architecture.</li>
-<li>A basic understanding of networking concepts.</li>
-</ul>
-<p>Let’s break them down one by one.</p>
-<section id="linux-command-line" class="level3">
-<h3 class="anchored" data-anchor-id="linux-command-line">Linux command line</h3>
-<p>A basic understanding of how to use the command line is useful as you’ll mostly be using the command line when accessing HPCs. When you’re on the command line, you also want to be able to use text editors like Vim or Nano to edit scripts and configuration files.</p>
-<p><strong>Resources</strong></p>
-<ul>
-<li><strong>The Linux Command Line</strong> by William Shotts (freely available <a href="https://linuxcommand.org/tlcl.php">here</a>) is a textbook I really enjoyed. It gives an accessible and friendly explanation of what’s going on. See also my <a href="https://chitra-ms.com/code-collection/2024-09-13-command-line-tips/">list of command line tips and resources</a>.</li>
-<li><strong>Unix and Linux: Visual QuickStart Guide</strong> (4e) by Deborah Ray and Eric Ray (<a href="https://books.google.com.au/books/about/Unix_and_Linux.html?id=M-z1SWdCKkwC&amp;redir_esc=y">Google Books</a>) is more comprehensive than The Linux Command Line. It describes the whole Unix system, which I found really useful. Pick this up after you feel more comfortable with the command line.</li>
+<li>The <strong>Computer Science Crash Course</strong> playlist on <a href="https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo">YouTube</a> is fantastic. It’s what it says it is (a crash course), so you’ll learn just enough to prepare you for diving deeper.</li>
+<li><strong>Code: The hidden language of computer hardware and software</strong> by Charles Petzold (<a href="https://www.google.com.au/books/edition/Code/iNfPEAAAQBAJ?hl=en&amp;gbpv=0">Google Books</a>) is an excellent book that starts you from the very beginning (0’s and 1’s) and conceptually builds towards how computers work. I highly recommend this if you’d like an intuitive understanding of hardware and software. I also think he’s a great writer.</li>
 </ul>
 </section>
-<section id="text-editor-skills" class="level3">
-<h3 class="anchored" data-anchor-id="text-editor-skills">Text editor skills</h3>
-<p>My preferred text editor is Vim. Here are the resources I found most helpful in learning how to use Vim:</p>
+<section id="more-advanced-topics" class="level2">
+<h2 class="anchored" data-anchor-id="more-advanced-topics">More advanced topics</h2>
 <ul>
-<li>A quick introduction to what’s going on when you really have no clue: <a href="https://linuxhandbook.com/basic-vim-commands/">this guide</a> from the Linux Handbook.</li>
-<li>An interactive tutorial for learning Vim: <a href="https://www.openvim.com/">OpenVim</a>. I liked this because it allows you to actually see what happens on the screen as you’re typing things out. I preferred this over the game <a href="https://vim-adventures.com/">Vim Adventures</a> as 1) you can clearly see the progression of what you’re learning; and 2) it’s free.</li>
-<li>Otherwise you could try out the built-in <code>vimtutor</code> by typing in <code>vimtutor</code> in your terminal (assuming Vim is already installed on your device).</li>
-<li>For information on how to do more advanced things in Vim, <a href="https://learnvim.irian.to/">this guide</a> is pretty good.</li>
+<li>The course <strong>Build a Modern Computer from First Principles: From Nand to Tetris</strong> on <a href="https://www.coursera.org/learn/build-a-computer">coursera</a>. You can also find the Nand2Tetris homepage <a href="https://www.nand2tetris.org/">here</a>. I thought this was a really good course. It is quite detailed; I only skimmed through I’m not (yet) interested in building my own computer.</li>
 </ul>
-</section>
-<section id="hpc-components" class="level3">
-<h3 class="anchored" data-anchor-id="hpc-components">HPC components</h3>
-<p>It’s important to understand the components of the supercomputer you’re using so that you have a general idea of how processes and data move between its components. As an example, the following is a simplified and generalised architecture of a supercomputer, courtesy of Pawsey <span class="citation" data-cites="pawsey2023">(<a href="#ref-pawsey2023" role="doc-biblioref">Pawsey Supercomputing Research Centre 2023</a>)</span>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="supercomputer-architecture.png" class="img-fluid figure-img" width="550"></p>
-<figcaption>General architecture of a supercomputer.</figcaption>
-</figure>
-</div>
-<p>It’s useful to understand how to access the compute nodes and storage nodes from the login node; how to move data to and from the storage system from your local computer; and how to use the job scheduling system, which is the next topic.</p>
-</section>
-<section id="job-scheduling-system-slurm" class="level3">
-<h3 class="anchored" data-anchor-id="job-scheduling-system-slurm">Job scheduling system (Slurm)</h3>
-<p>Slurm is the most widely used job scheduling system for HPC clusters, but there are other job schedulers used too. Familiarise yourself with them.</p>
-<p>I found <a href="https://slurm.schedmd.com/quickstart.html">this</a> to be a good guide to Slurm.</p>
-</section>
-<section id="computer-architecture" class="level3">
-<h3 class="anchored" data-anchor-id="computer-architecture">Computer architecture</h3>
-<p>The best way to understand how supercomputers work is to understand how computers work to begin with, including computer architecture and computer networks. Specifically, I would want to know how processors, memory, and storage components work.</p>
-<p>I’ll write separate posts on these topics and link them here.</p>
-</section>
-<section id="networking-concepts" class="level3">
-<h3 class="anchored" data-anchor-id="networking-concepts">Networking concepts</h3>
-<p>Specifically, a basic understanding of how to use SSH for secure remote access and data transfer.</p>
-<p>For file transfer tools specifically, I found it useful to understand how to use tools such as <code>scp</code>, <code>sftp</code>, or <code>rsync</code> for transferring data into and out of the HPC system.</p>
-</section>
-</section>
-<section id="good-starting-points" class="level2">
-<h2 class="anchored" data-anchor-id="good-starting-points">Good starting points</h2>
-<p>If this is overwhelming: I get it! I only compiled this list after having spent over a month–every day–reading up and watching videos on how to use supercomputers. Here are some other places you could get good information from:</p>
-<ul>
-<li>Go to your supercomputing centre’s help page and see if they have user documentation that you can use and a support team you can reach out to. <a href="https://pawsey.org.au/">Pawsey</a>, the supercomputing research centre I’m with, has an excellent and comprehensive <a href="https://pawsey.atlassian.net/wiki/spaces/US/overview">user support documentation</a>, a Supercomputing User Training <a href="https://www.youtube.com/playlist?list=PLmu61dgAX-aYlqIy2VgH8s8UD2oUIA3KS">playlist</a>, and a responsive support team who helps us optimise our workflow. At one point I just needed to talk to someone and ask for help, so it was really good to have access to the support team.</li>
-<li>Go to other supercomputing centres’ help pages and look at their user documentations and videos. A few of my favourites:
-<ul>
-<li><p>HPC2N (Sweden) have really good written guides. Some of my favourites are their <a href="https://docs.hpc2n.umu.se/tutorials/clusterguide/">Beginner’s intro to clusters</a> and <a href="https://hpc2n.github.io/intro-course/batch/">their explanation of Slurm</a>.</p></li>
-<li><p>SciNet HPC at the University of Toronto has excellent YouTube videos. My favourite is their <a href="https://youtu.be/jdFd_U2-pqg?si=48Ds8ezITdBvn5Zl">Intro to Advanced Research Computing</a>.</p></li>
-</ul></li>
-<li>Talk to someone!</li>
-</ul>
-<p>I think it’s really helpful to talk to someone who’s used supercomputers before. That way you can: 1) have a general idea of what you need to do, tailored to your workflow; and 2) get an idea of what topic you need to read up on next.</p>
-<p>Alternatively, feel free to drop me a line and I will do my best to help!</p>
-</section>
-<section id="references" class="level2">
-
-
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-pawsey2023" class="csl-entry" role="listitem">
-Pawsey Supercomputing Research Centre. 2023. <span>“Connecting to a Supercomputer.”</span> Pawsey User Support Guide. November 2023. <a href="https://pawsey.atlassian.net/wiki/spaces/US/pages/51925858/Connecting+to+a+Supercomputer">https://pawsey.atlassian.net/wiki/spaces/US/pages/51925858/Connecting+to+a+Supercomputer</a>.
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
