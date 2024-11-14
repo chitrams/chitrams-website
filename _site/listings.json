@@ -18,23 +18,14 @@
   {
     "listing": "/code-collection/index.html",
     "items": [
-      "/code-collection/draft-tidy-evaluation-embrace/index.html",
       "/code-collection/2024-10-05-computers/index.html",
-      "/code-collection/2024-10-04-hpc-containers/index.html",
       "/code-collection/2024-09-13-command-line-tips/index.html",
       "/code-collection/2024-08-30-supercomputer-basics/index.html",
-      "/code-collection/2024-08-20-combine-ggplots/index.html",
-      "/code-collection/2024-07-29-python-setup/index.html",
       "/code-collection/2024-07-25-what-is-the-internet/index.html",
       "/code-collection/2024-05-31-git-good-with-rstudio/index.html",
       "/code-collection/2024-04-27-turing-way-handbook/index.html",
-      "/code-collection/draft-vscode/index.html",
-      "/code-collection/draft-hi-quarto-bye-blogdown/index.html",
-      "/code-collection/draft-resources-for-learning-r/index.html",
       "/code-collection/2024-04-11-understanding-a-targets-workflow/index.html",
-      "/code-collection/draft-summarising-across-columns-tidyverse/index.html",
       "/code-collection/2022-08-21-packages-for-summary-tables/index.html",
-      "/code-collection/draft-replacing-missing-values-with-na/index.html",
       "/code-collection/2022-08-16-functional-programming-in-r/index.html"
     ]
   },
