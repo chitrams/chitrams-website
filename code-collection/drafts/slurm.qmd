@@ -1,0 +1,22 @@
+---
+title: "How to use Slurm"
+description: "An opinionated tutorial for a research scientist using the job scheduler Slurm"
+author: ''
+date: '2024-10-05'
+date-modified: '2024-11-03'
+categories: 
+  - HPC
+  - resources
+---
+
+`sbatch` is what you'd normally use to submit jobs to Slurm. You can specify options for `sbatch` on the command line or within a bash script. Here's an example of how you would do it directly on the command line:
+
+``` bash
+sbatch --jobname=my_pipeline --n=1 hello.sh
+```
+
+Within a bash script:
+
+If you were to combine the two, it would be passed into one another. So say you did an `sbatch` on the command line (first example) that also has `#SBATCH` options in the file, the options would be passed on and your job submission would include both options from the command line and from within the job script.
+
+As a job scheduler, Slurm can usually handle jobs for you just fine, with its default settings, without requiring you to add additional specifications. However when you have certain requirements for your job, you would want to use these options. For example, you might want to specify how many CPUs you would like to use.
