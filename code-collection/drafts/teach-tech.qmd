@@ -1,0 +1,4 @@
+Resources:
+
+-   Software Carpentry's [Instructor Training](https://carpentries.github.io/instructor-training/)
+-   **Teaching Tech Together** by Greg Wilson (freely available [here](https://teachtogether.tech/en/))
