@@ -1,6 +1,6 @@
 ---
 title: "How to use Slurm"
-description: "An opinionated tutorial for a research scientist using the job scheduler Slurm".
+description: "An opinionated tutorial for a research scientist using the job scheduler Slurm"
 author: ''
 date: '2024-10-05'
 date-modified: '2024-11-03'
