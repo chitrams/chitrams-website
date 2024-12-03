@@ -1,16 +1,18 @@
 /*-- scss:defaults --*/
 
-// Define colours
-$tomato-red: #f25f70;
-
-$link-color:                  $tomato-red;
-$link-shade-percentage:       80%;
-$link-hover-color:            shift-color($link-color, $link-shade-percentage);
-
-$nav-link-color:              $tomato-red;
-$nav-link-hover-color:        $link-hover-color;
+$link-color: #f25f70;
+$toc-color: #f25f70;
 
 /*-- scss:rules --*/
+
+p code, li code {
+  color: #2761E3;
+  background-color: #f8f9fa;
+}
+
+a:hover {
+  color: #f25f70;
+}
 
 figcaption {
   margin: auto;
