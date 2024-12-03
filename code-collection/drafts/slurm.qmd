@@ -7,6 +7,7 @@ date-modified: '2024-11-03'
 categories: 
   - HPC
   - resources
+draft: true
 ---
 
 `sbatch` is what you'd normally use to submit jobs to Slurm. You can specify options for `sbatch` on the command line or within a bash script. Here's an example of how you would do it directly on the command line:

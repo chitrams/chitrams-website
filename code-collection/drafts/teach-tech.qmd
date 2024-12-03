@@ -1,3 +1,8 @@
+---
+title: Teaching tech
+draft: true
+---
+
 Resources:
 
 -   Software Carpentry's [Instructor Training](https://carpentries.github.io/instructor-training/)
