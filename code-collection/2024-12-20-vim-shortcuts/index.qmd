@@ -1,0 +1,53 @@
+---
+title: "List of Vim tips and resources"
+author: ""
+description: "Making Vim easier to use"
+date: "2024-12-20"
+categories:
+  - resources
+draft: true
+---
+
+Vim is a beast of its own.
+
+### Necessary commands
+
+-   Going into the Insert mode:
+    -   `i` starting before the current cursor position
+    -   `a` starting after the current cursor position
+    -   `o` adds a new blank line after the current cursor position and goes into the insert mode
+-   `u` undo last edit
+-   `ctrl` + `r` redo
+-   Exiting vim:
+    -   `:w` write file
+    -   `:q` quit
+    -   `:x` or `:wq` write file, then quit
+
+### Finding things
+
+-   `f` + `pattern` goes to the next instance of `pattern` in that line
+-   `/pattern` searches forward from the current cursor position for the text matching `pattern`. Press `/`, type the search term (pattern), and press `Enter`.
+    -   To search for the word "example": first, ensure you are in Normal mode by pressing `esc`. Then type `/example` and press `Enter`.
+    -   To navigate search results, `n` moves to the next occurrence of the search pattern.
+    -   `N` moves to the previous occurrence of the search pattern.
+-   `?pattern` searches backward from the current cursor position for the text matching `pattern`. Press `?`, type the search term (pattern), and press `Enter`.
+    -   To search backward for the word "example", you would type `?example` in Normal mode and press `Enter`.
+
+### Moving around the line
+
+-   `^` or `0` goes to the beginning of the line
+-   `$` goes to the end of the line
+-   `gg` goes to the beginning of the line
+
+### Moving around the file
+
+-   `:0` goes to line zero
+-   `:135` goes to line 135
+-   `:+5` goes 5 lines forward
+-   `:-5` goes 5 lines backward
+-   `G` goes to the last line of the file
+
+### Text editing
+
+-   `dd` delete current line
+-   `d$` or `D` deletes from current cursor position to the end of the line
