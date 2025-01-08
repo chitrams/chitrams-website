@@ -3,12 +3,12 @@ title: "List of Vim tips and resources"
 author: ""
 description: "Making Vim easier to use"
 date: "2024-12-20"
+date-modified: "2025-01-08"
 categories:
   - resources
-draft: true
 ---
 
-Vim is a beast of its own.
+This is a cheatsheet of the commands I most frequently use for Vim.
 
 ### Necessary commands
 
@@ -20,7 +20,7 @@ Vim is a beast of its own.
 -   `ctrl` + `r` redo
 -   Exiting vim:
     -   `:w` write file
-    -   `:q` quit
+    -   `:q` quit, assuming you haven't made any changes in the file
     -   `:x` or `:wq` write file, then quit
 
 ### Finding things
