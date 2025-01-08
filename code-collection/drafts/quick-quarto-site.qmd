@@ -1,0 +1,13 @@
+---
+title: "Quickly creating a website with Quarto"
+author: ""
+description: "What it means to use Quarto, potential traps for a statistician (non-programmer), and resources that's helped me."
+date: "2024-04-13"
+categories:
+  - R
+  - workflow
+  - documentation
+draft: true
+---
+
+bla
