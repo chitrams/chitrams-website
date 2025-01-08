@@ -3,23 +3,24 @@ title: "Resources to understand what computers are"
 description: "Fundamentals of computer science and understanding computer architecture."
 author: ''
 date: '2024-10-05'
-date-modified: '2024-11-03'
+date-modified: '2025-01-08'
 categories: 
   - computer science
   - resources
 ---
 
-*3 November update: This list will be updated as I find more resources.*
+*3 November 2024 update: This list will be updated as I find more resources.*
 
 As I do more and more programming, I'm finding computer science unavoidable. Specifically, the hardware side of things. I think it's important to understand the basics of how computers work–in other words, "computer architecture"-if you want to write better code.
 
-I never received a formal education in computer science, so it was important to find resources that were accessible. Here's my round-up of the best resources I found.
+I never received a formal education in computer science, so it was important to find resources that were accessible. Here's my round-up of the best resources I found and why I liked them.
 
 ## Dipping your toes
 
--   The **Computer Science Crash Course** playlist on [YouTube](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo) is fantastic. It's what it says it is (a crash course), so you'll learn just enough to prepare you for diving deeper.
+-   The **Computer Science Crash Course** playlist on [YouTube](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo) is fantastic. It's what it says it is (a crash course), so you'll learn just enough to prepare you for diving deeper. There are 40 episodes in this series but they are all bite-sized and of a reasonable length.
 -   **Code: The hidden language of computer hardware and software** by Charles Petzold ([Google Books](https://www.google.com.au/books/edition/Code/iNfPEAAAQBAJ?hl=en&gbpv=0)) is an excellent book that starts you from the very beginning (0's and 1's) and conceptually builds towards how computers work. I highly recommend this if you'd like an intuitive understanding of hardware and software. I also think he's a great writer.
 
 ## More advanced topics
 
--   The course **Build a Modern Computer from First Principles: From Nand to Tetris** on [coursera](https://www.coursera.org/learn/build-a-computer). You can also find the Nand2Tetris homepage [here](https://www.nand2tetris.org/). I thought this was a really good course. It is quite detailed; I only skimmed through I'm not (yet) interested in building my own computer.
+-   The course **Build a Modern Computer from First Principles: From Nand to Tetris** on [coursera](https://www.coursera.org/learn/build-a-computer). You can also find the Nand2Tetris homepage [here](https://www.nand2tetris.org/). I thought this was a really good course. It is quite detailed; I only skimmed through as I'm not (yet) interested in building my own computer.
+-   **CS50x** [online](https://cs50.harvard.edu/x/2025/), or on [edX](https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science) if you'd like a verified certificate. This comprehensive course covers programming more generally and doesn't go much into the hardware. Regardless, I still think it's a good starting point for anyone who wants to learn how to program, especially if you've never programmed before (or never taken a formal course in computer programming).
