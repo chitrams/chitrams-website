@@ -1,7 +1,7 @@
 ---
-title: "List of Vim tips and resources"
+title: "Cheatsheet of Vim shortcuts"
 author: ""
-description: "Making Vim easier to use"
+description: "Shortcuts that will make your life with Vim that much easier."
 date: "2024-12-20"
 date-modified: "2025-01-08"
 categories:
