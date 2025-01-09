@@ -231,7 +231,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="logging-in-using-ssh" class="level2">
 <h2 class="anchored" data-anchor-id="logging-in-using-ssh">Logging in using <code>ssh</code></h2>
-<p>To make a remote login, we issue the command <code>ssh &lt;username&gt;@&lt;computer&gt;</code> which tries to make a connection to the SSH daemon running on the remote computer we have specified. For Chitra to access the Setonix computer on Pawsey, she logs in using <code>ssh chitrams@setonix.pawsey.org.au</code>.</p>
+<p>To make a remote login, we issue the command <code>ssh &lt;username&gt;@&lt;computer&gt;</code> which tries to make a connection to the SSH daemon running on the remote computer we have specified. To access the computer called Setonix on my supercomputing cluster, Pawsey, I would log in using <code>ssh chitrams@setonix.pawsey.org.au</code>.</p>
 <div class="callout callout-style-default callout-warning callout-titled" title="Test your understanding">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -409,21 +409,17 @@ If <code>pbcopy</code> doesn’t work
 <p>Depending on your environment, you may need to use a different command. For example, you may need to use root access by running <code>sudo -s -H</code> before starting the ssh-agent, or you may need to use <code>exec ssh-agent bash</code> or <code>exec ssh-agent zsh</code> to run the ssh-agent.</p></li>
 <li><p>If you’re using macOS Sierra 10.12.2 or later, you will need to modify your <code>~/.ssh/config</code> file to automatically load keys into the ssh-agent and store passphrases in your keychain.</p>
 <ul>
-<li>First, check to see if your <code>~/.ssh/config</code> file exists in the default location using the following command:</li>
-</ul>
+<li><p>First, check to see if your <code>~/.ssh/config</code> file exists in the default location using the following command:</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>$ open ~/.ssh/config</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>&gt; The file /Users/YOU/.ssh/config does not exist.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>If the file doesn’t exist, create the file.</li>
-</ul>
-<div class="sourceCode" id="cb18"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>touch ~/.ssh/config</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Open your <code>~/.ssh/config</code> file, then modify the file to contain the following lines. If your SSH key file has a different name or path than the example code, modify the filename or path to match your current setup.</li>
-</ul>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>&gt; The file /Users/YOU/.ssh/config does not exist.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>If the file doesn’t exist, create the file.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>touch ~/.ssh/config</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Open your <code>~/.ssh/config</code> file, then modify the file to contain the following lines. If your SSH key file has a different name or path than the example code, modify the filename or path to match your current setup.</p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>Host setonix</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  AddKeysToAgent yes</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  UseKeychain yes</span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  IdentityFile ~/.ssh/pawsey_ed25519_key</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  IdentityFile ~/.ssh/pawsey_ed25519_key</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
 <div class="callout callout-style-default callout-note callout-titled" title="Note">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">

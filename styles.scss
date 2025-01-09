@@ -6,8 +6,11 @@ $toc-color: #f25f70;
 /*-- scss:rules --*/
 
 p code, li code {
+  color: #2761E3;           /* or #000080 */
+}
+
+h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
   color: #2761E3;
-  background-color: #f8f9fa;
 }
 
 a:hover {

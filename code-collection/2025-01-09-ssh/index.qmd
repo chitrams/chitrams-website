@@ -26,7 +26,7 @@ The remote login server which accepts connections from client programs is known 
 
 ## Logging in using `ssh`
 
-To make a remote login, we issue the command `ssh <username>@<computer>` which tries to make a connection to the SSH daemon running on the remote computer we have specified. For Chitra to access the Setonix computer on Pawsey, she logs in using `ssh chitrams@setonix.pawsey.org.au`.
+To make a remote login, we issue the command `ssh <username>@<computer>` which tries to make a connection to the SSH daemon running on the remote computer we have specified. To access the computer called Setonix on my supercomputing cluster, Pawsey, I would log in using `ssh chitrams@setonix.pawsey.org.au`.
 
 ::: {.callout-warning title="Test your understanding"}
 1.  Say that Chitra has been allocated a node named `nid09310`. How would she log in to that node directly?
@@ -35,17 +35,13 @@ To make a remote login, we issue the command `ssh <username>@<computer>` which t
 
 ::: {.callout-note title="Answer" icon="false" collapse="true"}
 For the first instance, Chitra would log in with the following command:
-
 ``` bash
 $ ssh chitrams@nid09310.pawsey.org.au
 ```
-
 For the second, Chitra would log in with the following command:
-
 ``` bash
 $ sftp chitrams@data-mover.pawsey.org.au
 ```
-
 where `sftp` is another companion program for `ssh`, the Secure File Transfer Protocol. We discuss this in @sec-file-transfer.
 :::
 
@@ -78,19 +74,19 @@ You can generate a new SSH key on your local machine. After you generate the key
 
 1.  Open a Terminal and paste the text below, replacing the email used in the example with your GitHub email address.
 
-    ``` txt
+    ```txt
     $ ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/.ssh/github_ed25519_key
     ```
 
     This creates a new SSH key, using the provided email as a label, and `github_ed25519_key` as the key name.
 
-    ``` txt
+    ```txt
     > Generating public/private ALGORITHM key pair.
     ```
 
 2.  At the prompt, type a secure passphrase.
 
-    ``` txt
+    ```txt
     > Enter passphrase (empty for no passphrase): [Type a passphrase]
     > Enter same passphrase again: [Type passphrase again]
     ```
@@ -218,25 +214,25 @@ Link to GitHub documentation [here](https://docs.github.com/en/authentication/co
 
     -   First, check to see if your `~/.ssh/config` file exists in the default location using the following command:
 
-    ``` txt
-    $ open ~/.ssh/config
-    > The file /Users/YOU/.ssh/config does not exist.
-    ```
+        ``` txt
+        $ open ~/.ssh/config
+        > The file /Users/YOU/.ssh/config does not exist.
+        ```
 
     -   If the file doesn't exist, create the file.
 
-    ``` txt
-    touch ~/.ssh/config
-    ```
+        ``` txt
+        touch ~/.ssh/config
+        ```
 
     -   Open your `~/.ssh/config` file, then modify the file to contain the following lines. If your SSH key file has a different name or path than the example code, modify the filename or path to match your current setup.
 
-    ``` txt
-    Host setonix
-      AddKeysToAgent yes
-      UseKeychain yes
-      IdentityFile ~/.ssh/pawsey_ed25519_key
-    ```
+        ``` txt
+        Host setonix
+          AddKeysToAgent yes
+          UseKeychain yes
+          IdentityFile ~/.ssh/pawsey_ed25519_key
+        ```
 
     ::: {.callout-note title="Note"}
     If you chose not to add a passphrase to your key, you should omit the `UseKeychain` line.
