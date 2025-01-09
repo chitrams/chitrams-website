@@ -1,0 +1,367 @@
+---
+title: "Understanding SSH"
+author: ""
+description: "Remote logins, file transfers, and how to set up SSH keys."
+date: "2025-01-09"
+categories:
+  - resources
+  - computer science
+---
+
+What happens when we want to run some commands on another machine, such as a supercomputing cluster? To do this, we have to first log in to that machine. We call this a remote login.
+
+In order for us to be able to login, the remote computer must be running a remote login server and we will run a client program that can talk to that server. The client program passes our login credentials to the remote login server and, if we are allowed to login, that server then runs a shell for us on the remote computer.
+
+Once our local client is connected to the remote server, everything we type into the client is passed on, by the server, to the shell running on the remote computer. That remote shell runs those commands on our behalf, just as a local shell would, then sends back output, via the server, to our client, for our computer to display.
+
+In this post we will learn what the SSH protocol is, how to set up SSH keys (specifically for GitHub and Pawsey's Setonix, but the advice is generalisable), and how to securely transfer files using the SSH protocol.
+
+## Background for SSH
+
+Back in the day, when everyone trusted each other and knew every chip in their computer by its first name, people didn’t encrypt anything except the most sensitive information when sending it over a network and the two programs used for running a shell (usually back then, the Bourne Shell, `sh`) on, or copying files to, a remote machine were named `rsh` and `rcp`, respectively. Think (`r`)emote `sh` and `cp`.
+
+However, anyone could watch the unencrypted network traffic, which meant that villains could steal usernames and passwords. The [SSH protocol](https://carpentries-incubator.github.io/shell-extras/reference/#ssh-protocolhttps://www.ssh.com/academy/ssh/protocol) was invented to prevent this (or at least slow it down). It uses several sophisticated, and heavily tested, encryption protocols to ensure that outsiders can’t see what’s in the messages going back and forth between different computers.
+
+The remote login server which accepts connections from client programs is known as the SSH daemon. The client program we use to login remotely is the **secure shell** or **SSH** (think (`s`)ecure `sh`).
+
+## Logging in using `ssh`
+
+To make a remote login, we issue the command `ssh <username>@<computer>` which tries to make a connection to the SSH daemon running on the remote computer we have specified. For Chitra to access the Setonix computer on Pawsey, she logs in using `ssh chitrams@setonix.pawsey.org.au`.
+
+::: {.callout-warning title="Test your understanding"}
+1.  Say that Chitra has been allocated a node named `nid09310`. How would she log in to that node directly?
+2.  Say that Chitra wants to access the data mover nodes on Pawsey, which has the hostname `data-mover.pawsey.org.au`. How would she log in to the data mover node?
+:::
+
+::: {.callout-note title="Answer" icon="false" collapse="true"}
+For the first instance, Chitra would log in with the following command:
+
+``` bash
+$ ssh chitrams@nid09310.pawsey.org.au
+```
+
+For the second, Chitra would log in with the following command:
+
+``` bash
+$ sftp chitrams@data-mover.pawsey.org.au
+```
+
+where `sftp` is another companion program for `ssh`, the Secure File Transfer Protocol. We discuss this in @sec-file-transfer.
+:::
+
+After we log in, we can use the remote shell to use the remote computer’s files and directories.
+
+Typing `exit` terminates the remote shell (and the local client program on that remote shell) and returns us to our previous shell.
+
+## SSH keys {#sec-sshkeys}
+
+SSH keys provide a more secure and streamlined way of authenticating to remote systems compared to traditional password-based login methods. Instead of relying on a potentially weak password that can be guessed or intercepted, SSH keys use a robust cryptographic authentication mechanism. By implementing SSH keys, you're not just avoiding the inconvenience of repeated password entry; you're fundamentally improving your system's security and authentication reliability.
+
+SSH keys come in pairs: a public key that gets shared with services like GitHub, and a private key that is stored only on your computer. If the keys match, you’re granted access. The cryptography behind SSH keys ensures that no one can reverse engineer your private key from the public one.
+
+When you generate an SSH key, you can add a passphrase to further secure the key. Whenever you use the key, you must enter the passphrase. If your key has a passphrase and you don't want to enter the passphrase every time you use the key, you can add your key to the SSH agent. The SSH agent manages your SSH keys and remembers your passphrase.
+
+The first step in using SSH authorization is to generate your own key pair. You might already have an SSH key pair on your machine. You can check to see if one exists by moving to your `.ssh` directory and listing the contents.
+
+``` bash
+$ cd ~/.ssh
+$ ls
+```
+
+If you see `id_rsa.pub`, you already have a key pair and don’t need to create a new one. If you don't see any, follow the instructions below to generate a key pair.
+
+### Generating a key pair for GitHub {#sec-ssh-git}
+
+You can generate a new SSH key on your local machine. After you generate the key, you can add the public key to your account on GitHub.com to enable authentication for Git operations over SSH.
+
+#### Generate a new SSH key pair
+
+1.  Open a Terminal and paste the text below, replacing the email used in the example with your GitHub email address.
+
+    ``` txt
+    $ ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/.ssh/github_ed25519_key
+    ```
+
+    This creates a new SSH key, using the provided email as a label, and `github_ed25519_key` as the key name.
+
+    ``` txt
+    > Generating public/private ALGORITHM key pair.
+    ```
+
+2.  At the prompt, type a secure passphrase.
+
+    ``` txt
+    > Enter passphrase (empty for no passphrase): [Type a passphrase]
+    > Enter same passphrase again: [Type passphrase again]
+    ```
+
+#### Add the keys to your machine's SSH agent
+
+1.  Start the ssh-agent in the background.
+
+    ``` bash
+    $ eval "$(ssh-agent -s)" 
+    > Agent pid 59566
+    ```
+
+    Depending on your environment, you may need to use a different command. For example, you may need to use root access by running `sudo -s -H` before starting the ssh-agent, or you may need to use `exec ssh-agent bash` or `exec ssh-agent zsh` to run the ssh-agent.
+
+2.  If you're using macOS Sierra 10.12.2 or later, you will need to modify your `~/.ssh/config` file to automatically load keys into the ssh-agent and store passphrases in your keychain.
+
+    -   First, check to see if your `~/.ssh/config` file exists in the default location.
+
+    ``` txt
+    $ open ~/.ssh/config
+    > The file /Users/YOU/.ssh/config does not exist.
+    ```
+
+    -   If the file doesn't exist, create the file.
+
+    ``` txt
+    $ touch ~/.ssh/config
+    ```
+
+    -   Open your `~/.ssh/config` file, then modify the file to contain the following lines. If your SSH key file has a different name or path than the example code, modify the filename or path to match your current setup.
+
+    ``` txt
+    Host setonix
+      AddKeysToAgent yes
+      UseKeychain yes
+      IdentityFile ~/.ssh/github_ed25519_key
+    ```
+
+    ::: {.callout-note title="Note"}
+    If you chose not to add a passphrase to your key, you should omit the `UseKeychain` line.
+
+    If you see a `Bad configuration option: usekeychain` error, add an additional line to the configuration's `Host *.github.com` section.
+
+    ``` txt
+    Host github.com
+      IgnoreUnknown UseKeychain
+    ```
+    :::
+
+3.  Add your SSH private key to the ssh-agent and store your passphrase in the keychain. If you created your key with a different name, or if you are adding an existing key that has a different name, replace `github_ed25519_key` in the command with the name of your private key file.
+
+    ``` txt
+    $ ssh-add --apple-use-keychain ~/.ssh/github_ed25519_key
+    ```
+
+    ::: {.callout-note title="Note"}
+    The `--apple-use-keychain` option stores the passphrase in your keychain for you when you add an SSH key to the ssh-agent. If you chose not to add a passphrase to your key, run the command without the `--apple-use-keychain` option.
+
+    The `--apple-use-keychain` option is in Apple's standard version of `ssh-add`. In macOS versions prior to Monterey (12.0), the `--apple-use-keychain` and `--apple-load-keychain` flags used the syntax `-K` and `-A`, respectively.
+
+    If you continue to be prompted for your passphrase, you may need to add the command to your `~/.zshrc` file (or your `~/.bashrc` file for bash).
+    :::
+
+#### Add the public key to your account on GitHub
+
+1.  Copy the SSH public key to your clipboard. If your SSH public key file has a different name than the example code, modify the filename to match your current setup. When copying your key, don't add any newlines or whitespace.
+
+    ``` txt
+    $ pbcopy < ~/.ssh/github_ed25519_key.pub
+    # Copies the contents of the github_ed25519_key.pub file to your clipboard
+    ```
+
+    ::: {.callout-tip title="If `pbcopy` doesn't work" collapse="true"}
+    If `pbcopy` isn't working, you can locate the hidden `.ssh` folder, open the file in your favorite text editor, and copy it to your clipboard.
+    :::
+
+2.  In the upper-right corner of any page on GitHub, click your profile photo, then click **Settings**.
+
+3.  In the "Access" section of the sidebar, click **SSH and GPG keys**.
+
+4.  Click **New SSH key** or **Add SSH key**.
+
+5.  In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal laptop, you might call this key "Personal laptop".
+
+6.  Select the type of key: in this instance, we want to set up a key for authentication.
+
+7.  In the "Key" field, paste your public key.
+
+8.  Click **Add SSH key**.
+
+9.  If prompted, confirm access to your account on GitHub.
+
+Link to GitHub documentation [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+
+### Generating a key pair for Pawsey {#sec-ssh-pawsey}
+
+#### Generate a new SSH key pair
+
+1.  Open a terminal and execute the following command:
+
+    ``` txt
+    $ ssh-keygen -t ed25519 -f ~/.ssh/pawsey_ed25519_key
+    ```
+
+2.  At the prompt, type a secure passphrase.
+
+    ``` txt
+    > Enter passphrase (empty for no passphrase): [Type a passphrase]
+    > Enter same passphrase again: [Type passphrase again]
+    ```
+
+#### Add the keys to your machine's SSH agent
+
+1.  Start the ssh-agent in the background.
+
+    ``` txt
+    $ eval "$(ssh-agent -s)"
+    > Agent pid 59566
+    ```
+
+    Depending on your environment, you may need to use a different command. For example, you may need to use root access by running `sudo -s -H` before starting the ssh-agent, or you may need to use `exec ssh-agent bash` or `exec ssh-agent zsh` to run the ssh-agent.
+
+2.  If you're using macOS Sierra 10.12.2 or later, you will need to modify your `~/.ssh/config` file to automatically load keys into the ssh-agent and store passphrases in your keychain.
+
+    -   First, check to see if your `~/.ssh/config` file exists in the default location using the following command:
+
+    ``` txt
+    $ open ~/.ssh/config
+    > The file /Users/YOU/.ssh/config does not exist.
+    ```
+
+    -   If the file doesn't exist, create the file.
+
+    ``` txt
+    touch ~/.ssh/config
+    ```
+
+    -   Open your `~/.ssh/config` file, then modify the file to contain the following lines. If your SSH key file has a different name or path than the example code, modify the filename or path to match your current setup.
+
+    ``` txt
+    Host setonix
+      AddKeysToAgent yes
+      UseKeychain yes
+      IdentityFile ~/.ssh/pawsey_ed25519_key
+    ```
+
+    ::: {.callout-note title="Note"}
+    If you chose not to add a passphrase to your key, you should omit the `UseKeychain` line.
+
+    If you see a `Bad configuration option: usekeychain` error, add an additional line to the configuration's `Host setonix` section.
+
+    ``` txt
+    Host setonix
+      IgnoreUnknown UseKeychain
+    ```
+    :::
+
+#### Add the public key to Setonix
+
+On your local machine, execute the following command:
+
+``` txt
+$ ssh-copy-id -i ~/.ssh/pawsey_ed25519_key.pub <username>@<remotehost>
+```
+
+Where `<username>` is your Pawsey username and `<remotehost>` is the remote host to be accessed (usually setonix.pawsey.org.au). If the command establishes the correct connection to the host, then it will ask for your password to accept and finalise the copy.
+
+## Secure file transfers {#sec-file-transfer}
+
+The `ssh` login client has companion programs called `scp` (think (`s`)ecure `cp`) and `sftp` (short for Secure File Transfer Protocol) which allows us to copy files to or from a remote computer using the same kind of encrypted connection as SSH.
+
+Command line clients such as `scp` and `sftp` are a convenient way of moving data between computers. Alternatively, you could use GUI clients such as Filezilla, Cyberduck, or WinSCP.
+
+::: {.callout-important title="Use SSH keys!"}
+Whichever you use, it is strongly recommended to use SSH keys instead of the conventional and less secure username and password. See @sec-sshkeys for information on SSH keys.
+:::
+
+### SCP
+
+`scp` is useful to copy few small files and not a lot or very large files. It is not recommended for the transfer of large amounts of data, as it can't resume transfers if the operation/connection is interrupted for any reason.
+
+The syntax for scp is:
+
+``` txt
+scp <options> <path/to/source> <user-name>@data-mover.pawsey.org.au:<path/to/destination>
+
+scp <options> <user-name>@data-mover.pawsey.org.au:<path/to/source> <path/to/destination> 
+```
+
+Note the use of the colon (`:`) separating the hostname and the definition of the path/files on it.
+
+Let's look at an example. For Chitra to transfer the file "/VIMC/launch.R" from a local computer into her personal directory in "/scratch", she would use:
+
+``` bash
+$ scp /VIMC/launch.R chitrams@data-mover.pawsey.org.au:/scratch/pawsey1104/chitrams
+```
+
+On Pawsey, your personal directory in scratch will always look like: `/scratch/<project-name>/<user-name>`.
+
+To transfer a whole directory tree recursively, then the option `-r` needs to be used. As an example:
+
+``` bash
+$ scp -r chitrams@data-mover.pawsey.org.au:/scratch/pawsey1104/chitrams/vimc-pawsey/output ./pawsey-files
+```
+
+### SFTP {#sec-sftp}
+
+FTP, the *File Transfer Protocol*, was a popular, unencrypted method of transferring files between two remote systems. As of 2022, it has been deprecated by most modern software due to a lack of security, and can mostly only be used in legacy applications. SFTP, which stands for Secure File Transfer Protocol, is a separate protocol packaged built into SSH that can implement FTP commands over a secure connection. Typically, it can act as a drop-in replacement in any contexts where an FTP server is still needed.
+
+In almost all cases, SFTP is preferable to FTP because of its underlying security features and ability to piggy-back on an SSH connection. FTP is an insecure protocol that should only be used in limited cases or on networks you trust.
+
+Although SFTP is integrated into many graphical tools such as Filezilla, Cyberduck, and WinSCP, we will demonstrate how to use it through its interactive command line interface.
+
+By default, SFTP uses the SSH protocol to authenticate and establish a secure connection. Because of this, the same authentication methods are available that are present in SSH. To establish an SFTP session, you can use the following command:
+
+``` txt
+$ sftp <user-name>@setonix.pawsey.org.au
+sftp>
+```
+
+Note that after establishing a connection, the prompt will change to `sftp>` indicating that the interactive SFTP session has started.
+
+To close the connection, execute the following:
+
+``` txt
+sftp> bye
+```
+
+To "put" files from your local system on to Pawsey, the syntax is:
+
+``` txt
+put [options] <source-in-local-system> <destination-in-remote-system>
+```
+
+To "get" files from Pawsey on to your local system, the syntax is:
+
+``` txt
+get [options] <source-in-remote-system> <destination-in-local-system>
+```
+
+As for any Linux interactive session, the basic navigation tool for navigating directories in the remote filesystem is `cd`, and you can check the current directory on the remote server with `pwd` and `ls`. Within the SFTP interactive session, you can also navigate in your local computer by using the prefix "l" for "local" in the commands, such as `lcd`, `lpwd`, and `lls`.
+
+Alternatively, you can specify the directory within the `put` and `get` commands above.
+
+In order to transfer an entire directory, the option `-r` needs to be used in either `put` or `get`. In the following example, the directory my-scripts will be transferred to the your personal directory in the /scratch filesystem:
+
+``` txt
+sftp> put -r ./my-scripts /scratch/<project>/<username>
+```
+
+### GUI clients
+
+GUI clients are a very attractive option for file transfers because of their intuitive framework. They have the advantage that users do not need to remember the several different options for the command-line tools, but keep in mind these GUI clients are still based on the command line clients listed above. In practice, the combined use of both GUI and command line clients within your workflows results in better efficiency.
+
+The recommended file transfer clients are FileZilla (available for Windows, MacOS, and Linux), Cyberduck (available for MacOS and Windows), or WinSCP (available for Windows).
+
+::: {.callout-important title="Downloading software"}
+Only download these tools from its official website:
+
+-   Filezilla: [filezilla-project.org/index.php](https://filezilla-project.org/index.php)
+-   Cyberduck: [cyberduck.io](https://cyberduck.io/)
+-   WinSCP: [winscp.net/eng/index.php](https://winscp.net/eng/index.php)
+
+As for any software, be careful of not falling into "click tricks" that mislead you to download or install undesired software.
+:::
+
+::: {.callout-important title="Authentication"}
+Saving your password within the GUI client is not recommended. Instead, use SSH keys. See @sec-sshkeys for information on SSH keys.
+:::
+
+## Acknowledgments
+
+This material is derived from works that are copyright © The Carpentries (https://carpentries.org/) and copyright © Pawsey (https://pawsey.atlassian.net/wiki/spaces/US/overview) made available under the CC BY 4.0 license; and copyright © GitHub, Inc. (https://docs.github.com/en) made available under the CC0 1.0 Universal Deed.
