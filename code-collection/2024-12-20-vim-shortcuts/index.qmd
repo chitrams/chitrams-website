@@ -8,7 +8,7 @@ categories:
   - resources
 ---
 
-This is a cheatsheet of the commands I most frequently use for Vim.
+This is a cheatsheet of the commands I most frequently use for Vim. For a beginner's guide to Vim, refer to my post [Starting Vim](../2024-12-03-starting-vim/index.qmd).
 
 ### Necessary commands
 
