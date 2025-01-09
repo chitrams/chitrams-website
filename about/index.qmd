@@ -23,6 +23,10 @@ I find that [writing leads to understanding](https://paulgraham.com/words.html),
 
 ### Selected academic articles
 
-Saraswati, C. M., Borghi, E., da Silva Breda, J. J., Flores-Urrutia, M. C., Williams, J., Hayashi, C., \... & McLain, A. C. (2022). Estimating childhood stunting and overweight trends in the European region from sparse longitudinal data. *The Journal of Nutrition*, *152*(7), 1773-1782. [doi:10.1093/jn/nxac072](https://doi.org/10.1093/jn/nxac072).
+Saraswati, C. M., Borghi, E., da Silva Breda, J. J., Flores-Urrutia, M. C., Williams, J., Hayashi, C., ... & McLain, A. C. (2022). Estimating childhood stunting and overweight trends in the European region from sparse longitudinal data. *The Journal of Nutrition*, *152*(7), 1773-1782. [doi:10.1093/jn/nxac072](https://doi.org/10.1093/jn/nxac072).
 
 Saraswati, C. M., Judge, M. A., Weeda, L. J., Bassat, Q., Prata, N., Le Souëf, P. N., & Bradshaw, C. J. (2024). Net benefit of smaller human populations to environmental integrity and individual health and wellbeing. *Frontiers in Public Health*, *12*, 1339933. [doi:10.3389/fpubh.2024.1339933](https://doi.org/10.3389/fpubh.2024.1339933).
+
+### Licensing
+
+The content of this site is licensed under the GNU General Public License v3.0 (<https://choosealicense.com/licenses/gpl-3.0/>).
