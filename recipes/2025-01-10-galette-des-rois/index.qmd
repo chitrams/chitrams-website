@@ -1,0 +1,93 @@
+---
+title: "Galette des rois"
+description: "Traditional French pastry with almond filling."
+author: ""
+date: "2025-01-10"
+# image: ""
+# image-alt: ""
+categories: [cakes, effort/medium, time/medium]
+---
+
+Adapted from [David Lebovitz' recipe](https://www.davidlebovitz.com/galette-des-rois-kings-cake-recipe/).
+
+### Ingredients
+
+-   100 g almond flour
+-   100 g sugar
+-   a pinch of salt
+-   zest of half an orange
+-   100 g unsalted butter, cut into small cubes, at room temperature
+-   2 large eggs at room temperature
+-   2 tablespoons rum[^1]
+-   1/8 to 1/4 teaspoon almond extract
+-   450 g puff pastry, divided into two pieces, chilled[^2]
+-   a sprinkling of all-purpose flour
+-   a whole almond or candied fruit to be the fève
+-   1 egg yolk
+-   1 teaspoon milk
+
+[^1]: I prefer to use a dark rum; I find it more flavourful.
+
+[^2]: For store-bought puff pastries in Australia, I prefer the all-butter puff pastry by [Carême](https://www.caremepastry.com.au/home-cook/all-butter-puff-pastry/). You can find them at IGA, Farmer Jack's, or some Woolworths; their website has [a map](https://www.caremepastry.com.au/where-to-buy-careme-pastry/) of where you can find them.
+
+### Other things you'll need
+
+-   medium mixing bowl
+-   rubber spatula
+-   rolling pin
+-   baking paper
+-   baking tray
+-   paring knife
+-   pastry brush (alternatively, use your fingers)
+
+### Method
+
+**(1) Prepare the almond filling**
+
+1.  In a medium bowl, combine almond flour, sugar, salt, and orange zest.
+2.  Mash in the room-temperature butter until it is completely incorporated.
+3.  Stir in the eggs one at a time along with the rum and almond extract.
+4.  Cover and chill. The mixture may not look completely smooth, which is fine.
+
+**(2) Prepare the puff pastry**
+
+You want to work quickly with puff pastry. If you find the puff pastry "melting", you can put it back into the fridge to firm up before you take it out to handle again.
+
+1.  Line a baking sheet with parchment paper.
+2.  On a lightly floured surface, roll one piece of puff pastry into a circle about 23 cm in diameter. Using the lid of a pot, plate, or bottom of a springform pan as a template, trim the dough into a neat circle.
+3.  Place the dough on to the baking sheet, and cover with a sheet of parchment paper.
+4.  Roll the other piece of dough into a circle, trim it, and lay it on top.
+5.  Chill dough for 30 minutes.
+
+**(3) Assembly**
+
+1.  Remove dough and almond filling from the fridge. Slide the top layer of dough and parchment from the pan, so there is only one circle of dough on the baking sheet.
+2.  Spread the almond filling over the center of the dough, leaving a 3 cm border. Be careful to not let the filling touch the edges, as this could cause the filling to leak.
+3.  Optionally, place an almond or piece of candied fruit to be the fève (prize) somewhere in the almond filling.
+4.  Brush water generously around the exposed perimeter of the dough, then place the other circle of dough on top of the galette. Press down to seal the edges of the dough very well.
+5.  I would recommend that you chill the galette from 30 minutes to overnight. This will help make it so much easier to decorate the galette. But it is not strictly necessary.
+
+**(4) Decorating and baking**
+
+1.  Pre-heat the oven to 180ºC fan-forced.
+2.  Flip the galette over so the bottom is now the top.
+3.  Flute the sides of the dough and use a paring knife to create a design on top. Refer to the videos in the [**Notes**] section for how to do this.
+4.  Mix egg yolk with milk and brush it evenly over the top. Avoid having the glaze fall down the sides, which will inhibit the pastry from rising at the edges.
+5.  Use a paring knife to poke 5 holes in the top to allow steam to escape whilst baking.
+6.  Bake for 30 minutes or until the galette is browned on top and up the sides. If the galette puffs up too dramatically during baking, feel free to poke it again once or twice with the paring knife to release the steam.
+7.  Remove from the oven, slide the galette off the baking sheet, and onto a cooling rack. The galette will deflate as it cools, which is normal.
+8.  Serve warm or at room temperature.
+
+### Context
+
+Galette des rois or [king cake](https://en.wikipedia.org/wiki/King_cake) is served to celebrate Epiphany or Fête des Rois (feast of the kings) on 6 January: the twelfth night after Christmas when the three kings or wise men arrive after the birth of Jesus.
+
+The fève, literally "bean", is usually a small figure hidden inside. The person who finds the fève wins a crown.
+
+The variant I've presented here is the northern French version. The south of France makes a gâteau des rois: a brioche dough decorated with candied fruit and coarse sugar. Germany and German-speaking Switzerland makes Dreikönigskuchen, where rolls of sweet bread are shaped like wreathes or rounds.
+
+### Notes {#sec-notes}
+
+[This video of Dominique Ansel](https://www.youtube.com/watch?v=Vott0DHU4Bg) (4:46) gives a good, quick overview of how to make galette des rois.
+
+[This video by La Pâte de Dom](https://www.youtube.com/watch?v=Y1sY752loTo) (22:57) is an excellent and comprehensive video for techniques on making galette des rois at the next level. It mixes pastry cream with the almond filling to create a frangipane, which I find a bit too complex for the average home cook. Regardless, the techniques are worth watching if you'd like to improve your galette des rois.
