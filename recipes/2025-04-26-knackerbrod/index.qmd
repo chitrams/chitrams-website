@@ -1,6 +1,6 @@
 ---
-title: "Knäckerbröd: Sourdough rye crispbread"
-description: "Scandinavian crispbread using sourdough discard"
+title: "Knäckerbröd"
+description: "A Scandinavian rye crispbread which uses your sourdough discards."
 categories:
   - effort/easy
   - time/waiting

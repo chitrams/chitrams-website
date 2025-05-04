@@ -1,6 +1,6 @@
 ---
 title: "Dal palak"
-description: "Indian lentils with spinach tadka"
+description: "Flavourful red lentils with spinach tadka: an Indian recipe."
 categories:
   - effort/easy
   - time/medium

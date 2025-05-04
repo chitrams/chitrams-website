@@ -1,6 +1,6 @@
 ---
-title: "Easy sourdough loaf"
-description: "My favourite recipe so far for a simple and easy sourdough loaf"
+title: "Sourdough bread"
+description: "My favourite recipe so far for a simple and easy loaf. Beginner-friendly and relatively uncomplicated, adapted for the Australian heat."
 categories:
   - effort/medium
   - time/waiting
