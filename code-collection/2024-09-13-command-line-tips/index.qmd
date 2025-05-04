@@ -1,5 +1,5 @@
 ---
-title: "List of command line tips and resources"
+title: "bash tips and resources: a list"
 author: ""
 description: "How to unleash some command line magic and make things less painful, especially if you're just starting out."
 date: "2024-09-13"
@@ -31,3 +31,4 @@ I will update this list as I come across more concepts that I find helpful.
 ## Resources
 
 -   *The Linux Command Line* by William Shotts (freely available [here](https://linuxcommand.org/tlcl.php)) provides a friendly introduction to what you need to know about the command line.
+-   *Efficient Linux at the Command Line: Boost Your Command-Line Skills* by Daniel J. Barrett (book details [here](https://efficientlinux.com/)) provides intermediate users tips on how to better use the command line.

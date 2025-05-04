@@ -1,0 +1,53 @@
+---
+title: "Easy sourdough loaf"
+description: "My favourite recipe so far for a simple and easy sourdough loaf"
+categories:
+  - effort/medium
+  - time/waiting
+  - bread
+date: "2025-04-12"
+---
+
+**Ingredients**
+
+-   100 g active starter
+-   375 g warm water
+-   500 g bread flour
+-   12 g salt
+
+**You'll also need**
+
+-   A large mixing bowl
+-   A small to medium-sized bowl you can cover (with a lid or a plate), that will fit in your fridge
+-   A tea towel
+-   Optional but very useful: a bench scraper
+-   Baking paper
+-   A solid baking tray. Optional: pizza stone or Dutch oven.
+
+**Method**
+
+1.  In a large mixing bowl, add your active starter and warm water. Mix together with a spatula. Then add the flour and salt, mixing together with the spatula or your hands (make sure to wet them first to prevent sticking). Cover with a towel and leave to rest for 30 minutes.
+2.  Stretch and fold your dough. See video instructions by The Perfect Loaf [here](https://youtu.be/HprDjPWuiN8?si=f9VE9mVz7qCME8mc). Do this four times, once every 30 minutes.[^1]
+3.  First rise. Cover the bowl with a tea towel and let rise at room temperature until it is approximately 1.5 times its previous size and has bubbles on the surface. [^2]
+4.  Shape. Sprinkle your work surface lightly with flour. Scrape the dough out onto your work surface and shape into a boule. See video instructions by The Perfect Loaf [here](https://youtu.be/IWA0RAAsBHg?si=IZNcPAkxSkeKTeIt).
+5.  Rest. Let the dough rest for \~30 minutes on the bench, covered by a tea towel. Whilst it's resting, prepare the lidded bowl you'll be resting your dough in. Line the bowl with a tea towel and sprinkle with flour.
+6.  Second shape. Shape again as in Step 4.
+7.  Second rise or proof. Move dough into tea towel-lined bowl. Cover, then leave in fridge overnight.[^3]
+8.  When you're ready to bake, pre-heat your oven to 230ºC. Pre-heat your baking tray, pizza stone, or Dutch oven too.
+9.  Cut a piece of baking paper to fit your pizza stone or Dutch oven. Place the paper over your dough, then invert the bowl to release. Using a sharp knife, score your dough.[^4] Use the baking paper to carefully transfer your dough to the pre-heated platform.
+10. Bake. Transfer the dough to the oven to bake. If you are using a baking tray or pizza stone, ideally you'd invert a large baking tray on top of your bread, and have a tray of boiling hot water in the bottom of the oven to make sure your bread has enough moisture. Ensure you have the fan-forced option switched off. If you are using a Dutch oven, simply cover the pot. Bake for 30 minutes. Then lower temperature to 200ºC and bake for another 10-20 minutes until golden-brown, depending on your oven. If using a Dutch oven, open lid for this last 10-20 minutes.
+11. Cool on a wire rack for about an hour before slicing.
+
+[^1]: Even if you only have time to do it once, that's fine. This is quite forgiving.
+
+[^2]: Here is where sourdough baking becomes a vibe. You can also choose: a) to let the dough rise in the fridge if you want to do it overnight; or b) to let the dough double in size, but I find this leads to gummy centres. The time it takes for the dough to expand to optimal volume also depends on how much starter you put in, how active your starter is, and the ambient temperature. As an example, with 100 g of active starter and a kitchen at 25ºC, it usually takes about 4 hours for my dough to increase in size by 1.5 times. If I want to do this rise overnight, I use 50 g of starter and leave it in my fridge for about 10 hours. It really depends on your schedule.
+
+[^3]: You can choose to leave in fridge for less time, but I find overnight gives me the best rise. I think this also depends on how long you've left it in the first rise.. So play around with this time variable. Some people also swear by 24 hours, so this is really variable!
+
+[^4]: Ensure you score it deep enough, otherwise your dough will crack at the bottom. You could go really deep into [the science of scoring dough](https://youtu.be/qRX3rulyXS8?si=mGRj4R1sjS_B46jN), but for starters, just make sure you are cutting it at least a centimeter deep and at an angle of approximately 45º.
+
+**Notes**
+
+The loaf stays fresh for about 3 days in an airtight container. This freezes well too.
+
+There's a lot of components to sourdough baking and you can make this as simple or as complicated as you want it to be!
