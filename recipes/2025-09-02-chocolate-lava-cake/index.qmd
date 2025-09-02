@@ -1,0 +1,44 @@
+---
+title: "Chocolate lava cake"
+description: "A rich dessert; deliciously melty on the inside."
+categories:
+  - effort/medium
+  - time/medium
+  - dessert
+date: "2025-09-02"
+---
+
+Makes 2; my own recipe
+
+**Ingredients**
+
+-   60g unsalted butter, cut into small cubes, plus a bit extra to grease
+-   1 tablespoon cocoa powder
+-   60g dark chocolate[^1] broken into pieces
+-   1 egg and 1 egg yolk
+-   60g caster sugar
+-   A pinch of salt
+-   1 tablespoon plain flour
+-   Optional: plain vanilla ice cream
+
+[^1]: Use good quality dark chocolate here, as it's the main flavour in this dessert. You can see there's not many ingredients, so it's really important that the flavour of the chocolate is one you like.
+
+**You'll also need**
+
+-   Ramekins or pudding moulds
+-   A heatproof bowl
+-   A saucepan
+-   A rubber spatula
+-   A whisk or electric mixer with whisk attachment
+
+**Method**
+
+1.  Pre-heat oven to 200ºC if cooking immediately. Put a baking tray on the middle shelf. Butter the inside of two small ramekins or pudding moulds, then coat with cocoa powder. To do this, put some cocoa powder in one and turn it to coat the inside, holding it over the second mould to catch any powder that escapes. Do the same with the other mould.
+2.  Put the butter and chocolate into a heatproof bowl set over, but not touching, a pan of simmering water.[^2] Stir occasionally until melted. Allow to cool slightly.
+3.  Vigorously whisk together the egg, yolk, sugar, and a pinch of salt until pale and fluffy. Gently fold in the melted chocolate and butter mixture, and then the flour. Spoon into the prepared moulds, stopping just shy of the top.
+4.  At this point, the mixture can be refrigerated or frozen until needed, as the puddings will not wait around once cooked; they are best served straight out of the oven.
+5.  Put moulds on to a hot baking tray and cook for 12 minutes (14 from refrigerator, 18 from frozen) until the tops are set and coming away from the sides of the moulds. Leave to rest for 30 seconds then serve in the ramekins or turn out on to plates if you're feeling confident. They're great with clotted cream or plain vanilla ice cream.
+
+
+
+[^2]: In an emergency, one could utilise the microwave instead, but I would be too worried about overcooking the chocolate in the microwave.
