@@ -17,9 +17,11 @@ about:
 
 ### About me
 
-I am a medical statistician and researcher with interests in epidemiology, climate change, and public health. More generally, I am interested in finding ways to be better at cooking, baking, learning, note-taking, writing, yoga, statistical programming, and understanding other people.
+I am a medical statistician and researcher with interests in epidemiology, climate change, and public health. The common thread in my professional career is leveraging data, mathematical modelling, and high-performance computing for some of the world's most urgent health challenges.
 
-I find that [writing leads to understanding](https://paulgraham.com/words.html), and writing as if other people are going to read what you're writing is the next level up. So here I am with a [digital garden](https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/)-kind of website.
+I am also interested in cooking, baking, learning, writing, yoga, statistical programming, and playing the piano. I also find the field of psychology incredibly fascinating. These are all topics I would write about in this blog, under the heading [**Curation**](https://chitra-ms.com/curation/).
+
+I find that [writing leads to understanding](https://paulgraham.com/words.html), and writing for others is the next level up. So here I am with a [digital garden](https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/)-kind of website.
 
 ### Selected academic articles
 
